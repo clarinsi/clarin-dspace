@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DIR_SOURCE=/project/lindat-dspace/source
-DIR_INSTALLATION=/project/lindat-dspace/installation
+DIR_SOURCE=../../..
+DIR_INSTALLATION=${DIR_SOURCE}/../installation
 
 cp ${DIR_SOURCE}/../configs/default.license ${DIR_INSTALLATION}/config/
 cp ${DIR_SOURCE}/../configs/alternative.license ${DIR_INSTALLATION}/config/
