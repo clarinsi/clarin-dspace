@@ -230,21 +230,21 @@ jQuery(document)
 	.ready(
 	function() {
 
-		jQuery.i18n.load("cs", {
-			"Rejected files": "Odmítnuté soubory",
+		jQuery.i18n.load("sl", {
+			"Rejected files": "Zavrnjene datoteke",
 			"The following files are too large for conventional upload (limit is %s) or are empty (0 bytes). Please contact %s about how to upload these files.":
-				"Následující soubory jsou příliš velké (limit je %s) pro nahrání běžnou cestou a nebo jsou prázdné (0 bytů). Tyto soubory vám pomůže nahrát %s, prosím kontaktujte jej.",
-			"Filename": "Jméno souboru",
+				"Naslednje datoteke so prevelike za običajni prenos (zgornja meja je %s) ali so prazne (0 bajtov). Prosim, stopite v stik z %s za navodila, kako naložiti te datoteke.",
+			"Filename": "Ime datoteke",
 			"Size": "Velikost",
-			"File Upload": "Odeslání souboru",
+			"File Upload": "Prenos datoteke",
 			"Please fill in the description(s) and hit the \"Start Upload\" button.\n Then wait till the file(s) are uploaded.":
-				"Vyplňte prosím popisky souborů a zmáčkněte tlačítko \"Začít odesílat\".\nPotom vyčkejte, dokud se soubor(y) nenahrají.",
-			"Start Upload": "Začít odesílat",
-			"Describe the file": "Popište soubor",
-			"Progress": "Průběh",
-			"Upload of %s failed.\n%s\n%s": "Nahrání souboru %s selhalo.\n%s\n%s",
-			"Type": "Typ",
-			"Done": "Hotovo",
+				"Izpolnite prosim opis(e) in kliknite na \"Začni prenos\".\nPtem počakajte, da se prenesejo vse datoteke.",
+			"Start Upload": "Začni prenos",
+			"Describe the file": "Opišite datoteke",
+			"Progress": "Napredek",
+			"Upload of %s failed.\n%s\n%s": "Prenos %s ni uspel.\n%s\n%s",
+			"Type": "Tip",
+			"Done": "Končano",
 		});
 
 		var fileFieldO = jQuery("#aspect_submission_StepTransformer_field_file");

@@ -23,16 +23,15 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:mods="http://www.loc.gov/mods/v3"
     xmlns:confman="org.dspace.core.ConfigurationManager"
-    xmlns:file="java.io.File"
     xmlns="http://www.w3.org/1999/xhtml"
-    exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods confman file">
+    exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods confman">
 
     <xsl:output indent="yes" />
 
     <xsl:variable name="aaiURL">
         <xsl:value-of select="confman:getProperty('lr', 'lr.aai.url')"/>
     </xsl:variable>
-
+                    
     <xsl:template match="dri:document">
     	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html></xsl:text>
         <html>
@@ -139,7 +138,7 @@
 	    
 	    <!-- license selector -->
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='licenseselect']">
-            <link rel="stylesheet" href="{$theme-path}/lib/lindat-license-selector/license-selector.css"> </link>
+            <link rel="stylesheet" href="{$theme-path}/lib/lindat-license-selector/license-selector.min.css"> </link>
         </xsl:if>
 	    
 
@@ -544,12 +543,10 @@
                 <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
             </xsl:variable>
             <xsl:attribute name="src">
-                <xsl:variable name="localizedContextPath" select="concat($theme-path,'/lib/lindat/public/js/',$currentLocale,'/lindat-refbox.js')" />
-                <xsl:variable name="localizedDiskPath" select="concat($theme-path-on-disk,'/lib/lindat/public/js/',$currentLocale,'/lindat-refbox.js')" />
-                <xsl:variable name="path" select="file:new($localizedDiskPath)"/>
                 <xsl:choose>
-                    <xsl:when test="file:isFile($path)">
-                        <xsl:value-of select="$localizedContextPath" />
+                    <xsl:when test='$currentLocale="sl"'>
+                        <xsl:value-of select="$theme-path" />
+                        <xsl:text>/lib/lindat/public/js/sl/lindat-refbox.js</xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:value-of select="$theme-path" />
@@ -611,7 +608,7 @@
 
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='licenseselect']">
             <script type="text/javascript" src="{$theme-path}/lib/lindat-license-selector/lodash.min.js">&#160;</script>
-            <script type="text/javascript" src="{$theme-path}/lib/lindat-license-selector/license-selector.js">&#160;</script>
+            <script type="text/javascript" src="{$theme-path}/lib/lindat-license-selector/license-selector.min.js">&#160;</script>
         </xsl:if>
         
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='bootstrap-toggle']">

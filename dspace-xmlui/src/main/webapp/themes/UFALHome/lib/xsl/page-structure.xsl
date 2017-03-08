@@ -264,7 +264,7 @@
 	<xsl:template match="dri:body">
 
         <xsl:call-template name="navbar" />
-        
+
 		<div class="container-fluid">
 			<div class="container">
 			
@@ -845,7 +845,7 @@
 						<h5 style="left: 36%; position: absolute; top: 54%;"><i18n:text i18n:key="homepage.carousel.easy_cite">Easy to Cite</i18n:text></h5>
 					</div>
 				</div>
-				<div class="item">
+				<!--div class="item">
 					<div style="position: relative; height: 180px;">
 						<div style="position: absolute; width: 65%; top: 20%; left: 20%; line-height: 20px;">
 							<blockquote>
@@ -859,21 +859,18 @@
 							</blockquote>
 						</div>
 					</div>
-				</div>
+				</div-->
 			</div>
 		</div>
-		<div class="col-md-5 col-lg-4 hidden-xs hidden-sm">
-			<div class="row">
-				<div style="height: 160px; position: relative;" class="col-md-7 col-lg-7">
-				  <a href="/lindat">
-			            <img src="{$context-path}/themes/UFAL/images/lindat/lindat-logo.png" style="position: absolute; height: 60%; top: 0px; bottom: 0px; margin: auto;" class="logo" alt="LINDAT/CLARIN logo" /></a>
-				</div>
-		                <div style="height: 160px; position: relative;" class="col-md-5 col-lg-5">
-				    <a href="http://www.clarin.eu/">
-		                    <img src="{$context-path}/themes/UFAL/images/lindat/clarin-logo.png" style="position: absolute; height: 70%; top: 0px; bottom: 0px; margin: auto;" class="logo" alt="LINDAT/CLARIN logo" /></a>
-		                </div>
-			</div>
-        </div>		
+                <div class="col-md-5 col-lg-4 hidden-xs hidden-sm">
+                	<div class="row">
+                		<div style="height: 160px; position: relative;" class="col-md-5 col-lg-5">
+                			<a href="http://www.clarin.si/">
+                				<img src="{$context-path}/themes/UFAL/images/lindat/clarin-logo.png" style="position: absolute; height: 70%; top: 0px; bottom: 0px; margin: auto;" class="logo" alt="CLARIN.SI logo" />
+                                        </a>
+                                </div>
+                        </div>
+                </div>
 	</div>	
 	</xsl:template>
 </xsl:stylesheet>

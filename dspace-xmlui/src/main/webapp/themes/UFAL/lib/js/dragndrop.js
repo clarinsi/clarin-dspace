@@ -57,9 +57,9 @@ function dragLeave(e) {
 jQuery(document)
 .ready(
 		function() {
-			$.i18n.load("cs",{
-				"Can't upload these files.": "Tyto soubory nelze nahrát.",
-				"Drop file(s) here.": "Přetáhněte soubory sem.",
+			$.i18n.load("sl",{
+				"Can't upload these files.": "Ne morem prevzeti teh datotek.",
+				"Drop file(s) here.": "Spustite datoteko/e sem.",
 			});
 			init_dragNdrop();
 		}
