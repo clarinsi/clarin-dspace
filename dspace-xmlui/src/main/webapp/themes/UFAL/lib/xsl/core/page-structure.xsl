@@ -19,12 +19,13 @@
     xmlns:mets="http://www.loc.gov/METS/"
     xmlns:xlink="http://www.w3.org/TR/xlink/"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:file="java.io.File"
     xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:mods="http://www.loc.gov/mods/v3"
     xmlns:confman="org.dspace.core.ConfigurationManager"
     xmlns="http://www.w3.org/1999/xhtml"
-    exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods confman">
+    exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods confman file">
 
     <xsl:output indent="yes" />
 
