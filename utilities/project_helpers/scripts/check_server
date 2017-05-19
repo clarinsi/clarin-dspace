@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# mail variables
+recipient="repo-technical@clarin.si"
+subject="fido system warning"
+
+body=""
+
+# Check disk space
+df=`df | grep "\(9[5-9]\|100\)%"`
+if [ "$df" ]; then
+   header="*Disk space running out*"
+   body="${body}${header}\n${df}\n\n"
+fi
+
+# Send email if there's anything to report
+if [ "$body" ]; then
+   message="subject:$subject\n$body"
+   echo -e "$message"
+   echo -e "$message" | /usr/sbin/sendmail "$recipient"
+else
+   echo "All good"
+fi
