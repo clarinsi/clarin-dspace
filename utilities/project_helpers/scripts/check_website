@@ -1,33 +1,29 @@
 #!/bin/bash
 
-url="https://www.clarin.si:443/repository/xmlui/handle/11356/1041"
 subject="restarting clarin.si"
-target="inflected form"
 recipient="repo-technical@clarin.si"
+logdir="/project/lindat-dspace/tmp/check_website"
 
-cd /tmp
-wget -o check_website.log -O check_website.html $url
+xmlui_url="https://www.clarin.si/repository/xmlui/handle/11356/1041"
+home_url="https://www.clarin.si/info/about/"
+oai_url="https://www.clarin.si/repository/oai/request?verb=Identify"
 
-if ! grep -q "HTTP request sent, awaiting response... 200 OK" check_website.log; then
-   if ! grep -q "$target" check_website.html; then
-       date=`date`
-       ps=`ps aux`
-       down=""
-       if ! grep -q "postgresql" <<< $ps; then
-           down="$down postgresql"
-       fi
-       if ! grep -q "tomcat" <<< $ps; then
-           down="$down tomcat"
-       fi
-       if ! grep -q "apache" <<< $ps; then
-           down="$down apache"
-       fi
-       if ! grep -q "handle" <<< $ps; then
-          down="$down handle"
-       fi
-       cd /project/lindat-dspace/source/utilities/project_helpers/scripts
-       message="subject:$subject\nCLARIN.SI appears to be down.\n\nDate:$date\nURL:$url\nTarget string:$target\nProcesses missing:$down\n\nRestarting: sudo make restart ..."
-       echo -e "$message" | /usr/sbin/sendmail "$recipient"
-       make restart
-   fi
+header_target="HTTP/1.1 200 OK"
+body_target="inflected form"
+
+tmp_file=/tmp/xmlui_current.html
+curl -s -i $xmlui_url > $tmp_file
+if [ `grep -c "$header_target" $tmp_file` == "0" ] || [ `grep -c "$body_target" $tmp_file` == "0" ] ; then
+    cd $logdir
+    rm *
+    mv $tmp_file xmlui.html
+    curl -s -i $home_url > home.html
+    curl -s -i $oai_url > oai.html
+    dmesg -T | tail > dmesg.log
+    free -m > free.log
+    lsof -i > lsof.log
+    ps auxwww > ps.log
+    message="subject:$subject\nCLARIN.SI appears to be down. See $logdir for some diagnostics.\n\nRestarting: sudo make restart ..."
+    echo -e "$message" | /usr/sbin/sendmail "$recipient"
+    make restart
 fi
