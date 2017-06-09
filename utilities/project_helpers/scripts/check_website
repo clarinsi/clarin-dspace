@@ -3,6 +3,7 @@
 subject="restarting clarin.si"
 recipient="repo-technical@clarin.si"
 logdir="/project/lindat-dspace/tmp/check_website"
+scriptdir="/project/lindat-dspace/source/utilities/project_helpers/scripts"
 
 xmlui_url="https://www.clarin.si/repository/xmlui/handle/11356/1041"
 home_url="https://www.clarin.si/info/about/"
@@ -25,5 +26,6 @@ if [ `grep -c "$header_target" $tmp_file` == "0" ] || [ `grep -c "$body_target" 
     ps auxwww > ps.log
     message="subject:$subject\nCLARIN.SI appears to be down. See $logdir for some diagnostics.\n\nRestarting: sudo make restart ..."
     echo -e "$message" | /usr/sbin/sendmail "$recipient"
+    cd $scriptdir
     make restart
 fi
