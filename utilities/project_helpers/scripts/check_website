@@ -16,7 +16,9 @@ tmp_file=/tmp/xmlui_current.html
 curl -s -i $xmlui_url > $tmp_file
 if [ `grep -c "$header_target" $tmp_file` == "0" ] || [ `grep -c "$body_target" $tmp_file` == "0" ] ; then
     cd $logdir
-    rm *
+    datedir="$(date +"%d-%m-%Y")"
+    mkdir $datedir
+    cd $datedir
     mv $tmp_file xmlui.html
     curl -s -i $home_url > home.html
     curl -s -i $oai_url > oai.html
@@ -24,7 +26,8 @@ if [ `grep -c "$header_target" $tmp_file` == "0" ] || [ `grep -c "$body_target" 
     free -m > free.log
     lsof -i > lsof.log
     ps auxwww > ps.log
-    message="subject:$subject\nCLARIN.SI appears to be down. See $logdir for some diagnostics.\n\nRestarting: sudo make restart ..."
+    hostname=`hostname`
+    message="subject:$subject\nCLARIN.SI on $hostname appears to be down. See $logdir for some diagnostics.\n\nRestarting: sudo make restart ..."
     echo -e "$message" | /usr/sbin/sendmail "$recipient"
     cd $scriptdir
     make restart
