@@ -1,6 +1,5 @@
 #!/bin/bash
 
-subject="restarting clarin.si"
 recipient="repo-technical@clarin.si"
 logdir="/project/lindat-dspace/tmp/check_website"
 scriptdir="/project/lindat-dspace/source/utilities/project_helpers/scripts"
@@ -17,16 +16,17 @@ curl -s -i $xmlui_url > $tmp_file
 if [ `grep -c "$header_target" $tmp_file` == "0" ] || [ `grep -c "$body_target" $tmp_file` == "0" ] ; then
     cd $logdir
     datedir="$(date +"%d-%m-%Y")"
-    mkdir $datedir
+    mkdir -p $datedir
     cd $datedir
     mv $tmp_file xmlui.html
-    curl -s -i $home_url > home.html
-    curl -s -i $oai_url > oai.html
-    dmesg -T | tail > dmesg.log
-    free -m > free.log
-    lsof -i > lsof.log
-    ps auxwww > ps.log
+    curl -s -i $home_url >> home.html
+    curl -s -i $oai_url >> oai.html
+    dmesg -T | tail >> dmesg.log
+    free -m >> free.log
+    lsof -i >> lsof.log
+    ps auxwww >> ps.log
     hostname=`hostname`
+    subject="restarting clarin.si on $hostname"
     message="subject:$subject\nCLARIN.SI on $hostname appears to be down. See $logdir for some diagnostics.\n\nRestarting: sudo make restart ..."
     echo -e "$message" | /usr/sbin/sendmail "$recipient"
     cd $scriptdir
