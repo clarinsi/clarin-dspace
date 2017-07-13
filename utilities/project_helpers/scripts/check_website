@@ -5,10 +5,10 @@ logdir="/project/lindat-dspace/tmp/check_website"
 scriptdir="/project/lindat-dspace/source/utilities/project_helpers/scripts"
 
 if [ `hostname` == "fido" ] ; then
-    server=www.clarin.si
+    server="www.clarin.si"
     curl="curl -s -i"
 else
-    server=beta.clarin.si
+    server="beta.clarin.si"
     curl="curl -k -s -i"
 fi
 
