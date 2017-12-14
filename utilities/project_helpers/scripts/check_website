@@ -1,29 +1,42 @@
 #!/bin/bash
 
-subject="restarting clarin.si"
 recipient="repo-technical@clarin.si"
 logdir="/project/lindat-dspace/tmp/check_website"
+scriptdir="/project/lindat-dspace/source/utilities/project_helpers/scripts"
 
-xmlui_url="https://www.clarin.si/repository/xmlui/handle/11356/1041"
-home_url="https://www.clarin.si/info/about/"
-oai_url="https://www.clarin.si/repository/oai/request?verb=Identify"
+if [ `hostname` == "fido" ] ; then
+    server="www.clarin.si"
+    curl="curl -s -i"
+else
+    server="beta.clarin.si"
+    curl="curl -k -s -i"
+fi
+
+xmlui_url="https://$server/repository/xmlui/handle/11356/1041"
+home_url="https://$server/info/about/"
+oai_url="https://$server/repository/oai/request?verb=Identify"
 
 header_target="HTTP/1.1 200 OK"
 body_target="inflected form"
 
 tmp_file=/tmp/xmlui_current.html
-curl -s -i $xmlui_url > $tmp_file
+$curl $xmlui_url > $tmp_file
 if [ `grep -c "$header_target" $tmp_file` == "0" ] || [ `grep -c "$body_target" $tmp_file` == "0" ] ; then
     cd $logdir
-    rm *
+    datedir="$(date +"%d-%m-%Y")"
+    mkdir -p $datedir
+    cd $datedir
     mv $tmp_file xmlui.html
-    curl -s -i $home_url > home.html
-    curl -s -i $oai_url > oai.html
-    dmesg -T | tail > dmesg.log
-    free -m > free.log
-    lsof -i > lsof.log
-    ps auxwww > ps.log
-    message="subject:$subject\nCLARIN.SI appears to be down. See $logdir for some diagnostics.\n\nRestarting: sudo make restart ..."
+    $curl $home_url >> home.html
+    $curl $oai_url >> oai.html
+    dmesg -T | tail >> dmesg.log
+    free -m >> free.log
+    lsof -i >> lsof.log
+    ps auxwww >> ps.log
+    hostname=`hostname`
+    subject="restarting clarin.si on $hostname"
+    message="subject:$subject\nCLARIN.SI on $hostname appears to be down. See $logdir for some diagnostics.\n\nRestarting: sudo make restart ..."
     echo -e "$message" | /usr/sbin/sendmail "$recipient"
+    cd $scriptdir
     make restart
 fi
