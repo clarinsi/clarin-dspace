@@ -24,8 +24,9 @@
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:mods="http://www.loc.gov/mods/v3"
     xmlns:confman="org.dspace.core.ConfigurationManager"
+    xmlns:psu="cz.cuni.mff.ufal.utils.PageStructureUtil"
     xmlns="http://www.w3.org/1999/xhtml"
-    exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods confman file">
+    exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods confman file psu">
 
     <xsl:output indent="yes" />
 
@@ -404,7 +405,7 @@
             
                             <xsl:when test="normalize-space($static-page-name) != ''">
                                 <div>
-                                    <xsl:copy-of select="document(concat('../../html/', $static-page-name, '.html'))" />
+                                    <xsl:copy-of select="psu:documentReadAndInterpolate(concat($theme-path-on-disk, '/lib/html/', $static-page-name, '.html'))" />
                                 </div>
                             </xsl:when>
             
@@ -460,21 +461,6 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:attribute>&#160;</script>
-
-	<xsl:variable name="currentLocale">
-	  <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
-	</xsl:variable>
-	<xsl:if test="$currentLocale!='' and $currentLocale!='en'">
-            <xsl:variable name="localizedContextPath" select="concat($theme-path,'/lib/js/messages/messages_',$currentLocale,'.js')" />
-            <xsl:variable name="localizedDiskPath" select="concat($theme-path-on-disk,'/lib/js/messages/messages_',$currentLocale,'.js')" />
-            <xsl:variable name="path" select="file:new($localizedDiskPath)"/>
-            <xsl:if test="file:isFile($path)">
-                <script type="text/javascript">
-                    <xsl:attribute name="src">
-		    <xsl:value-of select="$localizedContextPath" />
-                    </xsl:attribute>&#160;</script>
-            </xsl:if>
-        </xsl:if>
 
         <script type="text/javascript" src="{concat($aaiURL, '/discojuice/discojuice-2.1.en.min.js')}">&#160;</script>
         <script type="text/javascript" src="{concat($aaiURL, '/aai.js')}">&#160;</script>
@@ -572,6 +558,11 @@
             </xsl:attribute>&#160;</script>
 
         <script type="text/javascript">
+            <xsl:attribute name="src">
+                <xsl:text>https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js</xsl:text>
+            </xsl:attribute>&#160;</script>
+
+        <script type="text/javascript">
             <xsl:variable name="currentLocale">
                 <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='page'][@qualifier='currentLocale']"/>
             </xsl:variable>
@@ -600,6 +591,7 @@
             <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.cursor.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.dateAxisRenderer.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.enhancedLegendRenderer.js">&#160;</script>
+            <script type="text/javascript" src="{$theme-path}/lib/js/jqplot/plugins/jqplot.barRenderer.min.js">&#160;</script>            
             <script type="text/javascript" src="{$theme-path}/lib/js/piwik_charts.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/moment.min.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/daterangepicker.js">&#160;</script>
@@ -612,6 +604,7 @@
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='dragNdrop']">
             <script type="text/javascript" src="{$theme-path}/lib/js/dragndrop.js">&#160;</script>
             <script type="text/javascript" src="{$theme-path}/lib/js/fileupload.js">&#160;</script>
+            <script type="text/javascript" src="{$theme-path}/lib/js/socialproviders.js">&#160;</script>
         </xsl:if>
 
         <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='include-library'][@qualifier='extrametadata']">
