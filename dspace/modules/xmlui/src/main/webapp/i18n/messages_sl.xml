@@ -39,6 +39,8 @@
   <message key="xmlui.general.perform">Izvedi</message>
   <message key="xmlui.general.queue">Čakalna vrsta</message>
   <message key="xmlui.general.here">tu</message>
+  <message key="xmlui.general.helpdesk">Help Desk</message>
+
   <!-- Keys which are used by exception2dri.xsl on error pages -->
   <message key="xmlui.error.contact_msg">Prosimo, da stopite v stik s skrbnikom spletišča, če bi radi prijavili to napako. Priporočamo se za podrobnosti o vaši dejavnosti v trenutku, ko je prišlo do napake.</message>
   <message key="xmlui.error.contact">Kontaktirajte skrbnika spletišča</message>
@@ -303,6 +305,7 @@
     <!-- DO TU! -->
   <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_claimed">Ta vnos bo mogoče najti na naslednjih mestih:</message>
   <message key="xmlui.ArtifactBrowser.RestrictedItem.para2_item_claimed">Na prošnjo avtorjev smo skrili ta vnos. <strong>Še vedno hranimo vse podatke in metapodatke o izvornem vnosu,</strong> a vnos se zdaj nahaja na zgornjih URL-jih. Če potrebujete vsebino izvornega vnosa, stopite v stik z našo <a class="helpdesk-tolink">Pomočjo uporabnikom</a>.</message>
+  <message key="xmlui.ArtifactBrowser.RestrictedItem.para_reason">The reason for withdrawal:</message>
   <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_para_extraInfo">Priporočamo vključitev dodatnih informacij; handle, če je bil vnos premaknjen drugam, in/ali razlog za odstranitev vnosa.</message>
   <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_help_extra_handle">Če izpolnite to polje, bo uporabnikom, ki si bodo ogledali vnos, prikazano posebno sporočilo s povezavo, ustvarjeno iz novega PID-a.</message>
   <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_label_extra_handle">Novi PID:</message>
@@ -551,6 +554,8 @@
   <message key="xmlui.EPerson.FailedAuthentication.title">Authentication Failed</message>
   <message key="xmlui.EPerson.FailedAuthentication.trail">Failed Authentication</message>
   <message key="xmlui.EPerson.FailedAuthentication.h1">Authentication Failed</message>
+  <!-- cz.cuni.mff.ufal.dspace.authenticate.shibboleth.ShibEPerson -->
+  <message key="xmlui.ShibEPerson.locked_email">Your email ({0}) is already associated with a different user. It is also possible that you used a different identity provider to login before. For more information please contact our <a class="helpdesk-tolink">Help Desk</a>.</message>
   <!-- Login xml files -->
   <message key="xmlui.eperson.noAuthMethod.head">No Authentication Method Found</message>
   <message key="xmlui.eperson.noAuthMethod.p1">No authentication method was found. Please contact the <a class="helpdesk-tolink">Help Desk</a>.</message>
@@ -622,6 +627,8 @@
   <message key="xmlui.Submission.general.default.title">Vnos</message>
   <message key="xmlui.Submission.general.default.trail">Vnos</message>
   <message key="xmlui.Submission.general.submission.save_share">Shrani in deli</message>
+  <message key="xmlui.Submission.general.submission.handle">{0}</message>
+  <i18n:text key="xmlui.Submission.general.submission.handle">{0}</i18n:text>
   <!-- org.dspace.app.xmlui.submission.CollectionViewer -->
   <message key="xmlui.Submission.CollectionViewer.link1">Submit a new item to this collection</message>
   <!-- org.dspace.app.xmlui.submission.Navigation -->
@@ -930,6 +937,8 @@
   <message key="xmlui.Submission.submit.UploadStep.submit_remove_all">Remove All Files</message>
   <message key="xmlui.Submission.submit.UploadStep.column_checksum">Checksum</message>
   <message key="xmlui.Submission.submit.UploadStep.column_order">Order</message>
+  <message key="xmlui.Submission.submit.UploadStep.review.no_file">You didn't upload any file.</message>
+  <message key="xmlui.Submission.submit.UploadStep.social.drive.list_files">Add files from your Drive <span class="google-drive">&#160;</span></message>
   <!-- org.dspace.app.xmlui.Submission.submit.EditFileStep -->
   <message key="xmlui.Submission.submit.EditFileStep.head">Edit File</message>
   <message key="xmlui.Submission.submit.EditFileStep.file">File</message>
@@ -2348,7 +2357,10 @@
   <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Poglej/Odpri</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-files-access-rights">P&#x159;&#xED;stup na &#x10D;ten&#xED; dostupn&#xFD; pro</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">Nobena datoteka ni povezana s tem vnosom.</message>
+  <message key="xmlui.dri2xhtml.METS-1.0.item-files-checksum">MD5</message>
   <message key="xmlui.ufal.METS-1.0.item-collections">Zbirke</message>
+  <message key="xmlui.dri2xhtml.METS-1.0.item-relation-isreferencedby">Referenced by</message>
+  <message key="xmlui.dri2xhtml.METS-1.0.item-pid">Item identifier</message>
   <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bajtov</message>
   <message key="xmlui.dri2xhtml.METS-1.0.size-kilobytes">KB</message>
   <message key="xmlui.dri2xhtml.METS-1.0.size-megabytes">MB</message>
@@ -3047,6 +3059,9 @@
   <message key="input_forms.complex_definitions.funding.3_projname.label">Ime projekta financerja</message>
   <message key="input_forms.complex_definitions.funding.5_openaire_id.label">Identifikator EU projekta (OpenAIRE)</message>
   <message key="input_forms.complex_definitions.sizeInfo.2_unit.label">Enota</message>
+  <message key="input_forms.field.dc.relation.isreferencedby.label">Referenced by</message>
+  <message key="input_forms.field.dc.relation.isreferencedby.hint">Link to original paper that references this dataset.</message>
+  <message key="input_forms.field.dc.relation.isreferencedby.regexp-warning">The supplied url must start with http/https</message>
   <!-- cz.cuni.mff.ufal.ContractPage -->
   <message key="xmlui.ContractPage.title">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.trail">Sporazum o distribuciji virov</message>

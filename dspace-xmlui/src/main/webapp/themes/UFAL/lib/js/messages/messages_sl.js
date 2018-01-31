@@ -23,7 +23,18 @@ messages = {
     "upload-progress": "Napredek",
     "upload-upload-failed": "Prenos %s ni uspel.\n%s\n%s",
     "upload-type": "Tip",
-    "upload-done": "Končano"
+    "upload-done": "Končano",
+    "login-error": "Error",
+    "login-error-occurred": "An error has occured during authentication.",
+    "login-contact-helpdesk": "Please contact our helpdesk",
+    "login-cannot-continue": "Cannot continue with authentication",
+    "login-missing-info-send-you": "The login process can\'t continue because your home institution (%s) did not send the required information. Please click the button and send the prepared email to the responsible person from your IT department. You\'ll be also helping your colleagues.",
+    "login-missing-info-send-us": "The login process can\'t continue because your home institution (%s) did not send the required information. Please click the button and send us an email. You\'ll be also helping your colleagues.",
+    "login-email-send": "Send Email",
+    "login-email-to": "To",
+    "login-email-subject": "Subject",
+    "login-email-body": "Body",
+    "download-all-cmdline": "Download instructions for command line"
 };
 
 jQuery.i18n.load('sl', messages);
