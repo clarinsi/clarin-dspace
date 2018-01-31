@@ -628,7 +628,6 @@
   <message key="xmlui.Submission.general.default.trail">Vnos</message>
   <message key="xmlui.Submission.general.submission.save_share">Shrani in deli</message>
   <message key="xmlui.Submission.general.submission.handle">{0}</message>
-  <i18n:text key="xmlui.Submission.general.submission.handle">{0}</i18n:text>
   <!-- org.dspace.app.xmlui.submission.CollectionViewer -->
   <message key="xmlui.Submission.CollectionViewer.link1">Submit a new item to this collection</message>
   <!-- org.dspace.app.xmlui.submission.Navigation -->
