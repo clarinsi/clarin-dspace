@@ -2341,7 +2341,7 @@
   <message key="xmlui.dri2xhtml.METS-1.0.item-handle">Handle</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-date">Datum izdaje</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Izdajatelj</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.item-subject">Ključe besede</message>
+  <message key="xmlui.dri2xhtml.METS-1.0.item-subject">Ključne besede</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-type">Zvrst</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-size-info">Velikost</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-langs">Jezik(i)</message>
@@ -2851,7 +2851,7 @@
   <!-- input-forms.xml -->
   <message key="input_forms.field.dc.type.label">Izberite vrsto vira/orodja</message>
   <message key="input_forms.field.dc.type.hint">Vrsta vira: "Korpus" pomeni besedilo, govor ali multimodalen korpus.
-    "Leksikalnokonceptualen vir" vsebuje računalniške leksikone, ontologije, slovarje, besedja, besedišča itd.
+    "Leksikalnokonceptualni vir" vsebuje računalniške leksikone, ontologije, slovarje, besedja, besedišča itd.
     "Opis jezika" pokriva jeziko(slo)vne modele in gramatike.
     "Tehnologija / Oridje / Storitev" se uporablja za orodja, sisteme, komponente sistemov itd.
   </message>
@@ -2935,7 +2935,7 @@
   <message key="input_forms.value_pairs.common_identifiers.isbn">ISBN</message>
   <message key="input_forms.value_pairs.common_types.N/A">N/A</message>
   <message key="input_forms.value_pairs.common_types.corpus">Korpus</message>
-  <message key="input_forms.value_pairs.common_types.lexicalConceptualResource">Leksikalnokonceptualen vir</message>
+  <message key="input_forms.value_pairs.common_types.lexicalConceptualResource">Leksikalnokonceptualni vir</message>
   <message key="input_forms.value_pairs.common_types.languageDescription">Opis jezika</message>
   <message key="input_forms.value_pairs.common_types.toolService">Tehnologija / orodje / storitev</message>
 
