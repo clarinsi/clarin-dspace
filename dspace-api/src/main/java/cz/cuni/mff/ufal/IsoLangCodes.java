@@ -38,7 +38,7 @@ public class IsoLangCodes {
 			"Luxembourgish:ltz", "Macedonian:mkd", "Malagasy:mlg",
 			"Malay (macrolanguage):msa", "Malayalam:mal", "Maltese:mlt",
 			"Manx:glv", "Maori:mri", "Marathi:mar", "Marshallese:mah",
-			"Modern Greek (1453-):ell", "Mongolian:mon", "Nauru:nau",
+			"Modern Greek (1453-):ell", "Mongolian:mon", "Montenegrin:cnr", "Nauru:nau",
 			"Navajo:nav", "Ndonga:ndo", "Nepali:nep", "North Ndebele:nde",
 			"Northern Sami:sme", "Norwegian:nor", "Norwegian Bokmål:nob",
 			"Norwegian Nynorsk:nno", "Nyanja:nya", "Occitan (post 1500):oci",
