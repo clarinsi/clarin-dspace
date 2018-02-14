@@ -2981,7 +2981,7 @@
   <!-- ERROR in key "terminilogical" -->
   <message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.terminilogicalResource">terminološki vir</message>
   <message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.machineReadableDictionary">strojno berljiv slovar</message>
-  <message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.lexicon">leksicon</message>
+  <message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.lexicon">leksikon</message>
   <message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.other">drugo</message>
   <message key="input_forms.value_pairs.metashare_detailed_languageDescription.N/A">N/A</message>
   <message key="input_forms.value_pairs.metashare_detailed_languageDescription.grammar">gramatika</message>
