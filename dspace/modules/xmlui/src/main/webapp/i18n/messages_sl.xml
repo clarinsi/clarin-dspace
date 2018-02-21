@@ -2816,6 +2816,8 @@
   <message key="xmlui.UFAL.artifactbrowser.piwik.views">Ogledov glede na čas</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.replaced_one">Ta vnos je nadomeščen z novejšim vnosom:</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.replaced_many">Ta vnos je nadomeščen z novejšimi vnosi:</message>
+  <message key="xmlui.UFAL.artifactbrowser.item_view.versions_dt">Druge različice</message>
+  <message key="xmlui.UFAL.artifactbrowser.item_view.versions_dropdown">Pokaži vseh različice</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.licensed_under">Ta vnos je {0} z licenco:<BR/></message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.preview">Predogled</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.file_preview">Predogled datoteke</message>
