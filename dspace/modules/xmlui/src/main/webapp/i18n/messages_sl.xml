@@ -76,7 +76,7 @@
 <!-- org.dspace.app.xmlui.artifactbrowser.AbstractSearch.java -->
 <message key="xmlui.ArtifactBrowser.AbstractSearch.head1_community" source="sl-new">Rezultati iskanja za skupnost: {0}</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.head1_collection" source="sl-new">Rezultati iskanja za zbirko: {0}</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.head1_none" source="sl-new">Prikazovanje {0} do {1} izmed {2} zadetkov</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.head1_none" source="sl-new">Prikazovanje {0}–{1} od {2} zadetkov</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.result_query" source="sl-new">Vaša poizvedba "{0}" je vrnila {1} zadetkov.</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.head2" source="sl-new">Skupnosti ali zbirke, ki ustrezajo vaši poizvedbi</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.head3" source="sl-new">Vnosi, ki ustrezajo vaši poizvedbi</message>
@@ -137,7 +137,7 @@
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.not" source="sl-new">NE</message>
    <!-- org.dspace.app.xmlui.artifactbrowser.ConfigureableBrowse.java -->
 <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with" source="sl-new">Ali vpišite prvih nekaj črk:</message>
-   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with_help" source="sl-new">Brskaj po vnosih, ki se začenjajo z naslednjimi črkami</message>
+   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with_help" source="sl-new">Brskajte po vnosih, ki se začenjajo z naslednjimi črkami</message>
    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_select" source="sl-new">Skočite na mesto v seznamu</message>
    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_month" source="sl-new">(Izberite mesec)</message>
    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_year" source="sl-new">(Izberite leto)</message>
@@ -251,8 +251,8 @@
    <!-- org.dspace.app.xmlui.artifactbrowser.ItemViewer.java -->
 <message key="xmlui.ArtifactBrowser.ItemViewer.trail" source="sl-new">Pokaži vnos</message>
    <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections" source="sl-new">Ta vnos se nahaja v naslednjih zbirkah</message>
-   <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple" source="sl-new">Pokaži enostaven zapis vnosa</message>
-   <message key="xmlui.ArtifactBrowser.ItemViewer.show_full" source="sl-new">Pokaži celoten zapis vnosa</message>
+   <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple" source="sl-new">Prikaži enostaven zapis vnosa</message>
+   <message key="xmlui.ArtifactBrowser.ItemViewer.show_full" source="sl-new">Prikaži celoten zapis vnosa</message>
    <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn" source="sl-new">Ta vnos je bil umaknjen in ni več na voljo.</message>
    <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 <message key="xmlui.ArtifactBrowser.Navigation.head_browse" source="sl-new">Brskaj</message>
@@ -450,7 +450,7 @@
    <message key="xmlui.EPerson.EditProfile.telephone" source="sl-new">Telefon</message>
    <message key="xmlui.EPerson.EditProfile.language" source="sl-new">Jezik</message>
    <message key="xmlui.EPerson.EditProfile.subscriptions" source="sl-new">Naročnine</message>
-   <message key="xmlui.EPerson.EditProfile.subscriptions_help" source="sl-new">Lahko se naročite na zbirke za prejemanje dnevnih e-poštnih obvestil o novih vnosih. Lahko se naročite na poljubno število zbirk. Namesto dnevnih e-poštnih obvestil je mogoče prejemati sporočila virov RSS, ki so na voljo za vse zbirke.</message>
+   <message key="xmlui.EPerson.EditProfile.subscriptions_help" source="sl-new">Za prejemanje dnevnih e-poštnih obvestil o novih vnosih se lahko naročite na zbirke. Naročite se lahko na poljubno število zbirk. Namesto dnevnih e-poštnih obvestil je mogoče prejemati sporočila virov RSS, ki so na voljo za vse zbirke.</message>
    <message key="xmlui.EPerson.EditProfile.signatures" source="sl-new">Podpisane licence</message>
    <message key="xmlui.EPerson.EditProfile.email_subscriptions" source="sl-new">E-poštne naročnine</message>
    <message key="xmlui.EPerson.EditProfile.select_collection" source="sl-new">(Izberite zbirko)</message>
@@ -614,12 +614,12 @@
    <message key="xmlui.Submission.general.workflow.title" source="sl-new">Vnos</message>
    <message key="xmlui.Submission.general.workflow.trail" source="sl-new">Vnos</message>
    <message key="xmlui.Submission.general.workflow.head" source="sl-new">Vnos</message>
-   <message key="xmlui.Submission.general.showfull" source="sl-new">Pokaži celoten zapis vnosa</message>
-   <message key="xmlui.Submission.general.showsimple" source="sl-new">Pokaži enostaven zapis vnosa</message>
+   <message key="xmlui.Submission.general.showfull" source="sl-new">Prikaži celoten zapis vnosa</message>
+   <message key="xmlui.Submission.general.showsimple" source="sl-new">Prikaži enostaven zapis vnosa</message>
    <message key="xmlui.Submission.general.default.title" source="sl-new">Vnos</message>
    <message key="xmlui.Submission.general.default.trail" source="sl-new">Vnos</message>
    <message key="xmlui.Submission.general.submission.save_share" source="sl-new">Shrani in deli</message>
-   <message key="xmlui.Submission.general.submission.handle" source="sl-current">Handle {0} je rezerviran za vaš vnos. Ta handle lahko uporabite za citiranja vira, vendar bo postal aktiven šele po uspešnem dokončanju in odobritvi vnosa.</message>
+   <message key="xmlui.Submission.general.submission.handle" source="sl-current">Handle {0} je rezerviran za vaš vnos. Ta handle lahko uporabite za citiranje vira, vendar bo postal aktiven šele po uspešnem dokončanju in odobritvi vnosa.</message>
    <!-- org.dspace.app.xmlui.submission.CollectionViewer -->
 <message key="xmlui.Submission.CollectionViewer.link1" source="sl-new">Ustvari nov vnos v tej zbirki</message>
    <!-- org.dspace.app.xmlui.submission.Navigation -->
@@ -650,7 +650,7 @@
 <message key="xmlui.Submission.Submissions.submit_head1" source="sl-new">Vnosi</message>
    <message key="xmlui.Submission.Submissions.submit_info1a" source="sl-new">Lahko </message>
    <message key="xmlui.Submission.Submissions.submit_info1b" source="sl-new">Ustvarite nov vnos</message>
-   <message key="xmlui.Submission.Submissions.submit_info1c" source="sl-new">Postopek vnašanja v repozitorij vključuje opis vnosa in naložitev pripadajočih datotek. Vsaka skupnost ali zbirka lahko določi svojo politiko o vnašanju.</message>
+   <message key="xmlui.Submission.Submissions.submit_info1c" source="sl-new">Postopek vnašanja v repozitorij vključuje opis vnosa in nalaganje pripadajočih datotek. Vsaka skupnost ali zbirka lahko določi svojo politiko o vnašanju.</message>
    <message key="xmlui.Submission.Submissions.submit_head2" source="sl-new">Nedokončani vnosi</message>
    <message key="xmlui.Submission.Submissions.submit_info2a" source="sl-new">To so nedokončani vnosi. Lahko tudi </message>
    <message key="xmlui.Submission.Submissions.submit_info2b" source="sl-new">Ustvarite nov vnos</message>
@@ -692,16 +692,16 @@
 <message key="xmlui.Submission.submit.progressbar.initial-questions" source="sl-new">Začetna vprašanja</message>
    <message key="xmlui.Submission.submit.progressbar.describe" source="sl-new">Osnovne informacije</message>
    <message key="xmlui.Submission.submit.progressbar.describe2" source="sl-new">Sodelovali so</message>
-   <message key="xmlui.Submission.submit.progressbar.describe3" source="sl-new">Opiši</message>
+   <message key="xmlui.Submission.submit.progressbar.describe3" source="sl-new">Opis</message>
    <message key="xmlui.Submission.submit.progressbar.access" source="sl-current">Dostop</message>
-   <message key="xmlui.Submission.submit.progressbar.upload" source="sl-new">Naloži</message>
+   <message key="xmlui.Submission.submit.progressbar.upload" source="sl-new">Datoteke</message>
    <message key="xmlui.Submission.submit.progressbar.additional" source="sl-new">Opomba</message>
    <message key="xmlui.Submission.submit.progressbar.additional2" source="sl-new">Opomba</message>
-   <message key="xmlui.Submission.submit.progressbar.verify" source="sl-new">Pregej</message>
+   <message key="xmlui.Submission.submit.progressbar.verify" source="sl-new">Pregled</message>
    <message key="xmlui.Submission.submit.progressbar.creative-commons" source="sl-new">Creative Commons</message>
    <message key="xmlui.Submission.submit.progressbar.CClicense" source="sl-new">Licenca CC</message>
    <message key="xmlui.Submission.submit.progressbar.license" source="sl-new">Licenca</message>
-   <message key="xmlui.Submission.submit.progressbar.complete" source="sl-new">Zaključi</message>
+   <message key="xmlui.Submission.submit.progressbar.complete" source="sl-new">Zaključek</message>
    <!-- org.dspace.app.xmlui.Submission.submit.ResumeStep -->
 <message key="xmlui.Submission.submit.ResumeStep.submit_resume" source="sl-new">Nadaljuj</message>
    <message key="xmlui.Submission.submit.ResumeStep.submit_share" source="sl-new">Deli vnos</message>
@@ -877,7 +877,7 @@
    <message key="xmlui.Submission.submit.UploadStep.file_local_help" source="sl-new">Vnesite celotno pot datoteke, ki je na voljo na lokalnem strežniku ali http-ju.</message>
    <message key="xmlui.Submission.submit.UploadStep.file_error" source="sl-new">Vnos mora vsebovati vsaj eno datoteko.</message>
    <message key="xmlui.Submission.submit.UploadStep.file_error.internal" source="sl-new">Želena datoteka je verjetno presegla največjo dovoljeno velikost. Stopite v stik s skrbnikom.</message>
-   <message key="xmlui.Submission.submit.UploadStep.upload_error" source="sl-new">Pri nalaganju datoteke v repozitorij je prišlo do napake. Naložitev datoteke v repozitorij ni uspela. Do napake je mogoče prišlo zaradi napačno vnesenega imena datoteke, omrežne napake ali poskusa prenosa datotečnega formata, ki je namenjen samo za uporabo v internem sistemu. Poskusite znova.</message>
+   <message key="xmlui.Submission.submit.UploadStep.upload_error" source="sl-new">Pri nalaganju datoteke v repozitorij je prišlo do napake. Nalaganje datoteke v repozitorij ni uspelo. Do napake je mogoče prišlo zaradi napačno vnesenega imena datoteke, omrežne napake ali poskusa prenosa datotečnega formata, ki je namenjen samo za uporabo v internem sistemu. Poskusite znova.</message>
    <message key="xmlui.Submission.submit.UploadStep.not_found_error" source="sl-new">Vnesenega imena datoteke ni bilo mogoče najti ali nimate pravic za branje te datoteke.</message>
    <message key="xmlui.Submission.submit.UploadStep.virus_error" source="sl-new">Datoteka ni bila naložena zaradi suma virusa. Obrnite se na <a class="helpdesk-tolink">pomoč uporabnikom</a>.</message>
    <message key="xmlui.Submission.submit.UploadStep.virus_checker_error" source="sl-new">Pri protivirusnem pregledu datoteke je prišlo do tehnične napake. Obrnite se na <a class="helpdesk-tolink">pomoč uporabnikom</a>.</message>
@@ -909,7 +909,7 @@
    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.file" source="sl-new">Datoteka</message>
    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.file_help" source="sl-new">Vnesite celotno pot datoteke na vašem računalniku, ki ustreza vnosu. S klikom na "Prebrskaj ..." se bo odprlo novo okno in lahko boste izbrali datoteko z vašega računalnika.</message>
    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.file_error" source="sl-new">Vnos mora vsebovati vsaj eno datoteko.</message>
-   <message key="xmlui.Submission.submit.UploadWithEmbargoStep.upload_error" source="sl-new">Pri nalaganju datoteke v repozitorij je prišlo do napake. Naložitev datoteke v repozitorij ni uspela. Do napake je mogoče prišlo zaradi napačno vnesenega imena datoteke, omrežne napake ali poskusa prenosa datotečnega formata, ki je namenjen samo za uporabo v internem sistemu. Poskusite znova.</message>
+   <message key="xmlui.Submission.submit.UploadWithEmbargoStep.upload_error" source="sl-new">Pri nalaganju datoteke v repozitorij je prišlo do napake. Nalaganje datoteke v repozitorij ni uspelo. Do napake je mogoče prišlo zaradi napačno vnesenega imena datoteke, omrežne napake ali poskusa prenosa datotečnega formata, ki je namenjen samo za uporabo v internem sistemu. Poskusite znova.</message>
    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.virus_error" source="sl-new">Datoteka ni bila naložena zaradi suma virusa. Stopite v stik s skrbnikom sistema.</message>
    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.virus_checker_error" source="sl-new">Pri protivirusnem pregledu datoteke je prišlo do tehnične napake. Stopite v stik s skrbnikom sistema.</message>
    <message key="xmlui.Submission.submit.UploadWithEmbargoStep.description" source="sl-new">Opis datoteke</message>
@@ -952,7 +952,7 @@
    <!-- org.dspace.app.xmlui.Submission.submit.EditBitstreamPolicies -->
 <message key="xmlui.Submission.submit.EditBitstreamPolicies.head" source="sl-new">Dostop do bitnega toka</message>
    <!-- org.dspace.app.xmlui.Submission.submit.ReviewStep -->
-<message key="xmlui.Submission.submit.ReviewStep.head" source="sl-new">Preglej vnos</message>
+<message key="xmlui.Submission.submit.ReviewStep.head" source="sl-new">Pregled vnosa</message>
    <message key="xmlui.Submission.submit.ReviewStep.yes" source="sl-new">Da</message>
    <message key="xmlui.Submission.submit.ReviewStep.no" source="sl-new">Ne</message>
    <message key="xmlui.Submission.submit.ReviewStep.submit_jump" source="sl-new">Popravi enega izmed teh</message>
@@ -1017,23 +1017,23 @@
    <message key="xmlui.Submission.workflow.PerformTaskStep.leave_help" source="sl-new">Pustite nalogo v čakalni vrsti, da jo lahko sprejme drug uporabnik.</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.leave_submit" source="sl-new">Pusti nalogo</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.approve_help" source="sl-new">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
-   <message key="xmlui.Submission.workflow.PerformTaskStep.curate_help" source="sl-new">Preverite in potrdite vnos v orodju za kuriranje</message>
+   <message key="xmlui.Submission.workflow.PerformTaskStep.curate_help" source="sl-new">Preverite in potrdite vnos v orodju za kuriranje.</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.approve_submit" source="sl-new">Odobri vnos</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.curate_submit" source="sl-new">Kuriraj vnos</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.commit_help" source="sl-new">Ko ste uredili vnos, uporabite to možnost, da ga dodate v arhiv.</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.commit_submit" source="sl-new">Dodaj v arhiv</message>
-   <message key="xmlui.Submission.workflow.PerformTaskStep.reject_help" source="sl-new">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni". <strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren, in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
+   <message key="xmlui.Submission.workflow.PerformTaskStep.reject_help" source="sl-new">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni". <strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.reject_submit" source="sl-new">Zavrni vnos</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.edit_help" source="sl-new">Izberite to možnost za spremembo metapodatkov vnosa. Dodati boste morali vsa obvezna polja.</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.edit_submit" source="sl-new">Uredi metapodatke</message>
-   <message key="xmlui.Submission.workflow.PerformTaskStep.return_help" source="sl-new">Vrnite nalogo v čakalno vrsto, da jo lahko sprejme drugi uporabnik.</message>
+   <message key="xmlui.Submission.workflow.PerformTaskStep.return_help" source="sl-new">Vrnite nalogo v čakalno vrsto, da jo lahko sprejme drug uporabnik.</message>
    <message key="xmlui.Submission.workflow.PerformTaskStep.return_submit" source="sl-new">Vrni nalogo v čakalno vrsto</message>
    <!-- <UFAL> -->
-<message key="xmlui.Submission.workflow.PerformTaskStep.record_format_help" source="sl-new">Prikaži enostaven / celoten zapis vnosa</message>
+<message key="xmlui.Submission.workflow.PerformTaskStep.record_format_help" source="sl-new">Oglejte si enostaven / celoten zapis vnosa.</message>
    <message key="xmlui.Submission.workflow.ApproveError.note" source="sl-new">Prišlo je do napake pri registraciji vnosa pri zunanjem ponudniku identifikatorjev handle. Morda je prišlo do začasnih težav na strežniku. Lahko poskusite odobriti vnos kasneje ali omogočite dostop do vnosa na lokalni ravni in naknadno ustvarite ustrezen zapis identifikatorja handle.</message>
    <!--  </UFAL> -->
 <!-- org.dspace.app.xmlui.Submission.workflow.RejectTaskStep -->
-<message key="xmlui.Submission.workflow.RejectTaskStep.info1" source="sl-new">V spodnje polje vnesite razlog za zavrnitev vnosa in navedite, če lahko avtor težavo popravi in ponovno odda vnos.</message>
+<message key="xmlui.Submission.workflow.RejectTaskStep.info1" source="sl-new">V spodnje polje vnesite razlog za zavrnitev vnosa in navedite, ali lahko avtor težavo popravi in ponovno odda vnos.</message>
    <message key="xmlui.Submission.workflow.RejectTaskStep.reason" source="sl-new">Razlog</message>
    <message key="xmlui.Submission.workflow.RejectTaskStep.reason_required" source="sl-new">Razlog je obvezen</message>
    <message key="xmlui.Submission.workflow.RejectTaskStep.submit_reject" source="sl-new">Zavrni vnos</message>
@@ -1130,11 +1130,11 @@
 <message key="xmlui.administrative.eperson.ManageEPeopleMain.title" source="sl-new">Upravljaj e-osebe</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.main_head" source="sl-new">Upravljanje e-oseb</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_head" source="sl-new">Dejanja</message>
-   <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_create" source="sl-new">Ustvari novo e-osebo</message>
+   <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_create" source="sl-new">Ustvarite novo e-osebo</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_create_link" source="sl-new">Kliknite tukaj, da dodate novo e-osebo.</message>
-   <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse" source="sl-new">Brskaj po e-osebah</message>
+   <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse" source="sl-new">Brskajte po e-osebah</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse_link" source="sl-new">Kliknite tukaj za brskanje po vseh e-osebah.</message>
-   <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_search" source="sl-new">Išči e-osebe</message>
+   <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_search" source="sl-new">Poiščite e-osebe</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_help" source="sl-new">E-osebe se išče na osnovi delnega ujemanja imena ali e-poštnega naslova</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_para1" source="sl-new">Spodaj je seznam e-oseb, ki ustrezajo vaši poizvedbi. Označite e-osebe, ki jih želite izbrisati in kliknite na gumb za izbris, ali kliknite na ime ali e-poštni naslov e-osebe, da uredite njene podatke.</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_head" source="sl-new">Rezultati iskanja</message>
@@ -1154,7 +1154,7 @@
    <message key="xmlui.administrative.eperson.AddEPersonForm.error_email" source="sl-new">E-poštni naslov je obvezen</message>
    <message key="xmlui.administrative.eperson.AddEPersonForm.error_fname" source="sl-new">Ime je obvezno</message>
    <message key="xmlui.administrative.eperson.AddEPersonForm.error_lname" source="sl-new">Priimek je obvezen</message>
-   <message key="xmlui.administrative.eperson.AddEPersonForm.req_certs" source="sl-new">Zahteva certifikat</message>
+   <message key="xmlui.administrative.eperson.AddEPersonForm.req_certs" source="sl-new">Potrebuje certifikat</message>
    <message key="xmlui.administrative.eperson.AddEPersonForm.can_log_in" source="sl-new">Lahko se prijavi</message>
    <message key="xmlui.administrative.eperson.AddEPersonForm.submit_create" source="sl-new">Ustvari e-osebo</message>
    <message key="xmlui.administrative.eperson.AddEPersonForm.org" source="sl-new">Organizacija</message>
@@ -1171,7 +1171,7 @@
    <message key="xmlui.administrative.eperson.EditEPersonForm.error_email" source="sl-new">E-poštni naslov je obvezen</message>
    <message key="xmlui.administrative.eperson.EditEPersonForm.error_fname" source="sl-new">Ime je obvezno</message>
    <message key="xmlui.administrative.eperson.EditEPersonForm.error_lname" source="sl-new">Priimek je obvezen</message>
-   <message key="xmlui.administrative.eperson.EditEPersonForm.req_certs" source="sl-new">Zahteva certifikat</message>
+   <message key="xmlui.administrative.eperson.EditEPersonForm.req_certs" source="sl-new">Potrebuje certifikat</message>
    <message key="xmlui.administrative.eperson.EditEPersonForm.can_log_in" source="sl-new">Lahko se prijavi</message>
    <message key="xmlui.administrative.eperson.EditEPersonForm.submit_reset_password" source="sl-new">Ponastavi geslo</message>
    <message key="xmlui.administrative.eperson.EditEPersonForm.submit_reset_netid" source="sl-new">Ponastavi NETID</message>
@@ -1202,11 +1202,11 @@
 <message key="xmlui.administrative.group.ManageGroupsMain.title" source="sl-new">Upravljaj skupine</message>
    <message key="xmlui.administrative.group.ManageGroupsMain.main_head" source="sl-new">Upravljanje skupin</message>
    <message key="xmlui.administrative.group.ManageGroupsMain.actions_head" source="sl-new">Dejanja</message>
-   <message key="xmlui.administrative.group.ManageGroupsMain.actions_create" source="sl-new">Ustvari novo skupino</message>
+   <message key="xmlui.administrative.group.ManageGroupsMain.actions_create" source="sl-new">Ustvarite novo skupino</message>
    <message key="xmlui.administrative.group.ManageGroupsMain.actions_create_link" source="sl-new">Kliknite tukaj, da dodate novo skupino.</message>
-   <message key="xmlui.administrative.group.ManageGroupsMain.actions_browse" source="sl-new">Brskaj po skupinah</message>
+   <message key="xmlui.administrative.group.ManageGroupsMain.actions_browse" source="sl-new">Brskajte po skupinah</message>
    <message key="xmlui.administrative.group.ManageGroupsMain.actions_browse_link" source="sl-new">Kliknite tukaj za brskanje po vseh skupinah.</message>
-   <message key="xmlui.administrative.group.ManageGroupsMain.actions_search" source="sl-new">Poišči skupine</message>
+   <message key="xmlui.administrative.group.ManageGroupsMain.actions_search" source="sl-new">Poiščite skupine</message>
    <message key="xmlui.administrative.group.ManageGroupsMain.search_help" source="sl-new">Skupine se išče na osnovi delnega ujemanja imena</message>
    <message key="xmlui.administrative.group.ManageGroupsMain.search_head" source="sl-new">Rezultati iskanja</message>
    <message key="xmlui.administrative.group.ManageGroupsMain.search_column1" source="sl-new">Del</message>
@@ -1500,8 +1500,8 @@
    <message key="xmlui.administrative.batchimport.general.changes" source="sl-new">spremembe</message>
    <message key="xmlui.administrative.batchimport.general.no_changes" source="sl-new">Ni zaznanih sprememb</message>
    <message key="xmlui.administrative.batchimport.general.new_item" source="sl-new">Nov vnos</message>
-   <message key="xmlui.administrative.batchimport.flow.upload_successful" source="sl-new">Naložitev je bila uspešna</message>
-   <message key="xmlui.administrative.batchimport.flow.upload_failed" source="sl-new">Naložitev ni uspela ali datoteka ni bila izbrana</message>
+   <message key="xmlui.administrative.batchimport.flow.upload_successful" source="sl-new">Nalaganje je bilo uspešno</message>
+   <message key="xmlui.administrative.batchimport.flow.upload_failed" source="sl-new">Nalaganje ni uspelo ali datoteka ni bila izbrana</message>
    <message key="xmlui.administrative.batchimport.flow.upload_badschema" source="sl-new">Neznana metapodatkovna shema v naslovu</message>
    <message key="xmlui.administrative.batchimport.flow.upload_badelement" source="sl-new">Neznan metapodatkovni element v naslovu</message>
    <message key="xmlui.administrative.batchimport.flow.import_successful" source="sl-new">Uvoz je bil uspešen</message>
@@ -1654,7 +1654,7 @@
    <message key="xmlui.administrative.item.EditItemStatusForm.label_auth" source="sl-new">Uredi avtorizacijske politike vnosa</message>
    <message key="xmlui.administrative.item.EditItemStatusForm.label_withdraw" source="sl-new">Umakni vnos iz repozitorija</message>
    <message key="xmlui.administrative.item.EditItemStatusForm.label_reinstate" source="sl-new">Obnovi vnos v repozitoriju</message>
-   <message key="xmlui.administrative.item.EditItemStatusForm.label_move" source="sl-new">Premakni vnos v drugo zbirko</message>
+   <message key="xmlui.administrative.item.EditItemStatusForm.label_move" source="sl-new">Premaknite vnos v drugo zbirko.</message>
    <message key="xmlui.administrative.item.EditItemStatusForm.label_delete" source="sl-new">Popolnoma izbriši vnos</message>
    <message key="xmlui.administrative.item.EditItemStatusForm.submit_authorizations" source="sl-new">Avtorizacije ...</message>
    <message key="xmlui.administrative.item.EditItemStatusForm.submit_withdraw" source="sl-new">Umakni ...</message>
@@ -1732,8 +1732,8 @@
    <message key="xmlui.administrative.metadataimport.general.changes" source="sl-new">spremembe</message>
    <message key="xmlui.administrative.metadataimport.general.no_changes" source="sl-new">Ni zaznanih sprememb</message>
    <message key="xmlui.administrative.metadataimport.general.new_item" source="sl-new">Nov vnos</message>
-   <message key="xmlui.administrative.metadataimport.flow.upload_successful" source="sl-new">Naložitev je bila uspešna</message>
-   <message key="xmlui.administrative.metadataimport.flow.upload_failed" source="sl-new">Naložitev ni uspela</message>
+   <message key="xmlui.administrative.metadataimport.flow.upload_successful" source="sl-new">Nalaganje je bilo uspešno</message>
+   <message key="xmlui.administrative.metadataimport.flow.upload_failed" source="sl-new">Nalaganje ni uspelo</message>
    <message key="xmlui.administrative.metadataimport.flow.upload_badschema" source="sl-new">Neznana metapodatkovna shema v naslovu</message>
    <message key="xmlui.administrative.metadataimport.flow.upload_badelement" source="sl-new">Neznan metapodatkovni element v naslovu</message>
    <message key="xmlui.administrative.metadataimport.flow.import_successful" source="sl-new">Uvoz je bil uspešen</message>
@@ -2209,7 +2209,7 @@
 <message key="xmlui.administrative.CurateForm.title" source="sl-new">Sistemske naloge pri kuriranju</message>
    <message key="xmlui.administrative.CurateForm.trail" source="sl-new">Naloge pri kuriranju</message>
    <message key="xmlui.administrative.CurateForm.object_label_name" source="sl-new">Handle predmeta Dspace</message>
-   <message key="xmlui.administrative.CurateForm.object_hint" source="sl-new">Namig: Vnesite [predpona-vašega-handla]/0, da nalogo izvedete na celotni spletni strani (to ni možno pri vseh nalogah)</message>
+   <message key="xmlui.administrative.CurateForm.object_hint" source="sl-new">Namig: Vnesite [predpona-vašega-handla]/0, da nalogo izvedete na celotni spletni strani (to ni možno pri vseh nalogah).</message>
    <message key="xmlui.administrative.CurateForm.task_label_name" source="sl-new">Naloga</message>
    <!-- Used by Curate<DSO>Form classes also -->
 <message key="xmlui.administrative.CurateForm.taskgroup_label_name" source="sl-new">Izberi med naslednjimi skupinami</message>
@@ -2495,7 +2495,7 @@
 <message key="xmlui.ChoiceLookupTransformer.field.dc_publisher.nonauthority" source="sl-new">Neavtoritetna vrednost: @1@</message>
    <!-- Choice Lookup - sample config for dc.contributor.author field -->
 <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help" source="sl-new">Ime v formatu "priimek, ime"</message>
-   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help.last" source="sl-new">Priimer, npr. "Novak"</message>
+   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help.last" source="sl-new">Priimek, npr. "Novak"</message>
    <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help.first" source="sl-new">Ime, npr. "Jaka"</message>
    <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.title" source="sl-new">Iskanje avtorja v LC avtroriteti za imena</message>
    <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.nonauthority" source="sl-new">Lokalna vrednost "@1@" (ni v avtoriteti za imena)</message>
@@ -2791,7 +2791,7 @@
    <message key="xmlui.swordclient.SwordResponse.trail" source="en-current">Odziv SWORD-a</message>
    <!-- jmisutka DragNDrop -->
 <message key="xmlui.UFAL.dragndrop.upload.button.text" source="sl-new">Naloži</message>
-   <message key="xmlui.UFAL.dragndrop.upload.label" source="sl-new">Povlecite in spustite za naložitev v repozitorij</message>
+   <message key="xmlui.UFAL.dragndrop.upload.label" source="sl-new">Povlecite in spustite, da naložite v repozitorij</message>
    <message key="xmlui.UFAL.dragndrop.nodescription.title" source="sl-new">Opišite datoteko</message>
    <message key="xmlui.UFAL.dragndrop.nodescription.help" source="sl-new">Če želite dodati opis, to storite tukaj in kliknite "Nadaljuj".</message>
    <message key="xmlui.UFAL.dragndrop.nodescription.label" source="sl-new">Opisovanje datoteke </message>
@@ -2895,7 +2895,7 @@
 	</message>
    <message key="input_forms.field.dc.language.iso.required" source="sl-new">Izberite jezik za vir.</message>
    <message key="input_forms.field.dc.language.iso1.label" source="sl-new">Jezik</message>
-   <message key="input_forms.field.dc.language.iso1.hint" source="sl-new">Če je orodje/storitev jezikovno odvisna, izberite ustrezne jezike. V nasprotnem primeru pustite polje prazno. Lahko določite več jezikov. Začnite vnašati jezik in kliknite na samodokončani izpis, ko se prikaže.
+   <message key="input_forms.field.dc.language.iso1.hint" source="sl-new">Če je orodje/storitev jezikovno odvisna, izberite ustrezne jezike. V nasprotnem primeru pustite polje prazno. Lahko določite več jezikov. Začnite vnašati jezik in kliknite na samodokončani izpis, če se prikaže.
 	</message>
    <message key="input_forms.field.dc.subject.label" source="sl-new">Ključne besede</message>
    <message key="input_forms.field.dc.subject.hint" source="sl-new">Vnesite ustrezne ključne besede ali besedne zveze in kliknite na gumb "Dodaj". Če želite vnesti več ključnih besed, lahko ponovite ta postopek ali uporabite ločila, tj. vejico ali podpičje, s katerimi boste ločili ključne besede. Začnite vnašati ključno besedo in kliknite na samodokončani izpis, ko se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.
@@ -2929,7 +2929,7 @@
    <message key="input_forms.field.dc.relation.replaces.hint" source="sl-new">URL do sorodnega vira, ki ga je opisani vir nadomestil ali zamenjal.
 	</message>
    <message key="input_forms.field.dc.relation.isreplacedby.label" source="sl-new">Je nadomeščen s</message>
-   <message key="input_forms.field.dc.relation.isreplacedby.hint" source="sl-new">Sorodnim virom, ki nadomešča ali zamenjuje opisani vir.</message>
+   <message key="input_forms.field.dc.relation.isreplacedby.hint" source="sl-new">Sorodni vir, ki nadomešča ali zamenjuje opisani vir.</message>
    <message key="input_forms.field.local.embargo.termslift.label" source="sl-new">Datum zaključka embarga</message>
    <message key="input_forms.field.local.embargo.termslift.hint" source="sl-new">Datum, ko bo vir postal dostopen, npr. 2018-01-21</message>
    <message key="input_forms.field.local.embargo.termslift.regexp-warning" source="sl-new">Vneseni datum ne ustreza zahtevanemu formatu \d\d\d\d-\d\d-\d\d, npr. 2018-01-21
