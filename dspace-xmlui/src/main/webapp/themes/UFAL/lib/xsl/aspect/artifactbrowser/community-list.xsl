@@ -178,9 +178,10 @@
 		
 		<xsl:if test="string-length($data/dim:field[@element='format'][@qualifier='extent'][1]) &gt; 0">
 			<div class="label label-info" style="margin-bottom: 20px;">
-				<xsl:text>This community contains </xsl:text>
-				<xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]" />
-				<xsl:text> item(s).</xsl:text>
+                            <i18n:translate>
+			        <i18n:text>xmlui.UFAL.artifactbrowser.community_list.contains</i18n:text>
+				<i18n:param><xsl:value-of select="$data/dim:field[@element='format'][@qualifier='extent'][1]" /></i18n:param>
+                            </i18n:translate>
 			</div>
 		</xsl:if>
 		
