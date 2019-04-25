@@ -55,7 +55,7 @@
 		<xsl:comment>External Metadata URL: <xsl:value-of select="$externalMetadataURL" /></xsl:comment>
 		<li class="item-box" style="min-height: 100px;">
 			<xsl:apply-templates select="document($externalMetadataURL)" mode="summaryList" />
-			<div class="artifact-abstract-head">Collections in this community:</div>
+			<div class="artifact-abstract-head"><i18n:text>xmlui.UFAL.artifactbrowser.community_list.collections</i18n:text>:</div>
 			<div class="artifact-abstract">
 				<xsl:choose>
 					<xsl:when test="dri:referenceSet/dri:reference[@type='DSpace Collection']">
@@ -64,11 +64,11 @@
 						</ul>
 					</xsl:when>
 					<xsl:otherwise>
-						<div class="text-error" style="margin-left: 10px;">No collections in this community.</div>
+						<div class="text-error" style="margin-left: 10px;"><i18n:text>xmlui.UFAL.artifactbrowser.community_list.no_collections</i18n:text></div>
 					</xsl:otherwise>
 				</xsl:choose>
 			</div>
-			<div class="artifact-abstract-head">Sub-Communities:</div>
+			<div class="artifact-abstract-head"><i18n:text>xmlui.UFAL.artifactbrowser.community_list.subcommunities</i18n:text>:</div>
 			<div class="artifact-abstract">
 				<xsl:choose>
 					<xsl:when test="dri:referenceSet/dri:reference[@type='DSpace Community']">
@@ -77,7 +77,7 @@
 						</ul>
 					</xsl:when>
 					<xsl:otherwise>
-						<div class="text-error" style="margin-left: 10px;">No sub-communities in this community.</div>
+						<div class="text-error" style="margin-left: 10px;"><i18n:text>xmlui.UFAL.artifactbrowser.community_list.no_subcommunities</i18n:text></div>
 					</xsl:otherwise>
 				</xsl:choose>
 			</div>			
@@ -136,7 +136,7 @@
 	<xsl:template name="communitySummaryList-DIM">
 		<xsl:variable name="data" select="./mets:dmdSec/mets:mdWrap/mets:xmlData/dim:dim" />
 		<xsl:variable name="logo" select="./mets:fileSec/mets:fileGrp[@USE='LOGO']/mets:file/mets:FLocat/@xlink:href" />		
-		<div class="item-type">Community</div>
+		<div class="item-type"><i18n:text>xmlui.UFAL.artifactbrowser.community_list.community</i18n:text></div>
 		<xsl:if test="$logo">
 			<img class="artifact-icon pull-right img-rounded">
 				<xsl:attribute name="src">
@@ -170,7 +170,7 @@
 		<xsl:variable name="abstract"
 			select="$data/dim:field[@element = 'description' and @qualifier='abstract']/node()" />
 		<xsl:if test="$abstract and string-length($abstract[1]) &gt; 0">
-			<div class="artifact-abstract-head">Description:</div>
+			<div class="artifact-abstract-head"><i18n:text>xmlui.UFAL.artifactbrowser.community_list.description</i18n:text>:</div>
 			<div class="artifact-abstract">
 				<xsl:value-of select="$abstract" />
 			</div>

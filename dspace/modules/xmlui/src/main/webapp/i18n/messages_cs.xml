@@ -3242,6 +3242,15 @@
 	<message key="xmlui.UFAL.artifactbrowser.item_view.preview">Náhled</message>
 	<message key="xmlui.UFAL.artifactbrowser.item_view.file_preview">Náhled souboru</message>
 
+        <!-- UFAL/lib/xsl/aspect/artifactbrowser/communitiy-list.xsl -->
+        <message key="xmlui.UFAL.artifactbrowser.community_list.community">Community</message>
+        <message key="xmlui.UFAL.artifactbrowser.community_list.collections">Collections in this community</message>
+        <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections">No collections in this community.</message>
+        <message key="xmlui.UFAL.artifactbrowser.community_list.subcommunities">Sub-communities</message>
+        <message key="xmlui.UFAL.artifactbrowser.community_list.no_subcommunities">No sub-communities in this collection.</message>
+        <message key="xmlui.UFAL.artifactbrowser.community_list.description">Description</message>
+        <message key="xmlui.UFAL.artifactbrowser.community_list.contains">This community contains {0} item(s).</message>
+
 	<!-- DisplayShareLink -->
 	<message key="xmlui.aspect.submission.submit.DisplayShareLink.title">Sdílet odkaz</message>
 	<message key="xmlui.aspect.submission.submit.DisplayShareLink.trail">Sdílet odkaz</message>

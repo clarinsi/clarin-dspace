@@ -2822,6 +2822,14 @@
    </message>
    <message key="xmlui.UFAL.artifactbrowser.item_view.preview" source="sl-new">Predogled</message>
    <message key="xmlui.UFAL.artifactbrowser.item_view.file_preview" source="sl-new">Predogled datoteke</message>
+   <!-- UFAL/lib/xsl/aspect/artifactbrowser/item-view.xsl -->
+   <message key="xmlui.UFAL.artifactbrowser.community_list.community">Skupnost</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.collections" source="sl-manual">Zbirke v skupnosti</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections" source="sl-manual">Ni zbirk v ti skupnosti.</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.subcommunities" source="sl-manual">Podskupnosti</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.no_subcommunities" source="sl-manual">Ni podskupnosti v ti skupnosti.</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.description" source="sl-manual">Opis</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.contains" source="sl-manual">Ta skupnost vsebuje {0} vnos(ov).</message>
    <!-- DisplayShareLink -->
 <message key="xmlui.aspect.submission.submit.DisplayShareLink.title" source="sl-new">Deli povezavo</message>
    <message key="xmlui.aspect.submission.submit.DisplayShareLink.trail" source="sl-new">Deli povezavo</message>
