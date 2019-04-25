@@ -1255,6 +1255,7 @@
 	<message key="xmlui.administrative.Navigation.administrative_groups">Groups</message>
 	<message key="xmlui.administrative.Navigation.administrative_authorizations">Authorizations</message>
 	<message key="xmlui.administrative.Navigation.administrative_registries">Registries</message>
+        <message key="xmlui.administrative.Navigation.administrative_communities">Collections &amp; Communities</message>
 	<message key="xmlui.administrative.Navigation.administrative_metadata">Metadata</message>
 	<message key="xmlui.administrative.Navigation.administrative_format">Format</message>
     <message key="xmlui.administrative.Navigation.administrative_content">Content Administration</message>

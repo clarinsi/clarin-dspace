@@ -1098,6 +1098,7 @@
    <message key="xmlui.administrative.Navigation.administrative_groups" source="sl-new">Skupine</message>
    <message key="xmlui.administrative.Navigation.administrative_authorizations" source="sl-new">Avtorizacije</message>
    <message key="xmlui.administrative.Navigation.administrative_registries" source="sl-new">Registri</message>
+   <message key="xmlui.administrative.Navigation.administrative_communities" source="sl-manual">Skupnosti in zbirke</message>
    <message key="xmlui.administrative.Navigation.administrative_metadata" source="sl-new">Metapodatki</message>
    <message key="xmlui.administrative.Navigation.administrative_format" source="sl-new">Format</message>
    <message key="xmlui.administrative.Navigation.administrative_content" source="sl-new">Administracija vsebin</message>

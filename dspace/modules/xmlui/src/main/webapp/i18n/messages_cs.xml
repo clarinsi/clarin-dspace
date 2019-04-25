@@ -1273,6 +1273,7 @@
 	<message key="xmlui.administrative.Navigation.administrative_groups">Skupiny</message>
 	<message key="xmlui.administrative.Navigation.administrative_authorizations">Autorizace</message>
 	<message key="xmlui.administrative.Navigation.administrative_registries">Registry</message>
+        <message key="xmlui.administrative.Navigation.administrative_communities">Collections &amp; Communities</message>
 	<message key="xmlui.administrative.Navigation.administrative_metadata">Metadata</message>
 	<message key="xmlui.administrative.Navigation.administrative_format">Formát</message>
     <message key="xmlui.administrative.Navigation.administrative_content">Správa obsahu</message>

@@ -201,7 +201,7 @@
 			<xsl:when test="$key='xmlui.administrative.Navigation.administrative_items'">
     			<i class="fa fa-bars fa-lg">&#160;</i>
     		</xsl:when>
-			<xsl:when test="$key='Collections &amp; Communities'">
+			<xsl:when test="$key='xmlui.administrative.Navigation.administration_communities'">
     			<i class="fa fa-sitemap fa-lg">&#160;</i>
     		</xsl:when>
 			<xsl:when test="$key='xmlui.administrative.Navigation.administrative_withdrawn'">

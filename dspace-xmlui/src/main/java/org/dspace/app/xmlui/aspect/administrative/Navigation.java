@@ -81,6 +81,7 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
     private static final Message T_administrative_control_panel 	= message("xmlui.administrative.Navigation.administrative_control_panel");
     private static final Message T_administrative_curation              = message("xmlui.administrative.Navigation.administrative_curation");
     private static final Message T_administrative_licenses			= message("xmlui.administrative.Navigation.administrative_licenses");
+    private static final Message T_administrative_communities			= message("xmlui.administrative.Navigation.administrative_communities");
     private static final Message T_administrative_handles			= message("xmlui.administrative.Navigation.administrative_handles");
     private static final Message T_administrative_external_handles			= message("xmlui.administrative.Navigation.administrative_external_handles");
 
@@ -326,7 +327,7 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
             registries.addItemXref(contextPath+"/admin/metadata-registry",T_administrative_metadata);
             registries.addItemXref(contextPath+"/admin/format-registry",T_administrative_format);
 
-			admin.addItemXref(contextPath+"/community-list", "Collections & Communities");
+            admin.addItemXref(contextPath+"/community-list", T_administrative_communities);
             admin.addItemXref(contextPath+"/statistics", T_statistics);
             admin.addItemXref(contextPath+ "/admin/curate", T_administrative_curation);
 
@@ -337,8 +338,7 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
         else if (isAnyAdmin)
         {
             admin.setHead(T_administrative_head);
-            admin.addItemXref(contextPath + "/community-list",
-                    "Collections & Communities");
+            admin.addItemXref(contextPath + "/community-list", T_administrative_communities);
         }
     }
     
