@@ -1136,6 +1136,7 @@
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">ID</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column3">Name</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column4">Email</message>
+  <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column5">More information</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.submit_delete">Delete E-People</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.no_results">Your search found no results...</message>
   <!-- org.dspace.app.xmlui.administrative.eperson.AddEPersonForm -->
@@ -2202,6 +2203,7 @@
   <message key="xmlui.administrative.CurateForm.object_label_name">Handle of DSpace Object</message>
   <message key="xmlui.administrative.CurateForm.object_hint">Hint: Enter [your-handle-prefix]/0 to run a task across entire site (not all tasks may support this capability)</message>
   <message key="xmlui.administrative.CurateForm.task_label_name">Task</message>
+  <message key="xmlui.administrative.CurateForm.run_all">Run all curation tasks at once</message>
   <!-- Used by Curate<DSO>Form classes also -->
   <message key="xmlui.administrative.CurateForm.taskgroup_label_name">Choose from the following groups</message>
   <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

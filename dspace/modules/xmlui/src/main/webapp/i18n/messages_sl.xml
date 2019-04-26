@@ -1143,6 +1143,7 @@
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2" source="sl-new">ID</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column3" source="sl-new">Ime</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column4" source="sl-new">E-poštni naslov</message>
+   <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column5" source="sl-manual">Več informacij</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.submit_delete" source="sl-new">Izbriši e-osebe</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.no_results" source="sl-new">Vaše iskanje ni vrnilo rezultatov ...</message>
    <!-- org.dspace.app.xmlui.administrative.eperson.AddEPersonForm -->
@@ -2212,6 +2213,7 @@
    <message key="xmlui.administrative.CurateForm.object_label_name" source="sl-new">Handle predmeta Dspace</message>
    <message key="xmlui.administrative.CurateForm.object_hint" source="sl-new">Namig: Vnesite [predpona-vašega-handla]/0, da nalogo izvedete na celotni spletni strani (to ni možno pri vseh nalogah).</message>
    <message key="xmlui.administrative.CurateForm.task_label_name" source="sl-new">Naloga</message>
+   <message key="xmlui.administrative.CurateForm.run_all" source="sl-manual">Poženi vse naloge hkrati</message>
    <!-- Used by Curate<DSO>Form classes also -->
 <message key="xmlui.administrative.CurateForm.taskgroup_label_name" source="sl-new">Izberi med naslednjimi skupinami</message>
    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -2825,9 +2827,9 @@
    <!-- UFAL/lib/xsl/aspect/artifactbrowser/item-view.xsl -->
    <message key="xmlui.UFAL.artifactbrowser.community_list.community">Skupnost</message>
    <message key="xmlui.UFAL.artifactbrowser.community_list.collections" source="sl-manual">Zbirke v skupnosti</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections" source="sl-manual">Ni zbirk v ti skupnosti.</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections" source="sl-manual">Ni zbirk v tej skupnosti.</message>
    <message key="xmlui.UFAL.artifactbrowser.community_list.subcommunities" source="sl-manual">Podskupnosti</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.no_subcommunities" source="sl-manual">Ni podskupnosti v ti skupnosti.</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.no_subcommunities" source="sl-manual">Ni podskupnosti v tej skupnosti.</message>
    <message key="xmlui.UFAL.artifactbrowser.community_list.description" source="sl-manual">Opis</message>
    <message key="xmlui.UFAL.artifactbrowser.community_list.contains" source="sl-manual">Ta skupnost vsebuje {0} vnos(ov).</message>
    <!-- DisplayShareLink -->

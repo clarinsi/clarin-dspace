@@ -92,6 +92,9 @@ public class ManageEPeopleMain extends AbstractDSpaceTransformer
     private static final Message T_search_column4 =
 		message("xmlui.administrative.eperson.ManageEPeopleMain.search_column4");
 
+    private static final Message T_search_column5 =
+		message("xmlui.administrative.eperson.ManageEPeopleMain.search_column5");
+
     private static final Message T_submit_delete =
 		message("xmlui.administrative.eperson.ManageEPeopleMain.submit_delete");
 
@@ -172,7 +175,7 @@ public class ManageEPeopleMain extends AbstractDSpaceTransformer
         header.addCell().addContent(T_search_column2);
         header.addCell().addContent(T_search_column3);
         header.addCell().addContent(T_search_column4);
-        header.addCell().addContent("More information");
+        header.addCell().addContent(T_search_column5);
 
         CheckBox selectEPerson; 
         for (EPerson person : epeople)

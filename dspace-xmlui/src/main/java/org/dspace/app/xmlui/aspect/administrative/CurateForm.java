@@ -43,6 +43,7 @@ public class CurateForm extends AbstractDSpaceTransformer
         private static final Message T_dspace_home = message("xmlui.general.dspace_home");
         private static final Message T_submit_perform = message("xmlui.general.perform");
         private static final Message T_submit_queue = message("xmlui.general.queue");
+        private static final Message T_submit_run_all = message("xmlui.administrative.CurateForm.run_all");
         private static final Message T_title = message("xmlui.administrative.CurateForm.title");
         private static final Message T_trail = message("xmlui.administrative.CurateForm.trail");
         private static final Message T_task_label_name = message("xmlui.administrative.CurateForm.task_label_name");
@@ -152,6 +153,6 @@ public class CurateForm extends AbstractDSpaceTransformer
                 buttonList.addButton("submit_queue_task").setValue(T_submit_queue);
                 div.addHidden("administrative-continue").setValue(knot.getId());
                 
-                buttonList.addButton("submit_run_all_tasks").setValue("Run all curation tasks at once");
+                buttonList.addButton("submit_run_all_tasks").setValue(T_submit_run_all);
         }
 }
