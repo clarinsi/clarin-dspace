@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
+    Translation: Lia Lampe, 2018-2019, Katja Zupan, 2016-2017.
+    Review: Tomaž Erjavec, Cyprian Laskowski, 2016-2019.
 
     The contents of this file are subject to the license and copyright
     detailed in the LICENSE and NOTICE files at the root of the source
@@ -1098,7 +1100,7 @@
    <message key="xmlui.administrative.Navigation.administrative_groups">Skupine</message>
    <message key="xmlui.administrative.Navigation.administrative_authorizations">Avtorizacije</message>
    <message key="xmlui.administrative.Navigation.administrative_registries">Registri</message>
-   <message key="xmlui.administrative.Navigation.administrative_communities" source="sl-manual">Skupnosti in zbirke</message>
+   <message key="xmlui.administrative.Navigation.administrative_communities">Skupnosti in zbirke</message>
    <message key="xmlui.administrative.Navigation.administrative_metadata">Metapodatki</message>
    <message key="xmlui.administrative.Navigation.administrative_format">Format</message>
    <message key="xmlui.administrative.Navigation.administrative_content">Administracija vsebin</message>
@@ -1143,7 +1145,7 @@
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">ID</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column3">Ime</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column4">E-poštni naslov</message>
-   <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column5" source="sl-manual">Več informacij</message>
+   <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column5">Več informacij</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.submit_delete">Izbriši e-osebe</message>
    <message key="xmlui.administrative.eperson.ManageEPeopleMain.no_results">Vaše iskanje ni vrnilo rezultatov ...</message>
    <!-- org.dspace.app.xmlui.administrative.eperson.AddEPersonForm -->
@@ -2213,7 +2215,7 @@
    <message key="xmlui.administrative.CurateForm.object_label_name">Handle predmeta Dspace</message>
    <message key="xmlui.administrative.CurateForm.object_hint">Namig: Vnesite [predpona-vašega-handla]/0, da nalogo izvedete na celotni spletni strani (to ni možno pri vseh nalogah).</message>
    <message key="xmlui.administrative.CurateForm.task_label_name">Naloga</message>
-   <message key="xmlui.administrative.CurateForm.run_all" source="sl-manual">Poženi vse naloge hkrati</message>
+   <message key="xmlui.administrative.CurateForm.run_all">Poženi vse naloge hkrati</message>
    <!-- Used by Curate<DSO>Form classes also -->
    <message key="xmlui.administrative.CurateForm.taskgroup_label_name">Izberi med naslednjimi skupinami</message>
    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -2614,184 +2616,184 @@
    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.head">{0}: Nedavni vnosi</message>
    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.trail">Nedavni vnosi</message>
    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.recent.head">Nedavno dodano</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type_filter" source="en-current">Vrsta</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher_filter" source="en-current">Izdajatelj</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.ispartof" source="en-current">Nadrejena vsebina</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by" source="en-current">Združi rezultate po:</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type_filter">Vrsta</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher_filter">Izdajatelj</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.ispartof">Nadrejena vsebina</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by">Združi rezultate po:</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.none">Nič</message>
    <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.publication_grp">Objava</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.comm">Skupnost</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.coll">Zbirka</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.relation.ispartofseries_filter" source="en-current">Serija</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.contributor.author_browse" source="en-current">Brskanje po: Avtor</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.title_browse" source="en-current">Brskanje po: Naslov</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.subject_browse" source="en-current">Brskanje po: Vsebina</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.description.abstract_browse" source="en-current">Brskanje po: Povzetek</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_series_browse" source="en-current">Brskanje po: Serija</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_sponsor_browse" source="en-current">Brskanje po: Financer</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_identifier_browse" source="en-current">Brskanje po: Identifikator</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_language_browse" source="en-current">Brskanje po: Jezik (ISO)</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_keyword_browse" source="en-current">Brskanje po: Ključna beseda</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_taxon_browse" source="en-current">Brskanje po: Znanstveno ime</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_contributor_browse" source="en-current">Brskanje po: Sodelavec</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_creator_browse" source="en-current">Brskanje po: Avtor</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_subject_browse" source="en-current">Brskanje po: Vsebina</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_description_browse" source="en-current">Brskanje po: Opis</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_relation_browse" source="en-current">Brskanje po: Relacija</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_mime_browse" source="en-current">Brskanje po: Vrsta medija MIME</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_other_browse" source="en-current">Brskanje po: Drugi sodelavec</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_advisor_browse" source="en-current">Brskanje po: Svetovalec</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_department_browse" source="en-current">Brskanje po: Oddelek</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dateissued_dt_browse" source="en-current">Brskanje po: Datum izdaje</message>
-   <message key="xmlui.dri2xhtml.structural.pagination-info.nototal" source="en-current">Trenutno prikazani vnosi {0}–{1}</message>
-   <message key="xmlui.Discovery.AbstractSearch.type_author" source="en-current">Filtriraj po: Avtor</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.relation.ispartofseries_filter">Serija</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.contributor.author_browse">Brskanje po: Avtor</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.title_browse">Brskanje po: Naslov</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.subject_browse">Brskanje po: Vsebina</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.description.abstract_browse">Brskanje po: Povzetek</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_series_browse">Brskanje po: Serija</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_sponsor_browse">Brskanje po: Financer</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_identifier_browse">Brskanje po: Identifikator</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_language_browse">Brskanje po: Jezik (ISO)</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_keyword_browse">Brskanje po: Ključna beseda</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_taxon_browse">Brskanje po: Znanstveno ime</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_contributor_browse">Brskanje po: Sodelavec</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_creator_browse">Brskanje po: Avtor</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_subject_browse">Brskanje po: Vsebina</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_description_browse">Brskanje po: Opis</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_relation_browse">Brskanje po: Relacija</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_mime_browse">Brskanje po: Vrsta medija MIME</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_other_browse">Brskanje po: Drugi sodelavec</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_advisor_browse">Brskanje po: Svetovalec</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_department_browse">Brskanje po: Oddelek</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dateissued_dt_browse">Brskanje po: Datum izdaje</message>
+   <message key="xmlui.dri2xhtml.structural.pagination-info.nototal">Trenutno prikazani vnosi {0}–{1}</message>
+   <message key="xmlui.Discovery.AbstractSearch.type_author">Filtriraj po: Avtor</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author_filter">Avtor</message>
-   <message key="xmlui.Discovery.AbstractSearch.type_subject" source="en-current">Filtriraj po: Vsebina</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter" source="en-current">Vsebina</message>
+   <message key="xmlui.Discovery.AbstractSearch.type_subject">Filtriraj po: Vsebina</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">Vsebina</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued.year">Datum izdaje</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.rights_filter" source="en-current">Pravice</message>
-   <message key="xmlui.Discovery.AbstractSearch.startswith" source="en-current">Začne se s/z</message>
-   <message key="xmlui.Discovery.AbstractSearch.startswith.help" source="en-current">Ali vpišite prvih nekaj črk:</message>
-   <message key="xmlui.Discovery.AbstractSearch.sort_by.head" source="en-current">Možnosti razvrščanja:</message>
-   <message key="xmlui.Discovery.AbstractSearch.sort_by.relevance" source="en-current">Ustreznost</message>
-   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_desc" source="en-current">Naslov (padajoče)</message>
-   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_desc" source="en-current">Datum izdaje (padajoče)</message>
-   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_asc" source="en-current">Naslov (naraščajoče)</message>
-   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_asc" source="en-current">Datum izdaje (naraščajoče)</message>
-   <message key="xmlui.Discovery.AbstractSearch.rpp" source="en-current">Rezultati na stran:</message>
-   <message key="xmlui.Discovery.AbstractSearch.filters.controls.add-filter" source="en-current">Dodaj filter</message>
-   <message key="xmlui.Discovery.AbstractSearch.filters.controls.apply-filters" source="en-current">Uporabi</message>
-   <message key="xmlui.Discovery.AbstractSearch.filters.controls.remove-filter" source="en-current">Odstrani</message>
-   <message key="xmlui.Discovery.AbstractSearch.filters.controls.new-filters.head" source="en-current">Novi filtri:</message>
-   <message key="xmlui.Discovery.AbstractSearch.filters.controls.current-filters.head" source="en-current">Trenutni filtri:</message>
-   <message key="xmlui.Discovery.AbstractSearch.filters.display" source="en-current">Dodaj filtre:</message>
-   <message key="xmlui.discovery.SearchFacetFilter.no-results" source="en-current">Vrednosti filtra ni bilo mogoče najti</message>
-   <message key="xmlui.discovery.AbstractFiltersTransformer.filters.head" source="en-current">Odkrij</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.rights_filter">Pravice</message>
+   <message key="xmlui.Discovery.AbstractSearch.startswith">Začne se s/z</message>
+   <message key="xmlui.Discovery.AbstractSearch.startswith.help">Ali vpišite prvih nekaj črk:</message>
+   <message key="xmlui.Discovery.AbstractSearch.sort_by.head">Možnosti razvrščanja:</message>
+   <message key="xmlui.Discovery.AbstractSearch.sort_by.relevance">Ustreznost</message>
+   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_desc">Naslov (padajoče)</message>
+   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_desc">Datum izdaje (padajoče)</message>
+   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_asc">Naslov (naraščajoče)</message>
+   <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_asc">Datum izdaje (naraščajoče)</message>
+   <message key="xmlui.Discovery.AbstractSearch.rpp">Rezultati na stran:</message>
+   <message key="xmlui.Discovery.AbstractSearch.filters.controls.add-filter">Dodaj filter</message>
+   <message key="xmlui.Discovery.AbstractSearch.filters.controls.apply-filters">Uporabi</message>
+   <message key="xmlui.Discovery.AbstractSearch.filters.controls.remove-filter">Odstrani</message>
+   <message key="xmlui.Discovery.AbstractSearch.filters.controls.new-filters.head">Novi filtri:</message>
+   <message key="xmlui.Discovery.AbstractSearch.filters.controls.current-filters.head">Trenutni filtri:</message>
+   <message key="xmlui.Discovery.AbstractSearch.filters.display">Dodaj filtre:</message>
+   <message key="xmlui.discovery.SearchFacetFilter.no-results">Vrednosti filtra ni bilo mogoče najti</message>
+   <message key="xmlui.discovery.AbstractFiltersTransformer.filters.head">Odkrij</message>
    <message key="xmlui.discovery.AbstractFiltersTransformer.filters.view-more">... poglejte več</message>
-   <message key="xmlui.Discovery.SimpleSearch.search_scope" source="en-current">Išči</message>
-   <message key="xmlui.discovery.SimpleSearch.search_label" source="en-current">Išči</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter_head" source="en-current">Filtri</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter_help" source="en-current">Uporabite filtre za omejitev rezultatov iskanja.</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter.contains" source="en-current">Vsebuje</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter.equals" source="en-current">Je enako</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter.authority" source="en-current">ID</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter.notcontains" source="en-current">Ne vsebuje</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter.notequals" source="en-current">Ni enako</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter.notauthority" source="en-current">Ni ID</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter.notavailable" source="en-current">Ni razpoložljivo</message>
-   <message key="xmlui.Discovery.RelatedItems.head" source="en-current">Sorodni vnosi</message>
-   <message key="xmlui.Discovery.RelatedItems.help" source="en-current">Prikazani so vnosi, ki so sorodni glede na naslov, avtorja, avtorja vnosa in ključno besedo.</message>
-   <message key="xmlui.Discovery.AbstractSearch.head1_community" source="en-current">Prikazanih {0} od skupno {1} zadetkov za skupnost: {2}. <span class="searchTime">({3} sekund)</span>
+   <message key="xmlui.Discovery.SimpleSearch.search_scope">Išči</message>
+   <message key="xmlui.discovery.SimpleSearch.search_label">Išči</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter_head">Filtri</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter_help">Uporabite filtre za omejitev rezultatov iskanja.</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter.contains">Vsebuje</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter.equals">Je enako</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter.authority">ID</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter.notcontains">Ne vsebuje</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter.notequals">Ni enako</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter.notauthority">Ni ID</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter.notavailable">Ni razpoložljivo</message>
+   <message key="xmlui.Discovery.RelatedItems.head">Sorodni vnosi</message>
+   <message key="xmlui.Discovery.RelatedItems.help">Prikazani so vnosi, ki so sorodni glede na naslov, avtorja, avtorja vnosa in ključno besedo.</message>
+   <message key="xmlui.Discovery.AbstractSearch.head1_community">Prikazanih {0} od skupno {1} zadetkov za skupnost: {2}. <span class="searchTime">({3} sekund)</span>
    </message>
-   <message key="xmlui.Discovery.AbstractSearch.head1_collection" source="en-current">Prikazanih {0} od skupno {1} zadetkov za zbirko: {2}. <span class="searchTime">({3} sekund)</span>
+   <message key="xmlui.Discovery.AbstractSearch.head1_collection">Prikazanih {0} od skupno {1} zadetkov za zbirko: {2}. <span class="searchTime">({3} sekund)</span>
    </message>
-   <message key="xmlui.Discovery.AbstractSearch.head1_none" source="en-current">Prikazanih {0} od skupno {1} zadetkov. <span class="searchTime">({2} sekund)</span>
+   <message key="xmlui.Discovery.AbstractSearch.head1_none">Prikazanih {0} od skupno {1} zadetkov. <span class="searchTime">({2} sekund)</span>
    </message>
-   <message key="xmlui.Discovery.AbstractSearch.head2" source="en-current">Skupnosti ali zbirke, ki ustrezajo vaši poizvedbi</message>
-   <message key="xmlui.Discovery.AbstractSearch.head3" source="en-current">Vnosi, ki ustrezajo vaši poizvedbi</message>
-   <message key="xmlui.Discovery.SimpleSearch.did_you_mean" source="en-current">Ste morda mislili: </message>
+   <message key="xmlui.Discovery.AbstractSearch.head2">Skupnosti ali zbirke, ki ustrezajo vaši poizvedbi</message>
+   <message key="xmlui.Discovery.AbstractSearch.head3">Vnosi, ki ustrezajo vaši poizvedbi</message>
+   <message key="xmlui.Discovery.SimpleSearch.did_you_mean">Ste morda mislili: </message>
    <!-- XMLWorkflow -->
-   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.info1" source="en-current">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
-   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_help" source="en-current">Dodelite si nalogo.</message>
-   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_submit" source="en-current">Sprejmi nalogo</message>
-   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_help" source="en-current">Pustite nalogo v čakalni vrsti, da jo lahko sprejme drug uporabnik.</message>
-   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_submit" source="en-current">Pusti nalogo</message>
-   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.back" source="en-current">Nazaj na pregled</message>
-   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.title" source="en-current">Potrdi/zavrni nalogo</message>
-   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.head" source="en-current">Izvedi nalogo: Potrdi/zavrni vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.info1" source="en-current">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
-   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_help" source="en-current">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni".  <strong/>  Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
-   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_submit" source="en-current">Zavrni vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_help" source="en-current">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
-   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_submit" source="en-current">Odobri vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.head" source="en-current">Izvedi nalogo: Potrdi/zavrni/uredi vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.info1" source="en-current">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_help" source="en-current">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni".<strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_submit" source="en-current">Zavrni vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_help" source="en-current">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_submit" source="en-current">Odobri vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_help" source="en-current">Izberite to možnost za spremembo metapodatkov vnosa. Dodati boste morali vsa obvezna polja.</message>
-   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_submit" source="en-current">Uredi metapodatke</message>
-   <message key="xmlui.XMLWorkflow.step.unknown" source="en-current">Neznan status</message>
-   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.head" source="en-current">Izvedi nalogo: Dodeli pregledovalca</message>
-   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.help" source="en-current">Uporabite spodnje iskalno polje, da poiščete e-osebo, ki ji boste dodelili pregledovanje.</message>
-   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.label" source="en-current">Poišči pregledovalca</message>
-   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.button" source="en-current">Poišči e-osebo</message>
-   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.select-reviewer.button" source="en-current">Določi za pregledovalca</message>
-   <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.help" source="en-current">Če niste prava oseba za pregled tega vnosa, lahko nalogo zavrnete s klikom na gumb "Zavrni nalogo".</message>
-   <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.button" source="en-current">Zavrni nalogo</message>
-   <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.head" source="en-current">Preglej vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.score.button" source="en-current">Preglej vnos</message>
-   <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.help" source="en-current">Vnesi oceno vnosa</message>
-   <message key="xmlui.XMLWorkflow.Navigation.xmlworkflow_overview" source="en-current">Pregled delotoka</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.trail" source="en-current">Pregled delotoka</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.title" source="en-current">Pregled delotoka</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column1" source="en-current"> </message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column2" source="en-current">Korak</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column3" source="en-current">Vnos</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column4" source="en-current">Zbirka</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column5" source="en-current">Avtor vnosa</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_submitter" source="en-current">Vrni vnose njihovim avtorjem</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_delete" source="en-current">Izbriši vnose</message>
-   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.no_results" source="en-current">Ni zadetkov</message>
-   <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.title" source="en-current">Prikaži vnos v delotoku: {0}</message>
-   <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.trail" source="en-current">Prikaži vnos v delotoku:</message>
-   <message key="xmlui.XMLWorkflow.default.reviewstep" source="en-current">Potrdi/zavrni</message>
-   <message key="xmlui.XMLWorkflow.default.reviewstep.claimaction" source="en-current">Potrdi/zavrni</message>
-   <message key="xmlui.XMLWorkflow.default.reviewstep.reviewaction" source="en-current">Potrdi/zavrni</message>
-   <message key="xmlui.XMLWorkflow.default.editstep" source="en-current">Korak potrdi/uredi/zavrni</message>
-   <message key="xmlui.XMLWorkflow.default.editstep.claimaction" source="en-current">Potrdi/uredi/zavrni</message>
-   <message key="xmlui.XMLWorkflow.default.editstep.editaction" source="en-current">Potrdi/uredi/zavrni</message>
-   <message key="xmlui.XMLWorkflow.default.finaleditstep" source="en-current">Končna potrditev/urejanje</message>
-   <message key="xmlui.XMLWorkflow.default.finaleditstep.claimaction" source="en-current">Končna potrditev/urejanje</message>
-   <message key="xmlui.XMLWorkflow.default.finaleditstep.finaleditaction" source="en-current">Končna potrditev/urejanje</message>
-   <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.claimaction" source="en-current">Korak dodelitve pregledovalca</message>
-   <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.selectrevieweraction" source="en-current">Dodeli pregledovalca</message>
-   <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep" source="en-current">Korak pregleda posameznega uporabnika</message>
-   <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep.singleuserreviewaction" source="en-current">Preglej vnos</message>
-   <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.claimaction" source="en-current">Pregled ocene</message>
-   <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.scorereviewaction" source="en-current">Pregled ocene</message>
-   <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep" source="en-current">Pregled ocene</message>
+   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
+   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_help">Dodelite si nalogo.</message>
+   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_submit">Sprejmi nalogo</message>
+   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_help">Pustite nalogo v čakalni vrsti, da jo lahko sprejme drug uporabnik.</message>
+   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_submit">Pusti nalogo</message>
+   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.back">Nazaj na pregled</message>
+   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.title">Potrdi/zavrni nalogo</message>
+   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.head">Izvedi nalogo: Potrdi/zavrni vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
+   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_help">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni".  <strong/>  Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
+   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_submit">Zavrni vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_help">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
+   <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_submit">Odobri vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.head">Izvedi nalogo: Potrdi/zavrni/uredi vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_help">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni".<strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_submit">Zavrni vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_help">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_submit">Odobri vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_help">Izberite to možnost za spremembo metapodatkov vnosa. Dodati boste morali vsa obvezna polja.</message>
+   <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_submit">Uredi metapodatke</message>
+   <message key="xmlui.XMLWorkflow.step.unknown">Neznan status</message>
+   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.head">Izvedi nalogo: Dodeli pregledovalca</message>
+   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.help">Uporabite spodnje iskalno polje, da poiščete e-osebo, ki ji boste dodelili pregledovanje.</message>
+   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.label">Poišči pregledovalca</message>
+   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.button">Poišči e-osebo</message>
+   <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.select-reviewer.button">Določi za pregledovalca</message>
+   <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.help">Če niste prava oseba za pregled tega vnosa, lahko nalogo zavrnete s klikom na gumb "Zavrni nalogo".</message>
+   <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.button">Zavrni nalogo</message>
+   <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.head">Preglej vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.score.button">Preglej vnos</message>
+   <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.help">Vnesi oceno vnosa</message>
+   <message key="xmlui.XMLWorkflow.Navigation.xmlworkflow_overview">Pregled delotoka</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.trail">Pregled delotoka</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.title">Pregled delotoka</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column1"> </message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column2">Korak</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column3">Vnos</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column4">Zbirka</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column5">Avtor vnosa</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_submitter">Vrni vnose njihovim avtorjem</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_delete">Izbriši vnose</message>
+   <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.no_results">Ni zadetkov</message>
+   <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.title">Prikaži vnos v delotoku: {0}</message>
+   <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.trail">Prikaži vnos v delotoku:</message>
+   <message key="xmlui.XMLWorkflow.default.reviewstep">Potrdi/zavrni</message>
+   <message key="xmlui.XMLWorkflow.default.reviewstep.claimaction">Potrdi/zavrni</message>
+   <message key="xmlui.XMLWorkflow.default.reviewstep.reviewaction">Potrdi/zavrni</message>
+   <message key="xmlui.XMLWorkflow.default.editstep">Korak potrdi/uredi/zavrni</message>
+   <message key="xmlui.XMLWorkflow.default.editstep.claimaction">Potrdi/uredi/zavrni</message>
+   <message key="xmlui.XMLWorkflow.default.editstep.editaction">Potrdi/uredi/zavrni</message>
+   <message key="xmlui.XMLWorkflow.default.finaleditstep">Končna potrditev/urejanje</message>
+   <message key="xmlui.XMLWorkflow.default.finaleditstep.claimaction">Končna potrditev/urejanje</message>
+   <message key="xmlui.XMLWorkflow.default.finaleditstep.finaleditaction">Končna potrditev/urejanje</message>
+   <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.claimaction">Korak dodelitve pregledovalca</message>
+   <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.selectrevieweraction">Dodeli pregledovalca</message>
+   <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep">Korak pregleda posameznega uporabnika</message>
+   <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep.singleuserreviewaction">Preglej vnos</message>
+   <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.claimaction">Pregled ocene</message>
+   <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.scorereviewaction">Pregled ocene</message>
+   <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep">Pregled ocene</message>
    <!-- SwordClient -->
-   <message key="xmlui.swordclient.Navigation.context_head" source="en-current">Kopija SWORD</message>
-   <message key="xmlui.swordclient.Navigation.context_copy" source="en-current">Kopiraj vnos v drug repozitorij</message>
-   <message key="xmlui.swordclient.general.SwordCopy_trail" source="en-current">Kopija SWORD</message>
-   <message key="xmlui.swordclient.general.main_head" source="en-current">Kopiraj vnos: {0}</message>
-   <message key="xmlui.swordclient.SelectTarget.title" source="en-current">Ciljno mesto kopije SWORD</message>
-   <message key="xmlui.swordclient.SelectTarget.trail" source="en-current">Izberi ciljno mesto</message>
-   <message key="xmlui.swordclient.SelectTarget.url" source="en-current">URL</message>
-   <message key="xmlui.swordclient.SelectTarget.other_url" source="en-current">Nadomestni URL</message>
+   <message key="xmlui.swordclient.Navigation.context_head">Kopija SWORD</message>
+   <message key="xmlui.swordclient.Navigation.context_copy">Kopiraj vnos v drug repozitorij</message>
+   <message key="xmlui.swordclient.general.SwordCopy_trail">Kopija SWORD</message>
+   <message key="xmlui.swordclient.general.main_head">Kopiraj vnos: {0}</message>
+   <message key="xmlui.swordclient.SelectTarget.title">Ciljno mesto kopije SWORD</message>
+   <message key="xmlui.swordclient.SelectTarget.trail">Izberi ciljno mesto</message>
+   <message key="xmlui.swordclient.SelectTarget.url">URL</message>
+   <message key="xmlui.swordclient.SelectTarget.other_url">Nadomestni URL</message>
    <message key="xmlui.swordclient.SelectTarget.username">Uporabniško ime</message>
    <message key="xmlui.swordclient.SelectTarget.password">Geslo</message>
-   <message key="xmlui.swordclient.SelectTarget.on_behalf_of" source="en-current">V imenu</message>
-   <message key="xmlui.swordclient.SelectTargetAction.url_error" source="en-current">Neveljaven URL</message>
-   <message key="xmlui.swordclient.SelectTargetAction.username_error" source="en-current">Neveljavno uporabniško ime</message>
-   <message key="xmlui.swordclient.SelectTargetAction.password_error" source="en-current">Neveljavno geslo</message>
-   <message key="xmlui.swordclient.SelectTargetAction.serviceDoc_error" source="en-current">Napaka pri pridobivanju dokumenta storitve SWORD: {0}</message>
-   <message key="xmlui.swordclient.SelectCollection.title" source="en-current">Ciljne zbirke SWORD</message>
-   <message key="xmlui.swordclient.SelectCollection.trail" source="en-current">Izberi zbirke</message>
-   <message key="xmlui.swordclient.SelectCollection.collection_head" source="en-current">Zbirka: {0}</message>
-   <message key="xmlui.swordclient.SelectCollection.collection_title" source="en-current">Naslov: {0} </message>
-   <message key="xmlui.swordclient.SelectCollection.collection policy" source="en-current">Politika: {0}</message>
-   <message key="xmlui.swordclient.SelectCollection.collection_mediation" source="en-current">Mediacija: {0}</message>
-   <message key="xmlui.swordclient.SelectCollection.collection_file_types" source="en-current">Vrste datotek: {0}</message>
-   <message key="xmlui.swordclient.SelectCollection.collection_package_formats" source="en-current">Formati paketov: {0}</message>
-   <message key="xmlui.swordclient.SelectCollection.collection_deposit_button" source="en-current">Vnesi v to mesto</message>
-   <message key="xmlui.swordclient.SelectCollection.sub_service_target" source="en-current">Ciljno mesto podstoritve</message>
-   <message key="xmlui.swordclient.SelectCollection.sub_service_target_button" source="en-current">Pridobi dokument podstoritve</message>
-   <message key="xmlui.swordclient.SelectPackagingAction.head" source="en-current">Zbirka: {0}</message>
-   <message key="xmlui.swordclient.SelectPackagingAction.title" source="en-current">Naslov: {0}</message>
-   <message key="xmlui.swordclient.SelectPackagingAction.policy" source="en-current">Politika: {0} </message>
-   <message key="xmlui.swordclient.SelectPackagingAction.mediation" source="en-current">Mediacija: {0} </message>
-   <message key="xmlui.swordclient.SelectPackagingAction.file_types" source="en-current">Vrsta datoteke</message>
-   <message key="xmlui.swordclient.SelectPackagingAction.package_formats" source="en-current">Format paketa</message>
-   <message key="xmlui.swordclient.SelectPackagingAction.packageFormat_error" source="en-current">Izbran je bil nepodprt format paketa</message>
-   <message key="xmlui.swordclient.DepositAction.success" source="en-current">Vnos je bil uspešno kopiran</message>
-   <message key="xmlui.swordclient.DepositAction.invalid_handle" source="en-current">Neveljaven handle</message>
-   <message key="xmlui.swordclient.DepositAction.package_error" source="en-current">Pri ustvarjanju paketa je prišlo do napake</message>
-   <message key="xmlui.swordclient.DepositAction.error" source="en-current">Pri vnašanju je prišlo do napake: {0}</message>
-   <message key="xmlui.swordclient.SwordResponse.title" source="en-current">Odziv SWORD-a</message>
-   <message key="xmlui.swordclient.SwordResponse.trail" source="en-current">Odziv SWORD-a</message>
+   <message key="xmlui.swordclient.SelectTarget.on_behalf_of">V imenu</message>
+   <message key="xmlui.swordclient.SelectTargetAction.url_error">Neveljaven URL</message>
+   <message key="xmlui.swordclient.SelectTargetAction.username_error">Neveljavno uporabniško ime</message>
+   <message key="xmlui.swordclient.SelectTargetAction.password_error">Neveljavno geslo</message>
+   <message key="xmlui.swordclient.SelectTargetAction.serviceDoc_error">Napaka pri pridobivanju dokumenta storitve SWORD: {0}</message>
+   <message key="xmlui.swordclient.SelectCollection.title">Ciljne zbirke SWORD</message>
+   <message key="xmlui.swordclient.SelectCollection.trail">Izberi zbirke</message>
+   <message key="xmlui.swordclient.SelectCollection.collection_head">Zbirka: {0}</message>
+   <message key="xmlui.swordclient.SelectCollection.collection_title">Naslov: {0} </message>
+   <message key="xmlui.swordclient.SelectCollection.collection policy">Politika: {0}</message>
+   <message key="xmlui.swordclient.SelectCollection.collection_mediation">Mediacija: {0}</message>
+   <message key="xmlui.swordclient.SelectCollection.collection_file_types">Vrste datotek: {0}</message>
+   <message key="xmlui.swordclient.SelectCollection.collection_package_formats">Formati paketov: {0}</message>
+   <message key="xmlui.swordclient.SelectCollection.collection_deposit_button">Vnesi v to mesto</message>
+   <message key="xmlui.swordclient.SelectCollection.sub_service_target">Ciljno mesto podstoritve</message>
+   <message key="xmlui.swordclient.SelectCollection.sub_service_target_button">Pridobi dokument podstoritve</message>
+   <message key="xmlui.swordclient.SelectPackagingAction.head">Zbirka: {0}</message>
+   <message key="xmlui.swordclient.SelectPackagingAction.title">Naslov: {0}</message>
+   <message key="xmlui.swordclient.SelectPackagingAction.policy">Politika: {0} </message>
+   <message key="xmlui.swordclient.SelectPackagingAction.mediation">Mediacija: {0} </message>
+   <message key="xmlui.swordclient.SelectPackagingAction.file_types">Vrsta datoteke</message>
+   <message key="xmlui.swordclient.SelectPackagingAction.package_formats">Format paketa</message>
+   <message key="xmlui.swordclient.SelectPackagingAction.packageFormat_error">Izbran je bil nepodprt format paketa</message>
+   <message key="xmlui.swordclient.DepositAction.success">Vnos je bil uspešno kopiran</message>
+   <message key="xmlui.swordclient.DepositAction.invalid_handle">Neveljaven handle</message>
+   <message key="xmlui.swordclient.DepositAction.package_error">Pri ustvarjanju paketa je prišlo do napake</message>
+   <message key="xmlui.swordclient.DepositAction.error">Pri vnašanju je prišlo do napake: {0}</message>
+   <message key="xmlui.swordclient.SwordResponse.title">Odziv SWORD-a</message>
+   <message key="xmlui.swordclient.SwordResponse.trail">Odziv SWORD-a</message>
    <!-- jmisutka DragNDrop -->
    <message key="xmlui.UFAL.dragndrop.upload.button.text">Naloži</message>
    <message key="xmlui.UFAL.dragndrop.upload.label">Povlecite in spustite, da naložite v repozitorij</message>
@@ -2826,12 +2828,12 @@
    <message key="xmlui.UFAL.artifactbrowser.item_view.file_preview">Predogled datoteke</message>
    <!-- UFAL/lib/xsl/aspect/artifactbrowser/item-view.xsl -->
    <message key="xmlui.UFAL.artifactbrowser.community_list.community">Skupnost</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.collections" source="sl-manual">Zbirke v skupnosti</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections" source="sl-manual">Ni zbirk v tej skupnosti.</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.subcommunities" source="sl-manual">Podskupnosti</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.no_subcommunities" source="sl-manual">Ni podskupnosti v tej skupnosti.</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.description" source="sl-manual">Opis</message>
-   <message key="xmlui.UFAL.artifactbrowser.community_list.contains" source="sl-manual">Ta skupnost vsebuje {0} vnos(ov).</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.collections">Zbirke v skupnosti</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections">Ni zbirk v tej skupnosti.</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.subcommunities">Podskupnosti</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.no_subcommunities">Ni podskupnosti v tej skupnosti.</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.description">Opis</message>
+   <message key="xmlui.UFAL.artifactbrowser.community_list.contains">Ta skupnost vsebuje {0} vnos(ov).</message>
    <!-- DisplayShareLink -->
    <message key="xmlui.aspect.submission.submit.DisplayShareLink.title">Deli povezavo</message>
    <message key="xmlui.aspect.submission.submit.DisplayShareLink.trail">Deli povezavo</message>
