@@ -2850,7 +2850,7 @@
    <message key="UFAL.firstpage.title.text">Dobrodošli v repozitoriju Slovenske raziskovalne infrastrukture CLARIN.SI</message>
    <!-- UFAL/lib/xsl/aspect/artifactbrowser/item-list.xsl -->
 <message key="xmlui.UFAL.artifactbrowser.item-contains-one-file">Ta vnos vsebuje {0} datoteko ({1}).</message>
-   <message key="xmlui.UFAL.artifactbrowser.item-contains-many-files">Ta vnos vsebuje {0} datotek ({1}).</message>
+   <message key="xmlui.UFAL.artifactbrowser.item-contains-many-files">Ta vnos vsebuje {0} datotek(e) ({1}).</message>
    <message key="xmlui.UFAL.artifactbrowser.item-contains-no-files">Ta vnos ne vsebuje datotek.</message>
    <message key="xmlui.UFAL.artifactbrowser.filters.add_filters">Napredno iskanje</message>
    <message key="xmlui.UFAL.artifactbrowser.filters.clear">Počisti vse</message>
