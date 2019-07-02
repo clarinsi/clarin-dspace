@@ -260,7 +260,7 @@
 <message key="xmlui.ArtifactBrowser.ItemViewer.trail">Prikaz vnosa</message>
    <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Ta vnos se nahaja v naslednjih zbirkah</message>
    <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Prikaži enostaven zapis vnosa</message>
-   <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Prikaži celoten zapis vnosa</message>
+   <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Prikaži polni zapis vnosa</message>
    <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">Ta vnos je bil umaknjen in ni več na voljo.</message>
    <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
 <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Brskanje</message>
