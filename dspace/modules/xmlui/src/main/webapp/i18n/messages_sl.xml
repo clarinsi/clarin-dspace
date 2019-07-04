@@ -627,7 +627,7 @@
    <message key="xmlui.Submission.general.workflow.title">Vnos</message>
    <message key="xmlui.Submission.general.workflow.trail">Vnos</message>
    <message key="xmlui.Submission.general.workflow.head">Vnos</message>
-   <message key="xmlui.Submission.general.showfull">Prikaži celoten zapis vnosa</message>
+   <message key="xmlui.Submission.general.showfull">Prikaži polni zapis vnosa</message>
    <message key="xmlui.Submission.general.showsimple">Prikaži enostaven zapis vnosa</message>
    <message key="xmlui.Submission.general.default.title">Vnos</message>
    <message key="xmlui.Submission.general.default.trail">Vnos</message>
