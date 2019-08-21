@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
     Translation: Lia Lampe, 2018-2019, Katja Zupan, 2016-2017.
     Review: Tomaž Erjavec, Cyprian Laskowski, 2016-2019.
+
+    This file was made on the basis of the dSpace/LINDAT localisation
+    file for CLARIN.SI, https://www.clarin.si/repository/xmlui/.
 
     The contents of this file are subject to the license and copyright
     detailed in the LICENSE and NOTICE files at the root of the source
@@ -110,7 +112,7 @@
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Serija</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Financer</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifikator</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher" status="missed">Izdajatelj</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher">Izdajatelj</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Jezik (ISO)</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Ključna beseda</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_hasfile">Vsebuje datoteke</message>
@@ -121,15 +123,15 @@
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.title">Naslov</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Ključna beseda</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued">Datum izdaje</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_content_in_original_bundle" status="dspace6">Vsebuje datoteke</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.original_bundle_filenames" status="dspace6">Ime datoteke</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.original_bundle_descriptions" status="dspace6">Opis datoteke</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.selected" status="missed">Izbrani filtri</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_content_in_original_bundle">Vsebuje datoteke</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.original_bundle_filenames">Ime datoteke</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.original_bundle_descriptions">Opis datoteke</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.selected">Izbrani filtri</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.rights">Pravice</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.publisher">Izdajatelj</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language">Jezik</message>
    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type">Vrsta</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype" status="missed">Vrsta medija</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype">Vrsta medija</message>
    <!--  some common other possibilities for Advanced Search Fields -->
 <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Sodelavec</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Avtor</message>
@@ -303,7 +305,7 @@
    </message>
    <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_claimed">Ta vnos lahko najdete na naslednjih mestih:</message>
    <message key="xmlui.ArtifactBrowser.RestrictedItem.para2_item_claimed">Na prošnjo avtorjev smo ta vnos skrili. <strong>Še vedno hranimo vse podatke in metapodatke o izvornem vnosu</strong>, vendar se vnos zdaj nahaja na zgornjih URL-jih. Če potrebujete vsebino izvornega vnosa, stopite v stik z našo <a class="helpdesk-tolink">pomočjo uporabnikom</a>.</message>
-   <message key="xmlui.ArtifactBrowser.RestrictedItem.para_reason" status="missed">Razlog za umik:</message>
+   <message key="xmlui.ArtifactBrowser.RestrictedItem.para_reason">Razlog za umik:</message>
    <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_para_extraInfo">Priporočamo, da vključite dodatne informacije: trajni identifikator (handle), če je bil vnos premaknjen drugam, in/ali razlog za odstranitev vnosa.</message>
    <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_help_extra_handle">Če to izpolnite, se bo uporabnikom, ki si bodo želeli ogledati vnos, prikazalo posebno sporočilo s povezavo, ustvarjeno iz novega PID-a. </message>
    <message key="xmlui.administrative.item.ConfirmItemForm.withdraw_label_extra_handle">Novi PID:</message>
@@ -544,11 +546,11 @@
    <message key="xmlui.EPerson.LoginChooser.trail">Izberite prijavo</message>
    <message key="xmlui.EPerson.LoginChooser.head1">Razpoložljivi načini prijave</message>
    <message key="xmlui.EPerson.LoginChooser.para1">Prijava prek:</message>
-   <message key="xmlui.EPerson.LoginChooser.discojuiceComment" status="missed">Prijavite se s poverilnicami vaše matične institucije (npr. institucije eduGAIN, člani eduID.cz, računi na clarin.eu itd.). Prikazati bi se moralo okno za izbiro institucije.</message>
-   <message key="xmlui.EPerson.LoginChooser.eduidComment" status="missed">Če imate uporabniški račun pri eni od čeških univerz (npr. CUNI, MUNI, ZCU itd.)</message>
-   <message key="xmlui.EPerson.LoginChooser.otherwiseComment" status="missed">Če ste se ročno vpisali v repozitorij, uporabite naslednjo povezavo </message>
+   <message key="xmlui.EPerson.LoginChooser.discojuiceComment">Prijavite se s poverilnicami vaše matične institucije (npr. institucije eduGAIN, člani eduID.cz, računi na clarin.eu itd.). Prikazati bi se moralo okno za izbiro institucije.</message>
+   <message key="xmlui.EPerson.LoginChooser.eduidComment">Če imate uporabniški račun pri eni od čeških univerz (npr. CUNI, MUNI, ZCU itd.)</message>
+   <message key="xmlui.EPerson.LoginChooser.otherwiseComment">Če ste se ročno vpisali v repozitorij, uporabite naslednjo povezavo </message>
    <message key="org.dspace.authenticate.ShibAuthentication.title">Avtentikacija s Shibboleth - prijava prek CUNI, MUNI, ZCU</message>
-   <message key="org.dspace.authenticate.ShibAuthenticationEduid.title" status="missed">Avtentikacija s Shibboleth (prijava prek federacije eduID.cz - češki uporabniki)</message>
+   <message key="org.dspace.authenticate.ShibAuthenticationEduid.title">Avtentikacija s Shibboleth (prijava prek federacije eduID.cz - češki uporabniki)</message>
    <message key="org.dspace.eperson.LDAPAuthentication.title">Avtentikacija z LDAP</message>
    <message key="org.dspace.eperson.PasswordAuthentication.title">Avtentikacija z geslom</message>
    <message key="org.dspace.eperson.X509Authentication.title">Avtentikacija s spletnim certifikatom</message>
@@ -873,7 +875,7 @@
    <message key="xmlui.Submission.submit.AccessStep.column4">Datum zaključka</message>
    <message key="xmlui.Submission.submit.AccessStep.table_edit_button">Uredi</message>
    <message key="xmlui.Submission.submit.AccessStep.table_delete_button">Odstrani</message>
-   <message key="xmlui.administrative.authorization.AccessStep.label_date_displayonly_help" status="dspace6">Dan, od katerega dalje je dostop dovoljen. <b>Na tem obrazcu datuma ni mogoče spremeniti.</b> Če želite določiti datum embarga za bitni tok, pojdite na <i>zavihek Status vnosa,</i> kliknite na <i>Avtorizacije ...,</i>ustvarite ali spremenite politiko BRANJE bitnega toka in določite  <i></i>  <i>želeni datum začetka.</i> </message>
+   <message key="xmlui.administrative.authorization.AccessStep.label_date_displayonly_help">Dan, od katerega dalje je dostop dovoljen. <b>Na tem obrazcu datuma ni mogoče spremeniti.</b> Če želite določiti datum embarga za bitni tok, pojdite na <i>zavihek Status vnosa,</i> kliknite na <i>Avtorizacije ...,</i>ustvarite ali spremenite politiko BRANJE bitnega toka in določite  <i/>  <i>želeni datum začetka.</i> </message>
    <message key="xmlui.administrative.authorization.AccessStep.label_date_help">Datum, od katerega dalje je dostop dovoljen. Dovoljeni format: llll, llll-mm, llll-mm-dd</message>
    <message key="xmlui.Submission.submit.AccessStep.review_policy_line">Ime: {0}; dejanje: {1}, skupina: {2}, datum začetka: {3}, datum zaključka: {4}</message>
    <message key="xmlui.Submission.submit.AccessStep.review_public_item">Vnos bo iskljiv</message>
@@ -1105,7 +1107,7 @@
    <message key="xmlui.administrative.Navigation.context_export_collection">Izvoz zbirke</message>
    <message key="xmlui.administrative.Navigation.context_export_community">Izvoz skupnosti</message>
    <message key="xmlui.administrative.Navigation.context_export_metadata">Izvoz metapodatkov</message>
-   <message key="xmlui.administrative.Navigation.context_search_export_metadata" status="dspace6">Izvoz iskanja metapodatkov</message>
+   <message key="xmlui.administrative.Navigation.context_search_export_metadata">Izvoz iskanja metapodatkov</message>
    <!-- Site administrator options -->
 <message key="xmlui.administrative.Navigation.administrative_head">Administrativno</message>
    <message key="xmlui.administrative.Navigation.administrative_access_control">Nadzor dostopa</message>
@@ -2129,11 +2131,11 @@
    <message key="xmlui.administrative.ControlPanel.headers">Glave: {0}</message>
    <message key="xmlui.administrative.ControlPanel.cookies">Piškotki: {0}</message>
    <message key="xmlui.administrative.ControlPanel.select_panel">Uporabite zgornje zavihke, da izberete informacije za prikaz</message>
-   <message key="xmlui.administrative.ControlPanel.tabs.Java Information" status="dspace6">Informacije o Javi</message>
-   <message key="xmlui.administrative.ControlPanel.tabs.Configuration" status="dspace6">Konfiguracija</message>
-   <message key="xmlui.administrative.ControlPanel.tabs.SystemWide Alerts" status="dspace6">Sistemska opozorila</message>
-   <message key="xmlui.administrative.ControlPanel.tabs.Harvesting" status="dspace6">Zajemanje</message>
-   <message key="xmlui.administrative.ControlPanel.tabs.Current Activity" status="dspace6">Trenutna dejavnost</message>
+   <message key="xmlui.administrative.ControlPanel.tabs.Java Information">Informacije o Javi</message>
+   <message key="xmlui.administrative.ControlPanel.tabs.Configuration">Konfiguracija</message>
+   <message key="xmlui.administrative.ControlPanel.tabs.SystemWide Alerts">Sistemska opozorila</message>
+   <message key="xmlui.administrative.ControlPanel.tabs.Harvesting">Zajemanje</message>
+   <message key="xmlui.administrative.ControlPanel.tabs.Current Activity">Trenutna dejavnost</message>
 
    <!-- <UFAL> -->
 <message key="xmlui.administrative.handle.general.handle">Handle</message>
@@ -2386,7 +2388,7 @@
    <message key="xmlui.dri2xhtml.METS-1.0.item-files-checksum">MD5</message>
    <message key="xmlui.ufal.METS-1.0.item-collections">Zbirke</message>
    <message key="xmlui.dri2xhtml.METS-1.0.item-relation-isreferencedby">Dokumentirano v</message>
-   <message key="xmlui.dri2xhtml.METS-1.0.item-pid" status="missed">Identifikator vnosa</message>
+   <message key="xmlui.dri2xhtml.METS-1.0.item-pid">Identifikator vnosa</message>
    <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bajtov</message>
    <message key="xmlui.dri2xhtml.METS-1.0.size-kilobytes">KB</message>
    <message key="xmlui.dri2xhtml.METS-1.0.size-megabytes">MB</message>
@@ -2601,7 +2603,7 @@
    <message key="xmlui.aspect.sherpa.submission.blue">modra</message>
    <message key="xmlui.aspect.sherpa.submission.white">bela</message>
    <message key="xmlui.aspect.sherpa.submission.yellow">rumena</message>
-   <message key="xmlui.aspect.sherpa.submission.gray" status="missed">siva</message>
+   <message key="xmlui.aspect.sherpa.submission.gray">siva</message>
    <!-- End Versioning -->
 <message key="xmlui.mirage2.itemSummaryView.MetaData">Metapodatki</message>
    <message key="xmlui.mirage2.itemSummaryView.Collections">Zbirke</message>
@@ -2622,11 +2624,11 @@
    <message key="xmlui.mirage2.navigation.rss.feed">vir</message>
    <message key="xmlui.mirage2.choice-authority-control.loading">Nalaganje ...</message>
    <message key="xmlui.mirage2.item-list.thumbnail">Sličica</message>
-   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_lookup" status="dspace6">Išči</message>
-   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.title" status="dspace6">Iskanje objav</message>
-   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.lookup_help" status="dspace6">Vnesite ID, DOI, naslov ali avtorja objave in kliknite "Išči". Prikazal se bo seznam vseh ustreznih objav, s katerega boste lahko izbrali želeno objavo.</message>
-   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_publication_item" status="dspace6">Zapis uvoženih objav</message>
-   <message key="xmlui.Submission.submit.progressbar.lookup" status="dspace6">Iskanje</message>
+   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_lookup">Išči</message>
+   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.title">Iskanje objav</message>
+   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.lookup_help">Vnesite ID, DOI, naslov ali avtorja objave in kliknite "Išči". Prikazal se bo seznam vseh ustreznih objav, s katerega boste lahko izbrali želeno objavo.</message>
+   <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_publication_item">Zapis uvoženih objav</message>
+   <message key="xmlui.Submission.submit.progressbar.lookup">Iskanje</message>
 
    <!-- Discovery -->
 <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
@@ -2634,14 +2636,14 @@
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.subject_filter">Ključna beseda</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.type_filter">Vrsta vsebine</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.date.issued">Datum izdaje</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_has_content_in_original_bundle" status="dspace6">Vsebuje datoteke</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_true" status="dspace6">Da</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_false" status="dspace6">Ne</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_has_content_in_original_bundle">Vsebuje datoteke</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_true">Da</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_false">Ne</message>
 
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Datum izdaje</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_rights">Pravice</message>
    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type">Vrsta</message>
-   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mediatype" status="missed">Vrsta medija</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mediatype">Vrsta medija</message>
    <!-- Site Leve Recently Added Content -->
 <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Najnovejši vnosi</message>
    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Poglejte več</message>
@@ -2692,7 +2694,7 @@
    <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_desc">Datum izdaje (padajoče)</message>
    <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_asc">Naslov (naraščajoče)</message>
    <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_asc">Datum izdaje (naraščajoče)</message>
-   <message key="xmlui.Discovery.AbstractSearch.type_language" status="missed">Filtriraj po: Jezik</message>
+   <message key="xmlui.Discovery.AbstractSearch.type_language">Filtriraj po: Jezik</message>
    <message key="xmlui.Discovery.AbstractSearch.rpp">Rezultati na stran:</message>
    <message key="xmlui.Discovery.AbstractSearch.filters.controls.add-filter">Dodaj filter</message>
    <message key="xmlui.Discovery.AbstractSearch.filters.controls.apply-filters">Uporabi</message>
@@ -2700,24 +2702,24 @@
    <message key="xmlui.Discovery.AbstractSearch.filters.controls.new-filters.head">Novi filtri:</message>
    <message key="xmlui.Discovery.AbstractSearch.filters.controls.current-filters.head">Trenutni filtri:</message>
    <message key="xmlui.Discovery.AbstractSearch.filters.display">Dodajanje filtrov:</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.publisher_filter" status="missed">Izdajatelj</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language_filter" status="missed">Jezik</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type_filter" status="missed">Vrsta</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype_filter" status="missed">Vrsta medija</message>
-   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_file_b" status="missed">Vsebuje datoteke</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.title_sort" status="missed">Naslov</message>
-   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.date.issued_dt" status="missed">Datum izdaje</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.publisher_filter">Izdajatelj</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language_filter">Jezik</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type_filter">Vrsta</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype_filter">Vrsta medija</message>
+   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_file_b">Vsebuje datoteke</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.title_sort">Naslov</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.date.issued_dt">Datum izdaje</message>
    <message key="xmlui.discovery.SearchFacetFilter.no-results">Strani ni bilo mogoče najti</message>
    <message key="xmlui.discovery.AbstractFiltersTransformer.filters.head">Odkrij</message>
    <message key="xmlui.discovery.AbstractFiltersTransformer.filters.view-more">... poglejte več</message>
    <message key="xmlui.Discovery.SimpleSearch.search_scope">Išči</message>
    <message key="xmlui.discovery.SimpleSearch.search_label">Išči</message>
    <message key="xmlui.Discovery.SimpleSearch.filter_head">Filtri</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter_add" status="missed">Dodajanje filtrov</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter_add">Dodajanje filtrov</message>
    <message key="xmlui.Discovery.SimpleSearch.filter_help">Uporabite filtre za omejitev rezultatov iskanja.</message>
-   <message key="xmlui.Discovery.SimpleSearch.filter_apply" status="missed">Posodobitev filtrov</message> 
-   <message key="xmlui.Discovery.SimpleSearch.sort_head" status="missed">Možnosti razvrščanja:</message>
-   <message key="xmlui.Discovery.SimpleSearch.sort_apply" status="missed">Uporabi</message>
+   <message key="xmlui.Discovery.SimpleSearch.filter_apply">Posodobitev filtrov</message> 
+   <message key="xmlui.Discovery.SimpleSearch.sort_head">Možnosti razvrščanja:</message>
+   <message key="xmlui.Discovery.SimpleSearch.sort_apply">Uporabi</message>
    <message key="xmlui.Discovery.SimpleSearch.filter.contains">Vsebuje</message>
    <message key="xmlui.Discovery.SimpleSearch.filter.equals">Je enako</message>
    <message key="xmlui.Discovery.SimpleSearch.filter.authority">ID</message>
@@ -2833,7 +2835,7 @@
    <message key="xmlui.swordclient.SelectPackagingAction.package_formats">Format paketa</message>
    <message key="xmlui.swordclient.SelectPackagingAction.packageFormat_error">Izbran je bil nepodprt format paketa</message>
    <message key="xmlui.swordclient.DepositAction.success">Vnos je bil uspešno kopiran</message>
-   <message key="xmlui.swordclient.DepositAction.package_format_error" status="dspace6">Napaka v formatu paketa</message>
+   <message key="xmlui.swordclient.DepositAction.package_format_error">Napaka v formatu paketa</message>
    <message key="xmlui.swordclient.DepositAction.invalid_handle">Izbriši handle</message>
    <message key="xmlui.swordclient.DepositAction.package_error">Pri ustvarjanju paketa je prišlo do napake</message>
    <message key="xmlui.swordclient.DepositAction.error">Pri vnašanju je prišlo do napake: {0}</message>
@@ -2867,8 +2869,8 @@
    <message key="xmlui.UFAL.artifactbrowser.piwik.views">Ogledi skozi čas</message>
    <message key="xmlui.UFAL.artifactbrowser.item_view.replaced_one">Ta vnos je bil nadomeščen z novejšim.</message>
    <message key="xmlui.UFAL.artifactbrowser.item_view.replaced_many">Ta vnos je bil nadomeščen z novejšimi.</message>
-   <message key="xmlui.UFAL.artifactbrowser.item_view.versions_dt" status="missed">Druge različice</message>
-   <message key="xmlui.UFAL.artifactbrowser.item_view.versions_dropdown" status="missed">Seznam vseh različic</message>
+   <message key="xmlui.UFAL.artifactbrowser.item_view.versions_dt">Druge različice</message>
+   <message key="xmlui.UFAL.artifactbrowser.item_view.versions_dropdown">Seznam vseh različic</message>
    <message key="xmlui.UFAL.artifactbrowser.item_view.licensed_under">To je vnos {0} z licenco:<BR/>
    </message>
    <message key="xmlui.UFAL.artifactbrowser.item_view.preview">Predogled</message>
@@ -3132,4 +3134,4 @@
    <message key="xmlui.ContractPage.collection_name">{0}</message>
    <!-- The following string says that what is in the english agreement goes, the translated agreement is for convenience only. see https://github.com/ufal/lindat-dspace/pull/491#issue-138531828 -->
 <message key="xmlui.ContractPage.explain_non_localized_license">Pogodba je sklenjena v angleščini in njeno celotno besedilo si lahko ogledate spodaj. Slovenski prevod je namenjen le orientaciji. V primeru neskladij velja angleška različica.</message>
-</catalogue> 
+</catalogue>
