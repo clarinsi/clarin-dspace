@@ -3187,6 +3187,7 @@
 	<message key="input_forms.value_pairs.metashare_sizeunit.idiomaticExpressions">idiomaticExpressions</message>
 	<message key="input_forms.value_pairs.metashare_sizeunit.neologisms">neologisms</message>
 	<message key="input_forms.value_pairs.metashare_sizeunit.multiWordUnits">multiWordUnits</message>
+	<message key="input_forms.value_pairs.metashare_sizeunit.collocations">collocations</message>
 	<message key="input_forms.value_pairs.metashare_sizeunit.expressions">expressions</message>
 	<message key="input_forms.value_pairs.metashare_sizeunit.synsets">synsets</message>
 	<message key="input_forms.value_pairs.metashare_sizeunit.classes">classes</message>

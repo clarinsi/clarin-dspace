@@ -837,6 +837,10 @@
                 <stored-value>multiWordUnits</stored-value>
             </pair>
             <pair>
+                <displayed-value>input_forms.value_pairs.metashare_sizeunit.collocations</displayed-value>
+                <stored-value>collocations</stored-value>
+            </pair>
+            <pair>
                 <displayed-value>input_forms.value_pairs.metashare_sizeunit.expressions</displayed-value>
                 <stored-value>expressions</stored-value>
             </pair>
