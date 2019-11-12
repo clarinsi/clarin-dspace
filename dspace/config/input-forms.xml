@@ -834,6 +834,10 @@
                 <stored-value>neologisms</stored-value>
             </pair>
             <pair>
+                <displayed-value>input_forms.value_pairs.metashare_sizeunit.translationUnits</displayed-value>
+                <stored-value>translationUntis</stored-value>
+            </pair>
+            <pair>
                 <displayed-value>input_forms.value_pairs.metashare_sizeunit.multiWordUnits</displayed-value>
                 <stored-value>multiWordUnits</stored-value>
             </pair>

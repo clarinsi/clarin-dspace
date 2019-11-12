@@ -3079,6 +3079,7 @@ Google Analytics Statistics Aspect
   <message key="input_forms.value_pairs.metashare_sizeunit.keywords">ključnih besed</message>
   <message key="input_forms.value_pairs.metashare_sizeunit.idiomaticExpressions">idiomov</message>
   <message key="input_forms.value_pairs.metashare_sizeunit.neologisms">neologizmov</message>
+  <message key="input_forms.value_pairs.metashare_sizeunit.translationUnits">prevodnih enot</message>
   <message key="input_forms.value_pairs.metashare_sizeunit.multiWordUnits">večbesednih enot</message>
   <message key="input_forms.value_pairs.metashare_sizeunit.collocations">kolokacij</message>
   <message key="input_forms.value_pairs.metashare_sizeunit.expressions">izrazov</message>
