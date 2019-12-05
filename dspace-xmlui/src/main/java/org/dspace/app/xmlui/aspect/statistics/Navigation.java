@@ -21,6 +21,7 @@ import org.dspace.content.Item;
 import org.apache.cocoon.caching.CacheableProcessingComponent;
 import org.apache.excalibur.source.SourceValidity;
 import org.apache.excalibur.source.impl.validity.NOPValidity;
+import org.dspace.core.ConfigurationManager;
 import org.dspace.core.Constants;
 import org.dspace.core.Context;
 import org.dspace.services.ConfigurationService;
@@ -32,6 +33,8 @@ import cz.cuni.mff.ufal.dspace.app.xmlui.aspect.statistics.PiwikStatisticsTransf
 import java.io.Serializable;
 import java.io.IOException;
 import java.sql.SQLException;
+
+import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
 /**
  * Navigation Elements for viewing statistics related to Items.
@@ -47,6 +50,7 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
     private static final Message T_statistics_usage_view = message("xmlui.statistics.Navigation.usage.view");
     private static final Message T_statistics_search_view = message("xmlui.statistics.Navigation.search.view");
     private static final Message T_statistics_workflow_view = message("xmlui.statistics.Navigation.workflow.view");
+    private static final Message T_statistics_ga_head = message("xmlui.statistics.Navigation.ga.title");
 
     public Serializable getKey() {
         //TODO: DO THIS
@@ -112,6 +116,15 @@ public class Navigation extends AbstractDSpaceTransformer implements CacheablePr
             }
         }
 
+        //show ga link only if we have a key file set
+        if(isNotBlank(ConfigurationManager.getProperty("lr", "lr.ga.analytics.key.file"))) {
+            // ufal - this is called only for authorised with admin rights (e.g., admin rights to a community/collection)
+            if (dso != null && dso.getHandle() != null) {
+                statistics.addItemXref(contextPath + "/handle/" + dso.getHandle() + "/statistics-google", T_statistics_ga_head);
+            } else {
+                statistics.addItemXref(contextPath + "/statistics-google", T_statistics_ga_head);
+            }
+        }
     }
 
     protected boolean displayStatsType(Context context, String type, DSpaceObject dso) throws SQLException {
