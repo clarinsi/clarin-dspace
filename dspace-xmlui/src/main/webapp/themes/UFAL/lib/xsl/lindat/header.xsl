@@ -30,7 +30,7 @@
         <xsl:variable name="path" select="file:new($localizedDiskPath)"/>
       <xsl:choose>
           <xsl:when test="file:isFile($path)">
-              <xsl:copy-of select="document($localizedDiskPath)" />
+              <xsl:copy-of select="document(concat('../../lindat/',$currentLocale,'/header.htm'))" />
           </xsl:when>
           <xsl:otherwise>
               <xsl:copy-of select="document('../../lindat/header.htm')" />
