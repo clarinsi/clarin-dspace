@@ -608,47 +608,37 @@
 						<xsl:if
 							test="count(xalan:nodeset($my_elem)/node()) = 0">
 							<div class="spacer">&#160;</div>
-						</xsl:if>						
+						</xsl:if>
 						<xsl:for-each
 							select="xalan:nodeset($my_elem)/node()">
-								<div class="funding">
+								<span class="funding">
 									<xsl:choose>
 										<xsl:when test="xalan:nodeset($my_elem)/dim:field[@element='sponsor']"> 
 											<xsl:for-each select="xalan:tokenize(./node(),'@@')">
 												<xsl:choose>
 													<xsl:when test="position()=1">
-														<p class="funding-org"><xsl:value-of select="."/></p>
+													  <span><xsl:value-of select="."/></span>
 													</xsl:when>
 													<xsl:when test="position()=2">
-														<p class="funding-code">
-															<i18n:translate>
-																<i18n:text>xmlui.UFAL.artifactbrowser.project.code</i18n:text>
-																<i18n:param><xsl:value-of select="."/></i18n:param>
-															</i18n:translate>
-														</p>
+                                                                                                          <span><xsl:value-of select="."/></span>
 													</xsl:when>
 													<xsl:when test="position()=3">
-														<p class="funding-name">
-															<i18n:translate>
-																<i18n:text>xmlui.UFAL.artifactbrowser.project.name</i18n:text>
-																<i18n:param><xsl:value-of select="."/></i18n:param>
-															</i18n:translate>
-														</p>
+                                                                                                          <span>"<xsl:value-of select="."/>"</span>
 													</xsl:when>
 												</xsl:choose>
 											</xsl:for-each>
 										</xsl:when>
 										<xsl:otherwise>
-											<p class="funding-name"><xsl:value-of select="concat('Project name: ' , substring-after(.,'-'))"/></p>
+											<span><xsl:value-of select="concat('Project name: ' , substring-after(.,'-'))"/></span>
 										</xsl:otherwise>
 									</xsl:choose>
-								</div>
+								</span>
 								
 							<xsl:if
 								test="count(xalan:nodeset($my_elem)/node()) != position()">
-								<div class="spacer">&#160;</div>
+								<div class="spacer"></div>
 							</xsl:if>
-						</xsl:for-each>						
+						</xsl:for-each>
 					</dd>
 				</dl>
 				<xsl:call-template name="itemSummaryView-DIM-fields">
