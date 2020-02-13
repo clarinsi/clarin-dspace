@@ -32,7 +32,9 @@ settings = {
     "mime_type": {
         "application/zip": "unzip -t %s",
         "application/x-xz": "xz -t %s",
-        "application/x-gzip": "gunzip -t %s",
+        "application/gzip": "gunzip -tv %s",
+        "application/x-gzip": "gunzip -tv %s",
+        "application/xml": "xmllint --noout %s",
         "application/x-bzip2": "bunzip2 -t %s",
         "application/x-tar": "tar -tvf %s",
         "image/png": "pngcheck %s",
