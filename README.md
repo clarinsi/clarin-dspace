@@ -9,7 +9,7 @@
 
 # clarin-dspace deployments
 
-* LINDAT/CLARIN: https://lindat.mff.cuni.cz/repository/xmlui/
+* LINDAT/CLARIAH-CZ: https://lindat.mff.cuni.cz/repository/xmlui/
 * CLARINO: https://repo.clarino.uib.no/xmlui/
 * CLARIN.SI: https://www.clarin.si/repository/xmlui/
 * CLARIN-PL: https://clarin-pl.eu/dspace/
@@ -20,6 +20,7 @@
 * CLARIN-LT:
 * SWE-CLARIN:
 * CLARIN-DK: https://repository.clarin.dk/repository/xmlui/
+* Árni Magnússon Institute for Icelandic Studies (CLARIN-IS): https://repository.clarin.is/repository/xmlui/
 * University of Oxford - Oxford Text Archive:
 * RDA EU – ENVRI Summer School:
 * Centrum orální historie ÚSD AV ČR:
@@ -52,7 +53,7 @@ Note: You should fork these projectbecause they will very likely require changes
 ## Projects somehow related to clarin-dspace repository
 
 * https://github.com/ufal/lindat-repository-vagrant
-* https://github.com/ufal/lindat-license-selector
+* https://github.com/ufal/public-license-selector
 * https://github.com/ufal/lr-b2safe-core
 * https://github.com/ufal/lr-b2safe-dspace
 * https://github.com/ufal/lindat-aai-info

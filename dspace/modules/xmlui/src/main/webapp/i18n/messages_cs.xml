@@ -28,7 +28,7 @@
 		--> 
 	
 	<!-- General keys -->
-	<message key="xmlui.general.dspace_home">Domovská stránka repozitáře LINDAT/CLARIN</message>
+	<message key="xmlui.general.dspace_home">Domovská stránka repozitáře LINDAT/CLARIAH-CZ</message>
 	<message key="xmlui.general.search">Hledat</message>
 	<message key="xmlui.general.go">Vykonat</message>
 	<message key="xmlui.general.go_home">Přejít na domovskou stránku repozitáře</message>
@@ -76,7 +76,7 @@
 	<!--
 		This section is for feed syndications (RSS, atom, etc)  
 	-->
-	<message key="xmlui.feed.general_description">Digitální repozitář LINDAT/CLARIN přijímá, ukládá, indexuje, uchovává a šíří digitální vědeckovýzkumné dokumenty.</message>
+	<message key="xmlui.feed.general_description">Digitální repozitář LINDAT/CLARIAH-CZ přijímá, ukládá, indexuje, uchovává a šíří digitální vědeckovýzkumné dokumenty.</message>
 	<message key="xmlui.feed.header">Kanály RSS</message>
 	<message key="xmlui.feed.logo_title">Obrázek kanálu</message>
 	<message key="xmlui.feed.untitled">Nepojmenovaný</message>
@@ -624,7 +624,7 @@
 	<!-- org.dspace.app.xmlui.eperson.WelcomeLogin.java -->
 	<message key="xmlui.EPerson.WelcomeLogin.title">Uvítací zpráva</message>
 	<message key="xmlui.EPerson.WelcomeLogin.trail">Uvítací zpráva</message>
-	<message key="xmlui.EPerson.WelcomeLogin.head1">Vítejte v repozitáři LINDAT/CLARIN</message>
+	<message key="xmlui.EPerson.WelcomeLogin.head1">Vítejte v repozitáři LINDAT/CLARIAH-CZ</message>
 	<message key="xmlui.EPerson.WelcomeLogin.head2">Ochrana soukromí</message>
 	<message key="xmlui.EPerson.WelcomeLogin.para1">Informace poskytnuté Vaší domovskou organizací jsou zobrazeny níže.</message>
 	<message key="xmlui.EPerson.WelcomeLogin.warn1"><div class="bold text-error">Používáme pouze povinné attributy tak jak jsou zmíněny v <a href="http://lindat.mff.cuni.cz/privacypolicy.html" target="_blank" class="bold">http://lindat.mff.cuni.cz/privacypolicy.html</a>.<BR /> Atributy jsou nějaký čas uchovány v záznamech.</div></message>
@@ -710,7 +710,15 @@
 	<message key="xmlui.EPerson.StartRegistration.email_address_help">Tato adresa bude ověřena a použita jako vaše přihlašovací jméno.</message>
 	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Nepodařilo se zaslat e-mail na tuto adresu.</message>
 	<message key="xmlui.EPerson.StartRegistration.submit_register">Zaregistrovat se</message>
-	
+
+
+	<message key="xmlui.EPerson.SetEmailStart.para2">Váš IDP (domovská organizace) nám neposkytl vaši emailovou
+		adresu. Pokud chcete přidávat záznamy do repozitáře, stahovat veřejně nedostupné záznamy, případně se
+		přihlásit k zásílání statistik a novinek, vyplňte a ověřte váš email.</message>
+	<message key="xmlui.EPerson.SetEmailStart.email_address_help">Tato adresa bude ověřena a zapamatována,
+		dokud při vašem přihlášení nedostaneme od IDP adresu jinou. I nadále se přihlašujete skrze vaši
+		domovskou organizaci.</message>
+
 	<!-- org.dspace.app.xmlui.eperson.VerifyEmail.java -->
 	<message key="xmlui.EPerson.VerifyEmail.title">Registrační e-mail zaslán</message>
 	<message key="xmlui.EPerson.VerifyEmail.head">Registrační e-mail zaslán</message>
@@ -907,6 +915,7 @@
         <message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.error">Vyskytl se problém s načtením řízeného slovníku. Zkuste to, prosím, znovu později.</message>
 	<message key="xmlui.Submission.submit.DescribeStep.missing_field">Vyplňte prosím všechna pole.</message>
 	<message key="xmlui.Submission.submit.DescribeStep.regexp_error">Hodnota neodpovídá danému regulárnímu výrazu (formátu) "{0}"</message>
+	<message key="xmlui.Submission.submit.DescribeStep.english_only">Tam, kde je to možné, vyplňte metadatová pole v angličtině (zejména pole pro volný text, např. popis).</message>
 
 	<!-- org.dspace.app.xmlui.Submission.submit.UFALLicenseStep -->
 	<message key="xmlui.Submission.submit.NA">N/A</message>
@@ -3216,7 +3225,7 @@
 
 	<!-- ufal theme -->
 	<message key="UFAL.firstpage.title">Repozitář</message>
-	<message key="UFAL.firstpage.title.text">Vítejte v LINDAT/CLARIN - Centru jazykové výzkumné infrastruktury v České republice</message>
+	<message key="UFAL.firstpage.title.text">Vítejte v LINDAT/CLARIAH-CZ - Centru jazykové výzkumné infrastruktury v České republice</message>
 
 	<!-- UFAL/lib/xsl/aspect/artifactbrowser/item-list.xsl -->
 	<message key="xmlui.UFAL.artifactbrowser.item-contains-one-file">Tento záznam obsahuje {0} soubor ({1}).</message>
@@ -3235,7 +3244,6 @@
 	<message key="xmlui.UFAL.artifactbrowser.authors">Autoři</message>
 	<message key="xmlui.UFAL.artifactbrowser.project.code">Kód projektu: {0}</message>
 	<message key="xmlui.UFAL.artifactbrowser.project.name">Jméno projektu: {0}</message>
-	<message key="xmlui.UFAL.artifactbrowser.piwik.views">Zobrazení v čase (prozatím pouze v angličtině)</message>
 	<message key="xmlui.UFAL.artifactbrowser.item_view.replaced_one">Tento záznam byl nahrazen novější verzí:</message>
 	<message key="xmlui.UFAL.artifactbrowser.item_view.replaced_many">Tento záznam byl nahrazen novějšími verzemi:</message>
 	<message key="xmlui.UFAL.artifactbrowser.item_view.versions_dt">Ostatní verze</message>
@@ -3421,6 +3429,8 @@
 	<message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.other">other</message>
 	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.N/A">N/A</message>
 	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.grammar">grammar</message>
+	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.mlmodel">machine learning model</message>
+	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.ngrammodel">n-gram model</message>
 	<message key="input_forms.value_pairs.metashare_detailed_languageDescription.other">other</message>
 	<message key="input_forms.value_pairs.metashare_funding.N/A">N/A</message>
 	<message key="input_forms.value_pairs.metashare_funding.euFunds">EU</message>

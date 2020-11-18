@@ -39,6 +39,7 @@
 				<xsl:if test="not(//dri:div[@n='site-home'])">
 					<li class="always-open hidden-xs">
 						<div style="background-color: #FFFFFF;" class="clearfix">
+
 							<div class="col-sm-12 text-center" style="height: 120px; position: relative;">
 								<a href="http://www.clarin.si/">
 									<img alt="CLARIN logo" class="img-responsive" style="position: absolute; bottom: 0px; left: 0px; right: 0px; padding: 10px;" src="{$context-path}/themes/UFAL/images/lindat/clarin-logo.png" />
@@ -47,12 +48,9 @@
 						</div>					
 					</li>
 				</xsl:if>
-				<li class="always-open hidden-xs">
-					<xsl:call-template name="howto-panel" />
-				</li>
 				<xsl:apply-templates select="dri:list[count(child::*)!=0]" />
 				<xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed']">
-					<li class="always-open">
+					<li class="">
 						<xsl:call-template name="addRSSLinks" />
 					</li>				
 				</xsl:if>
@@ -266,7 +264,7 @@
 
     <!-- Add each RSS feed from meta to a list -->
     <xsl:template name="addRSSLinks">
-        <a>
+        <a href="#" class="dropdown-toggle">
                 <i class="fa fa-rss-square ">&#160;</i>
                 <span class="menu-text">
                         RSS Feed
@@ -313,27 +311,6 @@
 	</xsl:template>
 
     
-    <xsl:template name="howto-panel">
-                <a>
-                        <i class="fa fa-question-circle">&#160;</i>
-                        <span class="menu-text">
-							<i18n:text>xmlui.UFAL.navigation.menu_head</i18n:text>
-                        </span>
-                </a>
-                <ul class="submenu" style="padding-bottom: 8px;">
-                        <li>
-                        <a href="{$context-path}/page/deposit" style="border-top: none; padding: 7px 0px 8px 18px">
-                                <img src="{$context-path}/themes/UFALHome/lib/images/deposit.png" align="left" class="deposit" />
-                        </a>
-                        </li>
-                        <li>
-                                <a href="{$context-path}/page/cite" style="border-top: none; padding: 7px 0px 8px 18px;">
-                                <img src="{$context-path}/themes/UFALHome/lib/images/cite.png" align="right" class="cite" />
-                                </a>
-                        </li>
-                </ul>
-    </xsl:template>
-
 	<xsl:template name="navbar">
 		<nav class="navbar-fixed-top">
 			<div class="container-fluid">
