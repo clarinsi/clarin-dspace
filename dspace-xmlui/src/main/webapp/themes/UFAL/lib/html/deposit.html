@@ -209,7 +209,7 @@
             <li>The "Demo URL" gives the URL of the web application where the resource
               is available for browsing, reading or analysis. For example, a deposited
               corpus might be also available in a digital library, a machine-readable
-              dictionary of a dictionary portal, a computer program as an API etc</li>
+              dictionary on a dictionary portal, and a computer program as an API.</li>
             <li>The "Referenced by" gives the URLs of any publications that reference
               the dataset. If a publication has a DOI URL, this is the one that should
               be used</li>
@@ -218,11 +218,11 @@
       </div>
       <div id="dateIssued">
         <h4>Date issued</h4>
-        <p style="margin-top: 10px; margin-bottom: 10px;">The date issued will typically
-          give the date when you are creating the repository entry.</p>
-        <div class="alert">The date should be exact, e.g.  2020-11-01. In certain cases,
-          esp. when the resource had already been published elsewhere before, the date
-          of the original publication should be given.</div>
+        <div class="alert">The date issued will typically give the date when you
+          submit the repository entry. The date should be exact, e.g.  2020-11-01. In
+          certain cases, esp. when the resource had already been published elsewhere
+          before, the date of the original publication of the resource should be
+          given.</div>
       </div>
     </div>
     <div id="screen2">
@@ -263,7 +263,7 @@
         </figure>
         <p style="margin-top: 10px; margin-bottom: 10px;">Next you must give the name,
           email and institution of the <em>contact person</em> for this item. The
-          contact person is typically, but not necessarily the person submitting the
+          contact person is typically, but not necessarily, the person submitting the
           item. It is possible to give more than one contact person.</p>
       </div>
       <div id="funding">
@@ -279,7 +279,7 @@
           funded the creation of the resource.</p>
         <div class="alert">If you will enter "EU funding", extra care should be taken
           with the project code, as your entry will then be automatically connected
-          to <a href="https://explore.openaire.eu/search/dataprovider?datasourceId=re3data_____::fe0d76581a60e1287a93e2ed2cb29339">OpenAIRE</a></div>
+          to <a href="https://explore.openaire.eu/search/dataprovider?datasourceId=re3data_____::fe0d76581a60e1287a93e2ed2cb29339">OpenAIRE</a>.</div>
         <p style="margin-top: 10px; margin-bottom: 10px;">Here are some examples from
           existing entries: </p>
         <ul>
@@ -338,9 +338,17 @@
           <img src="../themes/UFAL/images/deposit/figure12.png" class="print_screen_img" width="700" />
           <figcaption>Figure 12. Entering the language(s).</figcaption>
         </figure>
-        <p style="margin-top: 10px; margin-bottom: 10px;">Start typing the language and
-          use autocomplete form that will appear. You can also
+        <p style="margin-top: 10px; margin-bottom: 10px;">In this field you should
+          enter the language(s) that your resource contains data for. Start
+          typing the language and use autocomplete form that will appear. You can
+          also
 	  <a href="https://www.clarin.si/repository/xmlui/browse?type=language&amp;locale-attribute=en">Browse the CLARIN.SI repository by language.</a></p>
+        <div class="alert">Even if the language of the resource is a dialect, choose
+        the official language that it is a dialect of (but the fact that it is a
+        dialect should be, of course, mentioned in its title and description). For
+        multilingual resources, several languages can be chosen. If the resource is a
+        program ("toolResource") which is language independent, the language field
+        should be left blank.</div>
       </div>
       <div id="keywords">
         <h4>Keywords</h4>
@@ -351,10 +359,12 @@
         <p style="margin-top: 10px; margin-bottom: 10px;">At least one keyword should be
           entered here, but more are better. It is possible to see the list of all
           existing keywords by browsing the repository
-          by <a href="https://beta.clarin.si/repository/xmlui/browse?type=subject">Subjects</a></p>
-        <div class="alert"> If at all possible, choose existing keywords that appear in
-          the drop-down list after you start typing. Note that the keywords should,
-          except for proper nouns, all be lower case.</div>
+          by <a href="https://www.clarin.si/repository/xmlui/browse?type=subject">Subjects</a></p>
+        <div class="alert"> If at all possible, choose existing keywords that appear
+          in the drop-down list after you start typing. Note that the keywords
+          should, except for proper nouns, all be lower case. You should not enter
+          the language(s) of the resource in this field, as they are already covered
+          by the dedicated "language" field.</div>
       </div>
       <div id="size">
         <h4>Size</h4>
@@ -366,7 +376,7 @@
           should be given in as many sensible categories as possible.</p>
         <div class="alert"> The numbers should be exact, and follow from trivial
           counting of characters, lines, XML elements etc. In this way, they can also
-          serve as a simple "checksum" for the resource.</div>
+          serve as a simple checksum for the resource.</div>
       </div>
       <div id="mediaType">
         <h4>Media type</h4>
@@ -377,7 +387,7 @@
         <p style="margin-top: 10px; margin-bottom: 10px;">Here, a more precise category
           of the resource should be selected from the drop-down menu.</p>
         <p style="margin-top: 10px; margin-bottom: 10px;">Once you filled the necessary
-          information, click Next to upload the data files.</p>
+          information, click Next to upload the data files in the next step.</p>
       </div>
     </div>
     <div id="screen4">
@@ -389,8 +399,8 @@
       <p style="margin-top: 10px; margin-bottom: 10px;">In this step, you will upload
         the content files of your submission.</p>
       <div class="alert"> CLARIN.SI does not accept metadata-only submissions,
-        i.e. submission without files. The submitted files should follow the CLARIN.SI
-        guidelines for data submissions.</div>
+        i.e. submission without files. The submitted files should follow the
+	<a href="data">CLARIN.SI guidelines for data submissions</a>.</div>
       <p style="margin-top: 10px; margin-bottom: 10px;">A file can be
         added by clicking the browse button and selecting it from
         your computer, or you can directly drag and drop files in
@@ -449,7 +459,7 @@
           can ensure that users must authenticate and sign a license in order to
           download your data (see <a href="./item-lifecycle#restricted-submissions">Restricted
 	    Submissions</a> ). If you need more information about the users
-          than the fact that they authenticated via a university (or similar), we can
+          than the fact that they authenticated via their home institution, we can
           ask for some specific attributes similar to standard web forms. This makes
           sense mostly for data with "no redistribution" clause in their license.</p>
       </div>
