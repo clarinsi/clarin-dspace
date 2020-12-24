@@ -160,10 +160,13 @@
     </div>
     <div id="binary">
       <h3>Accepted binary formats</h3>
-      <p style="margin-top: 10px; margin-bottom: 10px;"> CLARIN.SI accepts data in well-known and/or
-        standard open formats. As most of the submissions involve marked-up or otherwise structured
-        (mostly) textual data, and the rules here are somewhat more complicated, this is covered in
-        the next section. Here we give the other (binary) accepted formats: <ul>
+      <p style="margin-top: 10px; margin-bottom: 10px;">CLARIN.SI accepts data in standard and/or
+        well-known open formats (see also the CLARIN ERIC
+        document <a href='http://www.clarin.eu/sites/default/files/Standards%20for%20LRT-v6.pdf'>Standards
+        for LRT</a>). As most of the submissions involve marked-up or otherwise structured (mostly)
+        textual data, and the rules here are somewhat more complicated, this is covered in the next
+        section. Here we give the other (binary) formats accepted by CLARIN.SI:
+	<ul>
           <li><b>Compression and packaging:</b> GNU ZIP (.gz), ZIP (.zip), TAR (.tar), compressed
             TAR files (.tgz).</li>
           <li><b>Document files:</b> for typeset document files we accept PDF (.pdf), but only for
@@ -174,9 +177,9 @@
             produce or use only binary language models, these are accepted into the repository,
             although we prefer text versions of the models.</li>
           <li><b>Audio files:</b> Wave (.wav), FLAC (.flac), AIFF (.aiff), MPEG 4 audio (.m4a), MP3
-            (.mp3), RAW (.raw). <i>Note that we prefer non-compressed audio files</i>.</li>
+            (.mp3), RAW (.raw). <i>Note that we prefer audio files with lossless or no compression</i>.</li>
           <li><b>Image files:</b> TIFF (.tiff), GIF (.gif), JPEG (.jpg), PNG (.png), SVG (.svg).
-            <i> Note that we prefer non-compressed images</i>.</li>
+            <i>Note that we prefer images with lossless or no compression</i>.</li>
           <li><b>Video files:</b> MPEG video (.mpg, .mpeg, .mp4), AVI (.avi), Motion JPEG 2000
             (.m2j).</li>
         </ul>
@@ -248,7 +251,8 @@
         <h4>XML documents</h4>
         <p style="margin-top: 10px; margin-bottom: 10px;">By far the most common format of
           submissions is XML (.xml), which allows for richly and hierarchically structured text
-          data. CLARIN.SI accepts any valid XML documents, where: <ul>
+          data. CLARIN.SI accepts any valid XML documents, where:
+	  <ul>
             <li>the schema, that is used to validate a document is well-known and publicly available
               from a stable location, which includes the documentation, e.g. RDF/XML (.rdf) or ELAN
               (.eaf); </li>
