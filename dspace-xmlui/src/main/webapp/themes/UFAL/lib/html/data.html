@@ -65,6 +65,17 @@
           </li>
         </ul>
         <li>
+          <a href="#controledValues">Controlled values</a>
+          <ul>
+            <li>
+              <a href="#LanguageCodes">Language codes</a>
+            </li>
+            <li>
+              <a href="#DatesTimes">Dates and times</a>
+            </li>
+          </ul>
+        </li>
+        <li>
           <a href="#binary">Accepted binary formats</a>
         </li>
         <li>
@@ -96,7 +107,13 @@
             <li>
               <a href="#tei">TEI documents</a>
             </li>
+            <li>
+              <a href="#linguistic">Linguistic annotation vocabularies</a>
+            </li>
           </ul>
+        </li>
+        <li>
+          <a href="#references">References</a>
         </li>
       </ul>
     </div>
@@ -156,6 +173,55 @@
                 VideoLectures 4.0 (audio)</a></li>
           </ul>
         </p>
+      </div>
+    </div>
+    <div id="controledValues">
+      <h3>Controlled values</h3>
+      <p style="margin-top: 10px; margin-bottom: 10px;">All dates and times that appear in a
+      machine-processable context should
+      follow <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>, i.e. “2020-12-28” for
+      a date, “23:21:21” for a time, and “2020-12-28T23:21:12” for a combination of the two. If
+      the time zone is important, then this can be specified via the suffix “Z” which refers to
+      the Coordinated Universal Time (mostly the same as Grenwich mean time) and the offset to
+	UTC, e.g. 23:21:12Z+01:00 for Slovenia and most other EU countries.</p>
+      <div id="LanguageCodes">
+        <h4>Language codes</h4>
+        <p style="margin-top: 10px; margin-bottom: 10px;">When the data (or filename) needs to
+        refer to a certain language, language codes should be used, rather than names of
+        languages. When they exists, the
+        two-letter <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1</a>
+        language codes should be used, while for languages that do not have a two-letter code,
+        the <a href="https://en.wikipedia.org/wiki/ISO_639-2">ISO 639-2</a> three letter so
+        called “T-code” should be used, or equivalently, a three letter code
+        from <a href="https://en.wikipedia.org/wiki/ISO_639-3">ISO 639-3</a>, which also contains
+        even more language codes than does ISO 639-2. All three standards concentrate on modern
+        standard languages, although ISO 639-2 and ISO 639-3 also cover some historical variants
+        of a few languages.</p>
+        <p style="margin-top: 10px; margin-bottom: 10px;">If the language resource is of a
+        dialect, or of a historical variant not covered by the ISO standards,
+        then <a href="https://tools.ietf.org/html/bcp47">BCP 47</a> (Tags for Identifying
+        Languages) should be used. In short, this Best Current Practice states that, if possible,
+        the appropriate code from
+        the <a href="https://www.iana.org/assignments/language-subtag-registry">IANA Language
+        Subtag Registry</a> should be used. In case the registry does not contain the required
+        language variant, then the rules for constructing an unregistered code are to start with
+        the code for the language (e.g. “sl” for Slovenian), add the string “-x-” (for
+        “unregistered”) and choose an arbitrary ASCII suffix (e.g. “prekmurje” for the Slovenian
+        Prekmurje dialect), giving “sl-x-prekmurje”.</p>
+        <p style="margin-top: 10px; margin-bottom: 10px;">You can read more about how to choose
+        the correct language (variety) tag in the W3C document
+        “<a href="https://www.w3.org/International/questions/qa-choosing-language-tags">Choosing
+        a Language Tag</a>”.</p>
+      </div>
+      <div id="DatesTimes">
+        <h4>Dates and times</h4>
+        <p style="margin-top: 10px; margin-bottom: 10px;">All dates and times that appear in a
+        machine-processable context should
+        follow <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>, i.e. “2020-12-28”
+        for a date, “23:21:21” for a time, and “2020-12-28T23:21:12” for a combination of the
+        two. If the time zone is important, then this can be specified via the suffix “Z” which
+        refers to the Coordinated Universal Time (mostly the same as Grenwich mean time) and the
+        offset to UTC, e.g. 23:21:12Z+01:00 for Slovenia and most other EU countries.</p>
       </div>
     </div>
     <div id="binary">
@@ -228,15 +294,21 @@
       <div id="tabular">
         <h4>Tabular data</h4>
         <p style="margin-top: 10px; margin-bottom: 10px;">For <b>spreadsheet or database-like data
-          </b>, we accept commonly used formats such as tab (.txt/.tsv/.tab) and comma (.txt/.csv)
-          separated values. Except for well-known tabular formats, such as CoNLL-U (.connlu), the
-          tabular files should contain a header row and the data should be accompanied with a README
-          file, explaining the meaning of the columns.</p>
-        <p style="margin-top: 10px; margin-bottom: 10px;">We also accept the so-called <b>vertical
-            files</b> (.vert/.vrt), which are a mixture of tabular data and XML-like tags, and are
-          used by CQP-based concordancers, i.e. the Corpus Query Workbench, (no)Sketch Engine and
-          KonText. If vertical files are deposited, they should also be accompanied by their
-          registry file. </p>
+          </b>, we accept commonly used formats such as tab (.txt/.tsv/.tab) and comma
+          (.txt/.csv) separated values. The tabular files should contain a header row and the
+          data should be accompanied with a README file, explaining the meaning of the
+          columns.</p>
+	<p style="margin-top: 10px; margin-bottom: 10px;"><b>Annotated corpora</b> can be
+	submitted in the <a href="https://universaldependencies.org/format.html">CoNLL-U
+	format</a> (.connlu) used by the <a href="https://universaldependencies.org/">Universal
+	Dependencies project</a>. We also accept the so-called <b>vertical files</b>
+	(.vert/.vrt), which are a mixture of tabular data and XML-like tags, and are used by
+	CQP-based concordancers, i.e. the Corpus Query Workbench, (no)Sketch Engine and
+	KonText. If vertical files are deposited, they should also be accompanied by their
+	registry file. Many corpora available in the CLARIN.SI repository are, along with their
+	TEI encoding, available also as vertical files, and are also linked to the CLARIN.SI
+	infrastructure <a href="http://clarin.si/noske/index-en.html">(no)Sketch Engine</a>
+	and<a href="https://www.clarin.si/kontext/">KonText</a> concordancers.</p>
       </div>
       <div id="html">
         <h4>HTML documents</h4>
@@ -285,7 +357,42 @@
           schemas (in particular RelaxNG .rng and .rnc) and documentation in at least HTML should
           always accompany such TEI XML data.</p>
       </div>
+      <div id="linguistic">
+        <h4>Linguistic annotation vocabularies</h4>
+	<p style="margin-top: 10px; margin-bottom: 10px;">Most language corpora are annotated on
+	various levels with linguistic categories. These categories must be documented, either on
+	stable external URLs or together with the repository entry, i.e. in included files or,
+	esp. with TEI-encoded corpora, as part of the corpus document itself.</p>
+	<p style="margin-top: 10px; margin-bottom: 10px;">The more commonly used annotation specifications in CLARIN.SI are:
+	  <ul>
+	    <li><a href="https://universaldependencies.org/">Universal
+	    Dependencies</a>: <a href="https://universaldependencies.org/u/overview/morphology.html">morphological
+	    features</a>
+	    and <a href="https://universaldependencies.org/guidelines.html">syntactic
+	    relations</a></li>
+	    <li><a href="http://nl.ijs.si/ME/">MULTEXT-East</a>
+	    (@<a href="https://github.com/clarinsi/mte-msd">GitHub</a>): <a href="http://nl.ijs.si/ME/V6/msd/html/index.html">morphosyntactic
+	    specifications</a>, also available in
+	    various <a href="http://nl.ijs.si/ME/V6/msd/tables/">machine usable formatsa</a>. For
+	    inclusion in XML you can
+	    use <a href="http://nl.ijs.si/ME/V6/msd/tables/msd-fslib2-*.xml">http://nl.ijs.si/ME/V6/msd/tables/msd-fslib2-*.xml</a></li>
+	    <li><a href="http://nl.ijs.si/janes/wp-content/uploads/2017/09/SlovenianNER-eng-v1.1.pdf">Janes
+	    Named Entity Guidelines</a></li>
+	  </ul>
+	</p>
+      </div>
     </div>
-
+    <div id="references">
+      <h3>References</h3>
+      <ul>
+	<li><a href="https://www.clarin.eu/content/standards">CLARIN ERIC: Standards</a></li>
+	<li><a href="https://www.clarin.eu/content/standards-and-formats">CLARIN ERIC: Standards and Formats</a></li>
+	<li><a href="https://arche.acdh.oeaw.ac.at/browser/formats-filenames-and-metadata">ARCHE: Filenames, Formats &amp; Metadata</a></li>
+	<li><a href="https://www.mpi.nl/corpus/html/lamus2/apa.html">MPI: Appendix A. Accepted file types and formats</a></li>
+	<li><a href="http://fedora.clarin-d.uni-saarland.de/ressources/AcceptedFormats.en.pdf">CLARIN-D: Llist of accepted formats</a></li>
+	<li><a href="https://docs.google.com/spreadsheets/d/1MEK-RAqK3eCXb6g8pztB1WI7atzbp3KUZ455izdSJj4/edit#">CLARIN Standards Committee Working Draft: Formats and Mimetypes</a></li>
+	<li><a href="https://docs.google.com/document/d/1Fqp3dI60YgTsMyaz4eqQy-BANxCfaSr5J6DD3aeONCo/">CLARIN Standards Committee Working Draft:: Format and Functiona Families</a></li>
+      </ul>
+    </div>
   </div>
 </body>
