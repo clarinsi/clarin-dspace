@@ -607,6 +607,9 @@
   <message key="xmlui.EPerson.StartRegistration.email_address_help">E-poštni naslov bo preverjen in uporabljali ga boste kot vaše uporabniško ime.</message>
   <message key="xmlui.EPerson.StartRegistration.error_bad_email">Ni mogoče poslati sporočila na ta e-poštni naslov.</message>
   <message key="xmlui.EPerson.StartRegistration.submit_register">Vpis</message>
+  <message key="xmlui.EPerson.SetEmailStart.para2">Vaš IDP (domača organizacija) ni zagotovila vašega e-poštnega naslova. Prosimo, da izpolnite in preverite vaš e-poštni naslov, da lahko ustvarite nove vnose v repozitoriju, prenos omejenih vnosov in, da se lahko naročite na napredne statistike oz. obvestila o posodobitvah zbirk.</message>
+  <message key="xmlui.EPerson.SetEmailStart.email_address_help">Ta e-poštni naslov bo preverjen in shranjen dokler vaš IDP ne zagotovi drugega. Še vedno se boste prijavljali prek vašega IDP.</message>
+
   <!-- org.dspace.app.xmlui.eperson.VerifyEmail.java -->
   <message key="xmlui.EPerson.VerifyEmail.title">Sporočilo za preverjanje je bilo poslano</message>
   <message key="xmlui.EPerson.VerifyEmail.head">Sporočilo za preverjanje je bilo poslano</message>
@@ -781,6 +784,7 @@
   <message key="xmlui.Submission.submit.DescribeStep.controlledvocabulary.error">Pri nalaganju nadzorovanega besednjaka je prišlo do napake. Poskusite kasneje.</message>
   <message key="xmlui.Submission.submit.DescribeStep.missing_field">Izpolnite vsa polja.</message>
   <message key="xmlui.Submission.submit.DescribeStep.regexp_error">Polje ne ustreza zahtevanemu regularnemu izrazu (format) "{0}"</message>
+  <message key="xmlui.Submission.submit.DescribeStep.english_only">Izpolnite metapodatke v angleščini, kjer je to mogoče (to še posebej velja za polja s prostim besedilom, kot npr. naslov ali opis vnosa).</message>
   <!-- org.dspace.app.xmlui.Submission.submit.UFALLicenseStep -->
   <message key="xmlui.Submission.submit.NA">N/A</message>
   <!-- org.dspace.app.xmlui.Submission.submit.ExtraMetadataStep -->
@@ -3050,6 +3054,8 @@ Google Analytics Statistics Aspect
   <message key="input_forms.value_pairs.metashare_detailed_lexicalConceptualResource.other">drugo</message>
   <message key="input_forms.value_pairs.metashare_detailed_languageDescription.N/A">N/A</message>
   <message key="input_forms.value_pairs.metashare_detailed_languageDescription.grammar">slovnica</message>
+  <message key="input_forms.value_pairs.metashare_detailed_languageDescription.mlmodel">model strojnega učenja</message>
+  <message key="input_forms.value_pairs.metashare_detailed_languageDescription.ngrammodel">n-gram model</message>
   <message key="input_forms.value_pairs.metashare_detailed_languageDescription.other">drugo</message>
   <message key="input_forms.value_pairs.metashare_funding.N/A">N/A</message>
   <message key="input_forms.value_pairs.metashare_funding.euFunds">EU</message>
