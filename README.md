@@ -17,11 +17,11 @@
     * ILC4CLARIN: https://dspace-clarin-it.ilc.cnr.it/repository/xmlui/
     * ERCC: https://clarin.eurac.edu/repository/xmlui/
 * CLARIN-ES:
-* CLARIN-LT:
-* SWE-CLARIN:
+* CLARIN-LT: https://clarin.vdu.lt/xmlui/
+* SWE-CLARIN: https://repo.spraakbanken.gu.se/xmlui/
 * CLARIN-DK: https://repository.clarin.dk/repository/xmlui/
 * Árni Magnússon Institute for Icelandic Studies (CLARIN-IS): https://repository.clarin.is/repository/xmlui/
-* University of Oxford - Oxford Text Archive:
+* University of Oxford - Oxford Text Archive: https://ota.bodleian.ox.ac.uk/repository/xmlui/
 * RDA EU – ENVRI Summer School:
 * Centrum orální historie ÚSD AV ČR:
 * Národní filmový archiv:
