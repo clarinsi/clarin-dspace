@@ -15,19 +15,157 @@
     Date: $Date$
 -->
 <catalogue xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xml:lang="sl">
-  <!--
-      The format used by all keys is as follows
-      
-      xmlui.<Aspect>.<Java Class>.<name>
-      
-      There are a few exceptions to this naming format,
-      1) Some general keys are in the xmlui.general namespace 
-      because they are used very frequently.
-      2) Some general keys which are specific to a particular aspect 
-      may be found at xmlui.<Aspect> without specifying a 
-      particular java class. 
-      -->
-  <!-- General keys -->
+  <message key="xmlui.swordclient.Navigation.context_head">Kopija SWORD</message>
+  <message key="xmlui.swordclient.Navigation.context_copy">Kopirajte vnos v drug repozitorij</message>
+  <message key="xmlui.swordclient.general.SwordCopy_trail">Kopija SWORD</message>
+  <message key="xmlui.swordclient.general.main_head">Kopiranje vnosa: {0}</message>
+  <message key="xmlui.swordclient.SelectTarget.title">Ciljno mesto kopije SWORD</message>
+  <message key="xmlui.swordclient.SelectTarget.trail">Izbira ciljnega mesta</message>
+  <message key="xmlui.swordclient.SelectTarget.url">URL</message>
+  <message key="xmlui.swordclient.SelectTarget.other_url">Nadomestni URL</message>
+  <message key="xmlui.swordclient.SelectTarget.username">Uporabniško ime</message>
+  <message key="xmlui.swordclient.SelectTarget.password">Geslo</message>
+  <message key="xmlui.swordclient.SelectTarget.on_behalf_of">V imenu</message>
+  <message key="xmlui.swordclient.SelectTargetAction.url_error">Neveljaven URL</message>
+  <message key="xmlui.swordclient.SelectTargetAction.username_error">Neveljavno uporabniško ime</message>
+  <message key="xmlui.swordclient.SelectTargetAction.password_error">Neveljavno geslo</message>
+  <message key="xmlui.swordclient.SelectTargetAction.serviceDoc_error">Napaka pri pridobivanju dokumenta storitve SWORD: {0}</message>
+  <message key="xmlui.swordclient.SelectCollection.title">Ciljne zbirke SWORD</message>
+  <message key="xmlui.swordclient.SelectCollection.trail">Izbira zbirke</message>
+  <message key="xmlui.swordclient.SelectCollection.collection_head">Zbirka: {0}</message>
+  <message key="xmlui.swordclient.SelectCollection.collection_title">Naslov: {0} </message>
+  <message key="xmlui.swordclient.SelectCollection.collection policy">Politika: {0}</message>
+  <message key="xmlui.swordclient.SelectCollection.collection_mediation">Mediacija: {0}</message>
+  <message key="xmlui.swordclient.SelectCollection.collection_file_types">Vrste datotek: {0}</message>
+  <message key="xmlui.swordclient.SelectCollection.collection_package_formats">Formati paketov: {0}</message>
+  <message key="xmlui.swordclient.SelectCollection.collection_deposit_button">Vnesi v to mesto</message>
+  <message key="xmlui.swordclient.SelectCollection.sub_service_target">Ciljno mesto podstoritve</message>
+  <message key="xmlui.swordclient.SelectCollection.sub_service_target_button">Pridobi dokument podstoritve</message>
+  <message key="xmlui.swordclient.SelectPackagingAction.head">Zbirka: {0}</message>
+  <message key="xmlui.swordclient.SelectPackagingAction.title">Naslov: {0}</message>
+  <message key="xmlui.swordclient.SelectPackagingAction.policy">Politika: {0} </message>
+  <message key="xmlui.swordclient.SelectPackagingAction.mediation">Mediacija: {0} </message>
+  <message key="xmlui.swordclient.SelectPackagingAction.file_types">Vrsta datoteke</message>
+  <message key="xmlui.swordclient.SelectPackagingAction.package_formats">Format paketa</message>
+  <message key="xmlui.swordclient.SelectPackagingAction.packageFormat_error">Izbran je bil nepodprt format paketa</message>
+  <message key="xmlui.swordclient.DepositAction.success">Vnos je bil uspešno kopiran</message>
+  <message key="xmlui.swordclient.DepositAction.invalid_handle">Izbriši handle</message>
+  <message key="xmlui.swordclient.DepositAction.package_error">Pri ustvarjanju paketa je prišlo do napake</message>
+  <message key="xmlui.swordclient.DepositAction.error">Pri vnašanju je prišlo do napake: {0}</message>
+  <message key="xmlui.swordclient.SwordResponse.title">Odziv SWORD-a</message>
+  <message key="xmlui.swordclient.SwordResponse.trail">Odziv SWORD-a</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.contributor.author_filter">Avtor</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.subject_filter">Ključna beseda</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.type_filter">Vrsta vsebine</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.date.issued">Datum izdaje</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Datum izdaje</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_rights">Pravice</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher">Izdajatelj</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type">Vrsta</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mediatype">Vrsta medija</message>
+  <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Najnovejši vnosi</message>
+  <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Poglejte več</message>
+  <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.head">{0}: Nedavni vnosi</message>
+  <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.trail">Nedavni vnosi</message>
+  <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.recent.head">Nedavno dodano</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type_filter">Vrsta</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher_filter">Izdajatelj</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.ispartof">Nadrejena vsebina</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by">Združi rezultate po:</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.none">Nič</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.publication_grp">Objava</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.comm">Skupnost</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.coll">Zbirka</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.relation.ispartofseries_filter">Serija</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.contributor.author_browse">Brskanje po: Avtor</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.title_browse">Brskanje po: Naslov</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.subject_browse">Brskanje po: Vsebina</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.description.abstract_browse">Brskanje po: Povzetek</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_series_browse">Brskanje po: Serija</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_sponsor_browse">Brskanje po: Financer</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_identifier_browse">Brskanje po: Identifikator</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_language_browse">Brskanje po: Jezik (ISO)</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_keyword_browse">Brskanje po: Ključna beseda</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_taxon_browse">Brskanje po: Znanstveno ime</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_contributor_browse">Brskanje po: Sodelavec</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_creator_browse">Brskanje po: Avtor</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_subject_browse">Brskanje po: Vsebina</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_description_browse">Brskanje po: Opis</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_relation_browse">Brskanje po: Relacija</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_mime_browse">Brskanje po: Vrsta medija MIME</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_other_browse">Brskanje po: Drugi sodelavec</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_advisor_browse">Brskanje po: Svetovalec</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_department_browse">Brskanje po: Oddelek</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dateissued_dt_browse">Brskanje po: Datum izdaje</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.title">Naslov</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued">Datum izdaje</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.selected">Izbrani filtri</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.rights">Pravice</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.publisher">Izdajatelj</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language">Jezik</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type">Vrsta</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype">Vrsta medija</message>
+  <message key="xmlui.dri2xhtml.structural.pagination-info.nototal">Trenutno prikazani vnosi {0}–{1}</message>
+  <message key="xmlui.Discovery.AbstractSearch.type_author">Filtriraj po: Avtor</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author">Avtor</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author_filter">Avtor</message>
+  <message key="xmlui.Discovery.AbstractSearch.type_subject">Filtriraj po: Vsebina</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Ključna beseda</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">Vsebina</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued.year">Datum izdaje</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.rights_filter">Pravice</message>
+  <message key="xmlui.Discovery.AbstractSearch.startswith">Začne se s/z</message>
+  <message key="xmlui.Discovery.AbstractSearch.startswith.help">Ali vpišite prvih nekaj črk:</message>
+  <message key="xmlui.Discovery.AbstractSearch.sort_by.head">Možnosti razvrščanja:</message>
+  <message key="xmlui.Discovery.AbstractSearch.sort_by.relevance">Ustreznost</message>
+  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_desc">Naslov (padajoče)</message>
+  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_desc">Datum izdaje (padajoče)</message>
+  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_asc">Naslov (naraščajoče)</message>
+  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_asc">Datum izdaje (naraščajoče)</message>
+  <message key="xmlui.Discovery.AbstractSearch.type_language">Filtriraj po: Jezik</message>
+  <message key="xmlui.Discovery.AbstractSearch.rpp">Rezultati na stran:</message>
+  <message key="xmlui.Discovery.AbstractSearch.filters.controls.add-filter">Dodaj filter</message>
+  <message key="xmlui.Discovery.AbstractSearch.filters.controls.apply-filters">Uporabi</message>
+  <message key="xmlui.Discovery.AbstractSearch.filters.controls.remove-filter">Odstrani</message>
+  <message key="xmlui.Discovery.AbstractSearch.filters.controls.new-filters.head">Novi filtri:</message>
+  <message key="xmlui.Discovery.AbstractSearch.filters.controls.current-filters.head">Trenutni filtri:</message>
+  <message key="xmlui.Discovery.AbstractSearch.filters.display">Dodajanje filtrov:</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.publisher_filter">Izdajatelj</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language_filter">Jezik</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type_filter">Vrsta</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype_filter">Vrsta medija</message>
+  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_file_b">Vsebuje datoteke</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.title_sort">Naslov</message>
+  <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.date.issued_dt">Datum izdaje</message>
+  <message key="xmlui.discovery.SearchFacetFilter.no-results">Strani ni bilo mogoče najti</message>
+  <message key="xmlui.discovery.AbstractFiltersTransformer.filters.head">Odkrij</message>
+  <message key="xmlui.discovery.AbstractFiltersTransformer.filters.view-more">... poglejte več</message>
+  <message key="xmlui.Discovery.SimpleSearch.search_scope">Išči</message>
+  <message key="xmlui.discovery.SimpleSearch.search_label">Išči</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter_head">Filtri</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter_add">Dodajanje filtrov</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter_help">Uporabite filtre za omejitev rezultatov iskanja.</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter_apply">Posodobitev filtrov</message>
+  <message key="xmlui.Discovery.SimpleSearch.sort_head">Možnosti razvrščanja:</message>
+  <message key="xmlui.Discovery.SimpleSearch.sort_apply">Uporabi</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter.contains">Vsebuje</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter.equals">Je enako</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter.authority">ID</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter.notcontains">Ne vsebuje</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter.notequals">Ni enako</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter.notauthority">Ni ID</message>
+  <message key="xmlui.Discovery.SimpleSearch.filter.notavailable">Ni razpoložljivo</message>
+  <message key="xmlui.Discovery.RelatedItems.head">Sorodni vnosi</message>
+  <message key="xmlui.Discovery.RelatedItems.help">Prikazani so vnosi, ki so sorodni glede na naslov, avtorja, avtorja vnosa in ključno besedo.</message>
+  <message key="xmlui.Discovery.AbstractSearch.head1_community">Prikazanih {0} od skupno {1} zadetkov za skupnost: {2}. <span class="searchTime">({3} sekund)</span>
+  </message>
+  <message key="xmlui.Discovery.AbstractSearch.head1_collection">Prikazanih {0} od skupno {1} zadetkov za zbirko: {2}. <span class="searchTime">({3} sekund)</span>
+  </message>
+  <message key="xmlui.Discovery.AbstractSearch.head1_none">Prikazanih {0} od skupno {1} zadetkov. <span class="searchTime">({2} sekund)</span>
+  </message>
+  <message key="xmlui.Discovery.AbstractSearch.head2">Skupnosti ali zbirke, ki ustrezajo vaši poizvedbi</message>
+  <message key="xmlui.Discovery.AbstractSearch.head3">Vnosi, ki ustrezajo vaši poizvedbi</message>
+  <message key="xmlui.Discovery.SimpleSearch.did_you_mean">Ste morda mislili: </message>
   <message key="xmlui.general.dspace_home">Repozitorij CLARIN.SI</message>
   <message key="xmlui.general.search">Išči</message>
   <message key="xmlui.general.go">Pojdi</message>
@@ -43,41 +181,24 @@
   <message key="xmlui.general.queue">Čakalna vrsta</message>
   <message key="xmlui.general.here">Tukaj</message>
   <message key="xmlui.general.helpdesk">Pomoč uporabnikom</message>
-  <!-- Keys which are used by exception2dri.xsl on error pages -->
   <message key="xmlui.error.contact_msg">Če bi radi prijavili to napako, stopite v stik s skrbnikom spletišča. Če je možno, navedite podrobnosti o vaši dejavnosti v trenutku, ko je prišlo do napake.</message>
   <message key="xmlui.error.contact">Stopite v stik s skrbnikom spletišča</message>
   <message key="xmlui.error.show_stack">Pokaži sklad napak</message>
   <message key="xmlui.error.site_administrator">Skrbnik spletišča</message>
-  <!-- 
-       Page not found keys 
-       
-       This is a special component that is not part of any aspect but is added
-       by manakin to all aspect chains.
-  -->
   <message key="xmlui.PageNotFound.title">Strani ni bilo mogoče najti</message>
   <message key="xmlui.PageNotFound.head">Strani ni bilo mogoče najti</message>
   <message key="xmlui.PageNotFound.para1">Strani, ki ste jo zahtevali, ni bilo mogoče najti (\{0}). Če menite, da bi morala obstajati, se obrnite na </message>
-  <!--  session expired  -->
   <message key="xmlui.SessionExpired.title">Vaša seja je potekla</message>
   <message key="xmlui.SessionExpired.head">Za nadaljevanje kliknite in se ponovno prijavite </message>
   <message key="xmlui.SessionExpired.para1">V primeru dodatnih težav stopite v stik s </message>
-  <!-- The "utils" non-aspect -->
   <message key="xmlui.utils.AuthenticationUtil.onlyAdmins">Samo skrbnik spletišča se lahko prijavi kot drug uporabnik.</message>
   <message key="xmlui.utils.AuthenticationUtil.onlyAuthenticatedAdmins">Samo avtenticirani uporabniki, ki so skrbniki, se lahko prijavijo kot drug uporabnik.</message>
   <message key="xmlui.utils.AuthenticationUtil.notAnotherAdmin">Ne morete se prijaviti kot drug skrbnik.</message>
-  <!-- This section is for feed syndications (RSS, atom, etc) -->
   <message key="xmlui.feed.general_description">Repozitorij CLARIN.SI zajema, hrani, indeksira, arhivira in distribuira digitalne raziskovalne podatke.</message>
   <message key="xmlui.feed.header">Viri RSS</message>
   <message key="xmlui.feed.logo_title">The Channel Image</message>
   <message key="xmlui.feed.untitled">Neimenovano</message>
-  <!-- Default notice header -->
   <message key="xmlui.general.notice.default_head">Obvestilo</message>
-  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      
-      ArtifactBrowser Aspect
-      
-      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-  <!-- org.dspace.app.xmlui.artifactbrowser.AbstractSearch.java -->
   <message key="xmlui.ArtifactBrowser.AbstractSearch.head1_community">Rezultati iskanja za skupnost: {0}</message>
   <message key="xmlui.ArtifactBrowser.AbstractSearch.head1_collection">Rezultati iskanja za zbirko: {0}</message>
   <message key="xmlui.ArtifactBrowser.AbstractSearch.head1_none">Prikazovanje {0}–{1} od {2} zadetkov</message>
@@ -96,7 +217,6 @@
   <message key="xmlui.ArtifactBrowser.AbstractSearch.order.asc">naraščajoče</message>
   <message key="xmlui.ArtifactBrowser.AbstractSearch.order.desc">padajoče</message>
   <message key="xmlui.ArtifactBrowser.AbstractSearch.rpp">Rezultati/stran</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.title">Napredno iskanje</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.trail">Napredno iskanje</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.head">Napredno iskanje</message>
@@ -112,27 +232,12 @@
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Serija</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Financer</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identifikator</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher">Izdajatelj</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Jezik (ISO)</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Ključna beseda</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_hasfile">Vsebuje datoteke</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_branding">Skupnost</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.hasfile">Vsebuje datoteke</message>
+  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_branding">Skupnost</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.branding">Skupnost</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author">Avtor</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.title">Naslov</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Ključna beseda</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued">Datum izdaje</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_content_in_original_bundle">Vsebuje datoteke</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.original_bundle_filenames">Ime datoteke</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.original_bundle_descriptions">Opis datoteke</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.selected">Izbrani filtri</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.rights">Pravice</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.publisher">Izdajatelj</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language">Jezik</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type">Vrsta</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype">Vrsta medija</message>
-  <!--  some common other possibilities for Advanced Search Fields -->
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Sodelavec</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Avtor</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_description">Opis</message>
@@ -145,7 +250,6 @@
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.and">IN</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.or">ALI</message>
   <message key="xmlui.ArtifactBrowser.AdvancedSearch.not">NE</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ConfigureableBrowse.java -->
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with">Ali vpišite prvih nekaj črk:</message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with_help">Brskajte po vnosih, ki se začenjajo z naslednjimi črkami</message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_select">Skočite na mesto v seznamu</message>
@@ -157,7 +261,6 @@
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.sort_by"> Razvrsti po: </message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.order"> Zaporedje: </message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.rpp"> Rezultati: </message>
-  <!-- /Page -->
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.etal"> Avtorji/Vnos: </message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.etal.all">Vse</message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.title">naslov</message>
@@ -192,21 +295,18 @@
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.mediatype">Brskanje po vrsti medija</message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.mediatype">Brskanje po vrsti medija</message>
   <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.mediatype.column_heading">Vrsta medija</message>
-  <!-- org.dspace.app.xmlui.administrative.WithdrawnItems.java -->
   <message key="xmlui.Administrative.WithdrawnItems.title.item.title">Umaknjeni vnosi po naslovu</message>
   <message key="xmlui.Administrative.WithdrawnItems.trail.item.title">Umaknjeni vnosi po naslovu</message>
   <message key="xmlui.Administrative.WithdrawnItems.title.item.dateissued">Umaknjeni vnosi po datumu vnosa</message>
   <message key="xmlui.Administrative.WithdrawnItems.trail.item.dateissued">Umaknjeni vnosi po datumu vnosa</message>
   <message key="xmlui.Administrative.WithdrawnItems.title.item.dateaccessioned">Umaknjeni vnosi po datumu izdaje</message>
   <message key="xmlui.Administrative.WithdrawnItems.trail.item.dateaccessioned">Umaknjeni vnosi po datumu izdaje</message>
-  <!-- org.dspace.app.xmlui.administrative.PrivateItems.java -->
   <message key="xmlui.Administrative.PrivateItems.title.item.title">Zasebni vnosi po naslovu</message>
   <message key="xmlui.Administrative.PrivateItems.trail.item.title">Zasebni vnosi po naslovu</message>
   <message key="xmlui.Administrative.PrivateItems.title.item.dateissued">Zasebni vnosi po datumu izdaje</message>
   <message key="xmlui.Administrative.PrivateItems.trail.item.dateissued">Zasebni vnosi po datumu izdaje</message>
   <message key="xmlui.Administrative.PrivateItems.title.item.dateaccessioned">Zasebni vnosi po datumu vnosa</message>
   <message key="xmlui.Administrative.PrivateItems.trail.item.dateaccessioned">Zasebni vnosi po datumu vnosa</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
   <message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Obseg iskanja</message>
   <message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Celoten repozitorij</message>
   <message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Iščite znotraj te zbirke:</message>
@@ -216,12 +316,10 @@
   <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_dates">Datum</message>
   <message key="xmlui.ArtifactBrowser.CollectionViewer.advanced_search_link">Napredno iskanje</message>
   <message key="xmlui.ArtifactBrowser.CollectionViewer.head_recent_submissions">Najnovejši vnosi</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
   <message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Seznam skupnosti</message>
   <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Seznam skupnosti</message>
   <message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Skupnosti v repozitoriju</message>
   <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Izberite skupnost za brskanje po njenih zbirkah.</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
   <message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Obseg iskanja</message>
   <message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Celoten repozitorij</message>
   <message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Iščite znotraj te skupnosti in njenih zbirk:</message>
@@ -233,7 +331,6 @@
   <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities">Podskupnosti znotraj te skupnosti</message>
   <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections">Zbirke v tej skupnosti</message>
   <message key="xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions">Najnovejši vnosi</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.Contact.java -->
   <message key="xmlui.ArtifactBrowser.Contact.title">Stopite v stik z nami</message>
   <message key="xmlui.ArtifactBrowser.Contact.trail">Stopite v stik z nami</message>
   <message key="xmlui.ArtifactBrowser.Contact.head">Stopite v stik z nami</message>
@@ -241,7 +338,6 @@
   <message key="xmlui.ArtifactBrowser.Contact.feedback_label">Spletni obrazec</message>
   <message key="xmlui.ArtifactBrowser.Contact.feedback_link">Povratne informacije</message>
   <message key="xmlui.ArtifactBrowser.Contact.email">E-pošta</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.FeedbackForm.java -->
   <message key="xmlui.ArtifactBrowser.FeedbackForm.title">Sporočite povratne informacije</message>
   <message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Sporočite povratne informacije</message>
   <message key="xmlui.ArtifactBrowser.FeedbackForm.head">Sporočite povratne informacije</message>
@@ -250,21 +346,17 @@
   <message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">Ta naslov bo uporabljen za odgovor na vaše komentarje.</message>
   <message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Komentarji</message>
   <message key="xmlui.ArtifactBrowser.FeedbackForm.submit">Pošlji povratne informacije</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.FeedbackSent.java -->
   <message key="xmlui.ArtifactBrowser.FeedbackSent.title">Sporočite povratne informacije</message>
   <message key="xmlui.ArtifactBrowser.FeedbackSent.trail">Sporočite povratne informacije</message>
   <message key="xmlui.ArtifactBrowser.FeedbackSent.head">Vaše sporočilo je bilo poslano.</message>
   <message key="xmlui.ArtifactBrowser.FeedbackSent.para1">Vaše sporočilo je bilo prejeto.</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.FrontPageSearch.java -->
   <message key="xmlui.ArtifactBrowser.FrontPageSearch.head">Iščite po repozitoriju</message>
   <message key="xmlui.ArtifactBrowser.FrontPageSearch.para1">Za iskanje po repozitoriju vnesite besedilo v spodnje polje.</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemViewer.java -->
   <message key="xmlui.ArtifactBrowser.ItemViewer.trail">Prikaz vnosa</message>
   <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Ta vnos se nahaja v naslednjih zbirkah</message>
   <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Prikaži enostavni zapis vnosa</message>
   <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Prikaži polni zapis vnosa</message>
   <message key="xmlui.ArtifactBrowser.ItemViewer.withdrawn">Ta vnos je bil umaknjen in ni več na voljo.</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
   <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Brskanje</message>
   <message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Celoten repozitorij</message>
   <message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Skupnosti in zbirke</message>
@@ -280,13 +372,11 @@
   <message key="xmlui.ArtifactBrowser.Navigation.browse_language">Jezik</message>
   <message key="xmlui.ArtifactBrowser.Navigation.browse_type">Vrsta</message>
   <message key="xmlui.ArtifactBrowser.Navigation.browse_mediatype">Vrsta medija</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
   <message key="xmlui.ArtifactBrowser.SimpleSearch.title">Iskanje</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.trail">Iskanje</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.head">Iskanje</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.search_scope">Obseg iskanja</message>
   <message key="xmlui.ArtifactBrowser.SimpleSearch.full_text_search">Iskanje po celotnem besedilu</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
   <message key="xmlui.ArtifactBrowser.RestrictedItem.title">Ta vir ima omejen dostop</message>
   <message key="xmlui.ArtifactBrowser.RestrictedItem.trail">Omejeno</message>
   <message key="xmlui.ArtifactBrowser.RestrictedItem.head_resource">Ta vir ima omejen dostop</message>
@@ -326,22 +416,17 @@
   <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted_auth">Dostop do izbranega vnosa je omejen in za ogled potrebujete dovoljenje. Za dostop do vnosa se prijavite.</message>
   <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item_restricted">Vašemu uporabniškemu računu niso bile dodeljene pravice za ogled tega vnosa. Če imate kakršnakoli vprašanja, se obrnite na našo pomoč uporabnikom.<a class="helpdesk-tolink"/>
   </message>
-  <!-- Authentication messages used at the top of the login page:  -->
   <message key="xmlui.ArtifactBrowser.RestrictedItem.auth_header">Ta vnos je omejen</message>
   <message key="xmlui.ArtifactBrowser.RestrictedItem.auth_message">Vnos, ki si ga želite ogledati, ima omejen dostop in za njegov ogled potrebujete dovoljenje. Za dostop do vnosa se prijavite.</message>
   <message key="xmlui.ArtifactBrowser.StatisticsViewer.choose_month">Mesečna poročila</message>
   <message key="xmlui.ArtifactBrowser.StatisticsViewer.report.title">Povzetek statistik</message>
   <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.title">Trenutno ni na voljo nobenih poročil.</message>
   <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.text">Trenutno ni na voljo nobenih poročil za to storitev. Znova preverite pozneje.</message>
-  <!-- Authentication messages used for bitstream authentication -->
   <message key="xmlui.BitstreamReader.auth_header">Ta datoteka je omejena</message>
   <message key="xmlui.BitstreamReader.auth_message">Datoteka, ki si jo želite ogledati, ima omejen dostop in za njen ogled potrebujete dovoljenje. Za dostop do datoteke se prijavite.</message>
   <message key="xmlui.BitstreamReader.auth_embargo_message">Datoteka, ki si jo želite ogledati, ima omejen dostop. Avtor je določil datum embarga pripadajočih bitnih tokov, kar pomeni, da bodo bitni tokovi postali dostopni v prihodnosti. Lahko poskusite stopiti v stik neposredno z avtorjem ali se obrnete na našo <a class="helpdesk-tolink">pomoč uporabnikom</a>.</message>
-  <!-- Export Archive download messages -->
   <message key="xmlui.ItemExportDownloadReader.auth_header">Ta arhiv izvoza je omejen.</message>
   <message key="xmlui.ItemExportDownloadReader.auth_message">Arhiv izvoza , ki si ga želite ogledati, ima omejen dostop in za njegov ogled potrebujete dovoljenje. Za dostop do arhiva izvoza se prijavite.</message>
-  <!-- REQUEST COPY -->
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestForm.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestForm.title">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestForm.trail">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestForm.head">Zahteva za kopijo dokumenta</message>
@@ -359,22 +444,19 @@
   <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterName">Ime</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterName.error">Ime je obvezno</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestForm.submit">Zahtevaj kopijo</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestSent.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestSent.title">Vaša zahteva je bila poslana.</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestSent.trail">Vaša zahteva je bila poslana.</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestSent.head">Vaša zahteva je bila poslana.</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestSent.para1">Vaša zahteva je bila poslana avtorju ali odgovorni osebi.</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseDecisionForm.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.title">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.trail">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.head">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">ČE STE AVTOR (ALI EDEN IZMED AVTORJEV) DOKUMENTA "{0}", uporabite gumbe za odgovor na uporabnikovo zahtevo.</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para2">Repozitorij bo ponudil primer odgovora, ki ga lahko priredite.</message>
-  <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Pošlji kopijo</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactRequester">Prvi odgovor uporabniku</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.contactAuthor"> Zahteva za avtorjevo dovoljenje</message>
+  <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Pošlji kopijo</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.dontSend">Ne pošlji kopije</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseTrueForm.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.title">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.trail">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.head">Zahteva za kopijo dokumenta</message>
@@ -383,7 +465,6 @@
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.subject">Zadeva</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.mail">Pošlji</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.back">Nazaj</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseFalseForm.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.title">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.trail">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.head">Zahteva za kopijo dokumenta</message>
@@ -392,7 +473,6 @@
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.subject">Zadeva</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.mail">Pošlji</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.back">Nazaj</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestChangeStatusForm.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.title">Zahteva za spremembo dovoljenj</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.trail">Zahteva za spremembo dovoljenj</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.head">Zahteva za spremembo dovoljenj</message>
@@ -402,13 +482,11 @@
   <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name.error">Ime je obvezno</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.email.error">E-poštni naslov je obvezen</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.changeToOpen">Spremeni v odprt dostop</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseFalseForm.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.title">Vaša zahteva je bila poslana</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.trail">Vaša zahteva je bila poslana</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.head">Vaša zahteva za spremembo dovoljenja je bila poslana</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para1">Vaša zahteva je bila poslana skrbniku</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para2">Hvala</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestContactRequester.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.title">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.trail">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.head">Zahteva za kopijo dokumenta</message>
@@ -418,7 +496,6 @@
   <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.message">Sporočilo</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.mail">Pošlji</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactRequester.back">Nazaj</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestContactAuthor.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.title">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.trail">Zahteva za kopijo dokumenta</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.head">Zahteva za kopijo dokumenta</message>
@@ -428,25 +505,16 @@
   <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.message">Sporočilo</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.mail">Pošlji</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestContactAuthor.back">Nazaj</message>
-  <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseSent.java -->
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.title">Vaš odgovor je bil poslan.</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.trail">Vaš odgovor je bil poslan.</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.head">Vaš odgovor je bil poslan.</message>
   <message key="xmlui.ArtifactBrowser.ItemRequestResponseSent.para1">Vaš odgovor je bil poslan.</message>
-  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      
-      EPerson Aspect
-      
-      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-  <!-- General keys used by the EPerson aspect -->
   <message key="xmlui.EPerson.trail_new_registration">Vpis novega uporabnika</message>
   <message key="xmlui.EPerson.trail_forgot_password">Pozabljeno geslo</message>
-  <!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
   <message key="xmlui.EPerson.CannotRegister.title">Vpis ni mogoč</message>
   <message key="xmlui.EPerson.CannotRegister.head">Vpis ni mogoč</message>
   <message key="xmlui.EPerson.CannotRegister.para1">Konfiguracija repozitorija ne dovoljuje vpisa v tem kontekstu. V primeru vprašanj in pripomb stopite v stik s <a class="helpdesk-tolink">pomočjo uporabnikom.</a>
   </message>
-  <!-- org.dspace.app.xmlui.eperson.EditProfile.java -->
   <message key="xmlui.EPerson.EditProfile.title_update">Posodobitev profila</message>
   <message key="xmlui.EPerson.EditProfile.title_create">Nov profil</message>
   <message key="xmlui.EPerson.EditProfile.trail_update">Posodobitev profila</message>
@@ -479,24 +547,20 @@
   <message key="xmlui.EPerson.EditProfile.head_identify">Identificiraj</message>
   <message key="xmlui.EPerson.EditProfile.head_security">Varnost</message>
   <message key="xmlui.EPerson.EditProfile.signed_licenses">Podpisane licence</message>
-  <!-- org.dspace.app.xmlui.eperson.EPersonUtils.java -->
   <message key="xmlui.EPerson.EPersonUtils.register_verify_email">Preverite e-poštni naslov</message>
   <message key="xmlui.EPerson.EPersonUtils.register_create_profile">Ustvarite profil</message>
   <message key="xmlui.EPerson.EPersonUtils.register_finished">Končano</message>
   <message key="xmlui.EPerson.EPersonUtils.forgot_verify_email">Preverite e-poštni naslov</message>
   <message key="xmlui.EPerson.EPersonUtils.forgot_reset_password">Ponastavite geslo</message>
   <message key="xmlui.EPerson.EPersonUtils.forgot_finished">Končano</message>
-  <!-- org.dspace.app.xmlui.eperson.ForgotPasswordFinished.java -->
   <message key="xmlui.EPerson.ForgotPasswordFinished.title">Ponastavitev gesla</message>
   <message key="xmlui.EPerson.ForgotPasswordFinished.head">Ponastavitev gesla</message>
   <message key="xmlui.EPerson.ForgotPasswordFinished.para1">Vaše geslo je bilo ponastavljeno.</message>
-  <!-- org.dspace.app.xmlui.eperson.InvalidToken.java -->
   <message key="xmlui.EPerson.InvalidToken.title">Neveljaven žeton</message>
   <message key="xmlui.EPerson.InvalidToken.trail">Neveljaven žeton</message>
   <message key="xmlui.EPerson.InvalidToken.head">Neveljaven žeton</message>
   <message key="xmlui.EPerson.InvalidToken.para1">Navedeni URL ni veljaven. V e-poštnem odjemalcu se je URL morda zapisal v več vrsticah, na primer:</message>
   <message key="xmlui.EPerson.InvalidToken.para2">Če je do tega prišlo, ne kliknite na povezavo, ampak kopirajte in prilepite celoten URL neposredno v naslovno vrstico brskalnika. Naslovna vrstica bi morala izgledati približno tako:</message>
-  <!-- org.dspace.app.xmlui.eperson.Navigation.java -->
   <message key="xmlui.EPerson.Navigation.my_account">Moj račun</message>
   <message key="xmlui.EPerson.Navigation.profile">Profil</message>
   <message key="xmlui.EPerson.Navigation.logout">Odjava</message>
@@ -504,14 +568,12 @@
   <message key="xmlui.EPerson.Navigation.discojuice.login">Prijava</message>
   <message key="xmlui.EPerson.Navigation.register">Vpis</message>
   <message key="xmlui.EPerson.Navigation.helpdesk">Pomoč uporabnikom</message>
-  <!-- org.dspace.app.xmlui.eperson.Navigation.java -->
   <message key="xmlui.EPerson.Navigation.about-head">Splošne informacije</message>
   <message key="xmlui.EPerson.Navigation.deposit">O vnosu v repozitorij</message>
   <message key="xmlui.EPerson.Navigation.cite">Citiranje</message>
   <message key="xmlui.EPerson.Navigation.item-lifecycle">Življenjski ciklus vnosa</message>
   <message key="xmlui.EPerson.Navigation.faq">Pogosta vprašanja</message>
   <message key="xmlui.EPerson.Navigation.about">O repozitoriju</message>
-  <!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
   <message key="xmlui.EPerson.PasswordLogin.title">Vpis</message>
   <message key="xmlui.EPerson.PasswordLogin.trail">Vpis</message>
   <message key="xmlui.EPerson.PasswordLogin.head1">Vpis v repozitorij</message>
@@ -523,7 +585,6 @@
   <message key="xmlui.EPerson.PasswordLogin.head2">Vpis novega uporabnika</message>
   <message key="xmlui.EPerson.PasswordLogin.para1">Ustvarite uporabniški račun za naročnino na zbirke in prejemanje e-poštnih obvestil ter za ustvarjanje vnosov v repozitoriju.</message>
   <message key="xmlui.EPerson.PasswordLogin.register_link">Za vpis kliknite tukaj.</message>
-  <!-- org.dspace.app.xmlui.eperson.WelcomeLogin.java -->
   <message key="xmlui.EPerson.WelcomeLogin.title">Pozdravno sporočilo</message>
   <message key="xmlui.EPerson.WelcomeLogin.trail">Pozdravno sporočilo</message>
   <message key="xmlui.EPerson.WelcomeLogin.head1">Dobrodošli v repozitoriju CLARIN.SI</message>
@@ -533,7 +594,6 @@
     <div class="bold text-error">Uporabljamo le atribute, ki so potrebni za delovanje sistema in so opredeljeni v pravilniku o zasebnosti, dostopnem na <a href="http://www.clarin.si/privacy_policy.html" target="_blank" class="bold">http://www.clarin.si/privacy_policy.html</a>.<BR/>Atribute lahko zabeležimo in hranimo za določen čas.</div>
   </message>
   <message key="xmlui.EPerson.WelcomeLogin.buttonok">Nazaj na Domov</message>
-  <!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
   <message key="xmlui.EPerson.LDAPLogin.title">Vpis</message>
   <message key="xmlui.EPerson.LDAPLogin.trail">Vpis</message>
   <message key="xmlui.EPerson.LDAPLogin.head1">Vpis v repozitorij</message>
@@ -541,7 +601,6 @@
   <message key="xmlui.EPerson.LDAPLogin.error_bad_login">Vneseni e-poštni naslov in/ali geslo ni veljavno.</message>
   <message key="xmlui.EPerson.LDAPLogin.password">Geslo</message>
   <message key="xmlui.EPerson.LDAPLogin.submit">Vpis</message>
-  <!-- org.dspace.app.xmlui.eperson.LoginChooser.java -->
   <message key="xmlui.EPerson.LoginChooser.title">Izberite način prijave</message>
   <message key="xmlui.EPerson.LoginChooser.trail">Izberite prijavo</message>
   <message key="xmlui.EPerson.LoginChooser.head1">Razpoložljivi načini prijave</message>
@@ -554,30 +613,24 @@
   <message key="org.dspace.eperson.LDAPAuthentication.title">Avtentikacija z LDAP</message>
   <message key="org.dspace.eperson.PasswordAuthentication.title">Avtentikacija z geslom</message>
   <message key="org.dspace.eperson.X509Authentication.title">Avtentikacija s spletnim certifikatom</message>
-  <!-- org.dspace.app.xmlui.eperson.FailedAuthentication -->
   <message key="xmlui.EPerson.FailedAuthentication.BadCreds">Navedene poverilnice niso veljavne.</message>
   <message key="xmlui.EPerson.FailedAuthentication.BadArgs">Avtentikacija ni mogoča zaradi neveljavnih argumentov.</message>
   <message key="xmlui.EPerson.FailedAuthentication.NoSuchUser">Uporabnika z navedenimi poverilnicami ni bilo mogoče najti.</message>
   <message key="xmlui.EPerson.FailedAuthentication.title">Napaka pri avtentikaciji</message>
   <message key="xmlui.EPerson.FailedAuthentication.trail">Neuspešna avtentikacija</message>
   <message key="xmlui.EPerson.FailedAuthentication.h1">Napaka pri avtentikaciji</message>
-  <!-- cz.cuni.mff.ufal.dspace.authenticate.shibboleth.ShibEPerson -->
   <message key="xmlui.ShibEPerson.locked_email">Vaš e-poštni naslov ({0}) je že povezan z drugim uporabnikom. Možno je, da ste pri prejšnjih prijavah uporabili drugega ponudnika identitete. Za več informacij se obrnite na našo <a class="helpdesk-tolink">pomoč uporabnikom</a>.</message>
-  <!-- Login xml files -->
   <message key="xmlui.eperson.noAuthMethod.head">Ni najdenih načinov avtentikacije</message>
   <message key="xmlui.eperson.noAuthMethod.p1">Ni bilo mogoče najti nobenega načina avtentikacije. Obrnite se na <a class="helpdesk-tolink">pomoč uporabnikom</a>.</message>
   <message key="xmlui.eperson.shibbLoginFailure.head">Napaka pri prijavi prek Shibboleth</message>
   <message key="xmlui.eperson.shibbLoginFailure.p1">Avtentikacija s Shibboleth trenutno ni na voljo. Obrnite se na <a class="helpdesk-tolink">pomoč uporabnikom</a>.</message>
-  <!-- org.dspace.app.xmlui.eperson.ProfileUpdated.java -->
   <message key="xmlui.EPerson.ProfileUpdated.title">Profil je bil posodobljen</message>
   <message key="xmlui.EPerson.ProfileUpdated.trail">Posodobitev profila</message>
   <message key="xmlui.EPerson.ProfileUpdated.head">Profil je bil posodobljen</message>
   <message key="xmlui.EPerson.ProfileUpdated.para1">Podatki vašega profila so bili posodobljeni.</message>
-  <!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
   <message key="xmlui.EPerson.RegistrationFinished.title">Vpis je končan</message>
   <message key="xmlui.EPerson.RegistrationFinished.head">Vpis je končan</message>
   <message key="xmlui.EPerson.RegistrationFinished.para1">Vpisani ste v repozitorij. Lahko se naročite na zbirke za prejemanje e-poštnih obvestil o novih vnosih.</message>
-  <!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
   <message key="xmlui.EPerson.ResetPassword.title">Ponastavitev gesla</message>
   <message key="xmlui.EPerson.ResetPassword.head">Ponastavitev gesla</message>
   <message key="xmlui.EPerson.ResetPassword.para1">V spodnje polje vnesite geslo in ga potrdite s ponovnim vnosom v drugo polje. Geslo naj vsebuje vsaj šest znakov.</message>
@@ -587,7 +640,6 @@
   <message key="xmlui.EPerson.ResetPassword.submit">Ponastavi geslo</message>
   <message key="xmlui.EPerson.ResetPassword.error_invalid_password">Geslo naj vsebuje vsaj 6 znakov</message>
   <message key="xmlui.EPerson.ResetPassword.error_unconfirmed_password">Ponovno vnesite geslo za potrditev</message>
-  <!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
   <message key="xmlui.EPerson.StartForgotPassword.title">Pozabljeno geslo</message>
   <message key="xmlui.EPerson.StartForgotPassword.head">Pozabljeno geslo</message>
   <message key="xmlui.EPerson.StartForgotPassword.para1">Vnesite e-poštni naslov, ki ste ga navedli ob vpisu. Na ta e-poštni naslov vam bomo poslali nadaljnja navodila.</message>
@@ -595,7 +647,6 @@
   <message key="xmlui.EPerson.StartForgotPassword.email_address_help">Vnesite e-poštni naslov, ki ste ga navedli ob vpisu.</message>
   <message key="xmlui.EPerson.StartForgotPassword.error_not_found">E-poštnega naslova ni bilo mogoče najti.</message>
   <message key="xmlui.EPerson.StartForgotPassword.submit">Pošlji informacije</message>
-  <!-- org.dspace.app.xmlui.eperson.StartRegistration.java -->
   <message key="xmlui.EPerson.StartRegistration.title">Vpis novega uporabnika</message>
   <message key="xmlui.EPerson.StartRegistration.head1">E-poštni naslov je že v uporabi</message>
   <message key="xmlui.EPerson.StartRegistration.para1">Ta e-poštni naslov je že povezan z drugim uporabniškim računom. Če želite ponastaviti geslo za ta račun, kliknite na spodnji gumb za ponastavitev gesla.</message>
@@ -609,17 +660,9 @@
   <message key="xmlui.EPerson.StartRegistration.submit_register">Vpis</message>
   <message key="xmlui.EPerson.SetEmailStart.para2">Vaš IDP (domača organizacija) ni zagotovila vašega e-poštnega naslova. Prosimo, da izpolnite in preverite vaš e-poštni naslov, da lahko ustvarite nove vnose v repozitoriju, prenos omejenih vnosov in, da se lahko naročite na napredne statistike oz. obvestila o posodobitvah zbirk.</message>
   <message key="xmlui.EPerson.SetEmailStart.email_address_help">Ta e-poštni naslov bo preverjen in shranjen dokler vaš IDP ne zagotovi drugega. Še vedno se boste prijavljali prek vašega IDP.</message>
-
-  <!-- org.dspace.app.xmlui.eperson.VerifyEmail.java -->
   <message key="xmlui.EPerson.VerifyEmail.title">Sporočilo za preverjanje je bilo poslano</message>
   <message key="xmlui.EPerson.VerifyEmail.head">Sporočilo za preverjanje je bilo poslano</message>
   <message key="xmlui.EPerson.VerifyEmail.para">Sporočilo s posebnim URL-jem in nadaljnjimi navodili je bilo poslano na {0}.</message>
-  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      
-      Submission Aspect
-      
-      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-  <!-- general submission aspect messages -->
   <message key="xmlui.Submission.general.mydspace_home">Domov</message>
   <message key="xmlui.Submission.general.go_mydspace">Pojdi na Domov</message>
   <message key="xmlui.Submission.general.submission.title">Vnos</message>
@@ -637,12 +680,8 @@
   <message key="xmlui.Submission.general.default.title">Vnos</message>
   <message key="xmlui.Submission.general.default.trail">Vnos</message>
   <message key="xmlui.Submission.general.submission.save_share">Shrani in deli</message>
-  <message key="xmlui.Submission.general.submission.handle">Handle {0} je rezerviran za vaš vnos. Ta handle lahko uporabite za citiranje vira, vendar bo postal aktiven šele po uspešnem dokončanju in odobritvi vnosa.</message>
-  <!-- org.dspace.app.xmlui.submission.CollectionViewer -->
   <message key="xmlui.Submission.CollectionViewer.link1">Ustvarite nov vnos v tej zbirki</message>
-  <!-- org.dspace.app.xmlui.submission.Navigation -->
   <message key="xmlui.Submission.Navigation.submissions">Vnosi</message>
-  <!-- org.dspace.app.xmlui.Submission.submissions -->
   <message key="xmlui.Submission.Submissions.title">Vnosi in delotok</message>
   <message key="xmlui.Submission.Submissions.trail">Vnosi</message>
   <message key="xmlui.Submission.Submissions.head">Vnosi in naloge delotoka</message>
@@ -650,7 +689,6 @@
     <i>Neimenovano</i>
   </message>
   <message key="xmlui.Submission.Submissions.email">e-poštni naslov: </message>
-  <!-- Same transformer, workflow section -->
   <message key="xmlui.Submission.Submissions.workflow_head1">Naloge delotoka</message>
   <message key="xmlui.Submission.Submissions.workflow_info1">Te naloge so vnosi, ki čakajo na potrditev, da bodo lahko dodani repozitoriju. Obstajata ločeni čakalni vrsti, in sicer ena za naloge, ki ste jih sprejeli, in ena za naloge, ki jih ni sprejel še nihče.</message>
   <message key="xmlui.Submission.Submissions.workflow_head2">Vaše naloge</message>
@@ -664,7 +702,6 @@
   <message key="xmlui.Submission.Submissions.workflow_head3">Naloge v čakalni vrsti</message>
   <message key="xmlui.Submission.Submissions.workflow_submit_take">Sprejmi izbrane naloge</message>
   <message key="xmlui.Submission.Submissions.workflow_info3">V čakalni vrsti ni nobenih nalog</message>
-  <!-- Same transformer, submissions section -->
   <message key="xmlui.Submission.Submissions.submit_head1">Vnosi</message>
   <message key="xmlui.Submission.Submissions.submit_info1a">Lahko </message>
   <message key="xmlui.Submission.Submissions.submit_info1b">Ustvarite nov vnos</message>
@@ -681,13 +718,11 @@
   <message key="xmlui.Submission.Submissions.submit_info3">Ni nedokončanih vnosov.</message>
   <message key="xmlui.Submission.Submissions.submit_head4">Nadziranje:</message>
   <message key="xmlui.Submission.Submissions.submit_submit_remove">Odstrani izbrane vnose</message>
-  <!-- Same transformer, inprogress section -->
   <message key="xmlui.Submission.Submissions.progress_head1">Vnosi v pregledu</message>
   <message key="xmlui.Submission.Submissions.progress_info1">To so vaši dokončani vnosi, ki so bili oddani v pregled skrbnikom zbirk.</message>
   <message key="xmlui.Submission.Submissions.progress_column1">Naslov</message>
   <message key="xmlui.Submission.Submissions.progress_column2">Zbirka</message>
   <message key="xmlui.Submission.Submissions.progress_column3">Status</message>
-  <!-- Same transformer, workflow status -->
   <message key="xmlui.Submission.Submissions.status_0">Oddano</message>
   <message key="xmlui.Submission.Submissions.status_1">Čaka na pregled</message>
   <message key="xmlui.Submission.Submissions.status_2">V pregledu</message>
@@ -697,7 +732,6 @@
   <message key="xmlui.Submission.Submissions.status_6">V redakciji</message>
   <message key="xmlui.Submission.Submissions.status_7">Vnos je bil arhiviran</message>
   <message key="xmlui.Submission.Submissions.status_unknown">Neznan status</message>
-  <!-- Same transformer, completed submissions section -->
   <message key="xmlui.Submission.Submissions.completed.head">Arhivirani vnosi</message>
   <message key="xmlui.Submission.Submissions.completed.info">To so dokončani vnosi, ki so bili dodani v Dspace.</message>
   <message key="xmlui.Submission.Submissions.completed.column1">Datum sprejema</message>
@@ -706,12 +740,10 @@
   <message key="xmlui.Submission.Submissions.completed_submit_add_new_version">Dodaj novo različico</message>
   <message key="xmlui.Submission.Submissions.completed.limit">Zgoraj je prikazanih samo prvih nekaj arhiviranih vnosov. </message>
   <message key="xmlui.Submission.Submissions.completed.displayall">Prikaži vse moje arhivirane vnose.</message>
-  <!-- submission progress bar messages -->
   <message key="xmlui.Submission.submit.progressbar.initial-questions">Začetna vprašanja</message>
   <message key="xmlui.Submission.submit.progressbar.describe">Osnovne informacije</message>
   <message key="xmlui.Submission.submit.progressbar.describe2">Sodelovali so</message>
   <message key="xmlui.Submission.submit.progressbar.describe3">Opis</message>
-  <message key="xmlui.Submission.submit.progressbar.access">Dostop</message>
   <message key="xmlui.Submission.submit.progressbar.upload">Datoteke</message>
   <message key="xmlui.Submission.submit.progressbar.additional">Opomba</message>
   <message key="xmlui.Submission.submit.progressbar.additional2">Opomba</message>
@@ -720,31 +752,24 @@
   <message key="xmlui.Submission.submit.progressbar.CClicense">Licenca CC</message>
   <message key="xmlui.Submission.submit.progressbar.license">Licenca</message>
   <message key="xmlui.Submission.submit.progressbar.complete">Zaključek</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.ResumeStep -->
   <message key="xmlui.Submission.submit.ResumeStep.submit_resume">Nadaljuj vnašanje</message>
   <message key="xmlui.Submission.submit.ResumeStep.submit_share">Deli vnos</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.SelectCollection -->
   <message key="xmlui.Submission.submit.SelectCollection.head">Izberite zbirko</message>
   <message key="xmlui.Submission.submit.SelectCollection.collection">Zbirka</message>
   <message key="xmlui.Submission.submit.SelectCollection.collection_help">Izberite zbirko, ki ji boste dodali vnos.</message>
   <message key="xmlui.Submission.submit.SelectCollection.collection_default">Izberite zbirko ...</message>
   <message key="xmlui.Submission.submit.SelectCollection.default_message">Vnesite vse potrebne podatke. Z večjim številom metapodatkov lažje sledimo vašemu vnosu.</message>
-  <!--  <UFAL> -->
-  <!-- cz.cuni.mff.ufal.dspace.app.xmlui.aspect.submission.submit.SelectCollection -->
   <message key="xmlui.Submission.submit.SelectCollection.select_collection_head">Izberite zbirko</message>
   <message key="xmlui.Submission.submit.SelectCollection.select_collection_help">Na podlagi vsebine vnosa izberite ustrezno zbirko.</message>
   <message key="xmlui.Submission.submit.SelectCollection.select_community_head">Izberite skupnost</message>
   <message key="xmlui.Submission.submit.SelectCollection.select_community_help">Izberite skupnost, ki vam najbolj ustreza.</message>
   <message key="xmlui.Submission.submit.SelectCollection.single_collection_help">Pooblaščeni ste za vnašanje v samo eno zbirko. Za nadaljevanje kliknite "Naprej".</message>
   <message key="xmlui.Submission.submit.SelectCollection.community">Skupnost</message>
-  <!-- </UFAL> -->
-  <!-- org.dspace.app.xmlui.Submission.submit.SaveOrRemoveStep -->
   <message key="xmlui.Submission.submit.SaveOrRemoveStep.head">Shranite ali prekličite vnos?</message>
   <message key="xmlui.Submission.submit.SaveOrRemoveStep.info1">Želite odstraniti svoj vnos ali ga želite dokončati pozneje? Če ste nehote kliknili na "‘Zapri", se lahko vrnete in nadaljujete vnašanje.</message>
   <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_back">Ups, nadaljuj vnašanje</message>
   <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_save">Shrani, dokončal bom pozneje</message>
   <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_remove">Odstrani vnos</message>
-  <!-- org.dpspace.app.xmlui.Submission.submit.InitialQuestionsStep -->
   <message key="xmlui.Submission.submit.InitialQuestionsStep.head">Začetna vprašanja</message>
   <message key="xmlui.Submission.submit.InitialQuestionsStep.important_note">Pomembno: </message>
   <message key="xmlui.Submission.submit.InitialQuestionsStep.and"> in </message>
@@ -761,7 +786,6 @@
   <message key="xmlui.Submission.submit.InitialQuestionsStep.date_issued">Datum objave</message>
   <message key="xmlui.Submission.submit.InitialQuestionsStep.citation">Citat</message>
   <message key="xmlui.Submission.submit.InitialQuestionsStep.publisher">Izdajatelj</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.DescribeStep -->
   <message key="xmlui.Submission.submit.DescribeStep.head">Informacije o vnosu</message>
   <message key="xmlui.Submission.submit.DescribeStep.head2">Sodelujoči posamezniki in organizacije</message>
   <message key="xmlui.Submission.submit.DescribeStep.head3">Podrobnosti o viru</message>
@@ -785,19 +809,15 @@
   <message key="xmlui.Submission.submit.DescribeStep.missing_field">Izpolnite vsa polja.</message>
   <message key="xmlui.Submission.submit.DescribeStep.regexp_error">Polje ne ustreza zahtevanemu regularnemu izrazu (format) "{0}"</message>
   <message key="xmlui.Submission.submit.DescribeStep.english_only">Izpolnite metapodatke v angleščini, kjer je to mogoče (to še posebej velja za polja s prostim besedilom, kot npr. naslov ali opis vnosa).</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.UFALLicenseStep -->
   <message key="xmlui.Submission.submit.NA">N/A</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.ExtraMetadataStep -->
   <message key="xmlui.Submission.submit.ExtraMetadataStep.head">Dodatni metapodatki za ta vnos</message>
   <message key="xmlui.Submission.submit.ExtraMetadataStep.deleteRepeatabaleComponent">Odstrani izbrano</message>
   <message key="xmlui.Submission.submit.ExtraMetadataStep.addNewRepeatabaleComponent">Dodaj komponento</message>
-  <!-- cz.cuni.mff.ufal.HandleRemoved -->
   <message key="xmlui.ufal.HandleRemoved.title">Ta handle je bil odstranjen.</message>
   <message key="xmlui.ufal.HandleRemoved.head">Ta handle je bil odstranjen.</message>
   <message key="xmlui.ufal.HandleRemoved.trail_item">Vnos</message>
   <message key="xmlui.ufal.HandleRemoved.trail_handle_removed">Handle je odstranjen</message>
   <message key="xmlui.ufal.HandleRemoved.message">Ta vnos ne obstaja več. Če menite, da bi moral obstajati, se obrnite na našo <a class="helpdesk-tolink">pomoč uporabnikom</a>.</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.UFALLicenseStep -->
   <message key="xmlui.Submission.submit.UFALLicenseStep.define.head">Določanje nove licence</message>
   <message key="xmlui.Submission.submit.UFALLicenseStep.delete.head">Izbris licence</message>
   <message key="xmlui.Submission.submit.UFALLicenseStep.license_detail">Prikaži več podrobnosti o licencah</message>
@@ -827,7 +847,6 @@
   <message key="xmlui.Submission.submit.UFALLicenseStep.option_placeholder">Izberite licenco ...</message>
   <message key="xmlui.Submission.submit.UFALLicenseStep.select_head">Izberite licenco za vir</message>
   <message key="xmlui.Submission.submit.UFALLicenseStep.or_label">- ALI -</message>
-  <!-- cz.cuni.mff.ufal.UFALLicenceAgreement -->
   <message key="xmlui.ufal.UFALLicenceAgreement.title">Sporazum o vnosu</message>
   <message key="xmlui.ufal.UFALLicenceAgreement.head">Sporazum o vnosu</message>
   <message key="xmlui.ufal.UFALLicenceAgreement.trail_item">Vnos</message>
@@ -837,7 +856,6 @@
   <message key="xmlui.ufal.UFALLicenceAgreement.signer_message">S klikom na spodnji gumb jaz, PODPISNIK z zgornjim ID-jem, soglašam z <b>LICENCAMI</b>, ki omejujejo uporabo zahtevanih BITNIH TOKOV.</message>
   <message key="xmlui.ufal.UFALLicenceAgreement.signer_head">Spodnji podatki identificirajo vas, PODPISNIKA. Če podatki niso pravilni, stopite v stik z našo <a class="helpdesk-tolink">pomoč uporabnikom</a>. Ti podatki bodo shranjeni kot del elektronskih podpisov.</message>
   <message key="xmlui.ufal.UFALLicenceAgreement.signer_agree">SOGLAŠAM</message>
-  <!-- cz.cuni.mff.ufal.UFALLicenceAgreementAgreed -->
   <message key="xmlui.ufal.UFALLicenceAgreementAgreed.title">Sporazum o vnosu v repozitorij</message>
   <message key="xmlui.ufal.UFALLicenceAgreementAgreed.head">Sporazum o vnosu v repozitorij sprejet</message>
   <message key="xmlui.ufal.UFALLicenceAgreementAgreed.trail_item">Vnos</message>
@@ -849,7 +867,6 @@
   <message key="xmlui.ufal.UFALLicenceAgreementAgreed.successful_signed_message">{2} je uspešno podpisal licenco {0} za bitni tok {1}.</message>
   <message key="xmlui.ufal.UFALLicenceAgreementAgreed.continue_message">Če se prenos ne začne samodejno, kliknite tukaj.</message>
   <message key="xmlui.ufal.UFALLicenceAgreementAgreed.technical_problem">Prišlo je do tehnične napake. Obrnite se na pomoč uporabnikom</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.AccessStep -->
   <message key="xmlui.Submission.submit.AccessStep.head">Nastavitve dostopa</message>
   <message key="xmlui.Submission.submit.AccessStep.access_settings">Vidno skupini izbranih uporabnikov (za anonimne uporabnike izbira ni potrebna)</message>
   <message key="xmlui.Submission.submit.AccessStep.open_access">Dovolite dostop, ko je vnos dodan v arhiv</message>
@@ -879,14 +896,11 @@
   <message key="xmlui.Submission.submit.AccessStep.column4">Datum zaključka</message>
   <message key="xmlui.Submission.submit.AccessStep.table_edit_button">Uredi</message>
   <message key="xmlui.Submission.submit.AccessStep.table_delete_button">Odstrani</message>
-  <message key="xmlui.administrative.authorization.AccessStep.label_date_displayonly_help">Dan, od katerega dalje je dostop dovoljen. <b>Na tem obrazcu datuma ni mogoče spremeniti.</b> Če želite določiti datum embarga za bitni tok, pojdite na <i>zavihek Status vnosa,</i> kliknite na <i>Avtorizacije ...,</i>ustvarite ali spremenite politiko BRANJE bitnega toka in določite  <i/>  <i>želeni datum začetka.</i> </message>
   <message key="xmlui.administrative.authorization.AccessStep.label_date_help">Datum, od katerega dalje je dostop dovoljen. Dovoljeni format: llll, llll-mm, llll-mm-dd</message>
   <message key="xmlui.Submission.submit.AccessStep.review_policy_line">Ime: {0}; dejanje: {1}, skupina: {2}, datum začetka: {3}, datum zaključka: {4}</message>
   <message key="xmlui.Submission.submit.AccessStep.review_public_item">Vnos bo iskljiv</message>
   <message key="xmlui.Submission.submit.AccessStep.review_private_item">Vnos ne bo iskljiv</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.EditPolicyStep -->
   <message key="xmlui.Submission.submit.EditPolicyStep.head">Urejanje politike</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.UploadStep -->
   <message key="xmlui.Submission.submit.UploadStep.head">Nalaganje datotek</message>
   <message key="xmlui.Submission.submit.UploadStep.file">Datoteka</message>
   <message key="xmlui.Submission.submit.UploadStep.file_help">Vnesite celotno pot datoteke na vašem računalniku, ki ustreza vnosu. S klikom na "Prebrskaj ..." se bo odprlo novo okno in lahko boste izbrali datoteko z vašega računalnika. <div class="alert">Prosimo, da pri nalaganju jezikovnih virov uporabite enega izmed priporočenih formatov, navedenih v <a href="http://www.clarin.eu/sites/default/files/Standards%20for%20LRT-v6.pdf" target="_blank">standardih LRT.</a>
@@ -922,6 +936,10 @@
   <message key="xmlui.Submission.submit.UploadStep.submit_edit">Uredi</message>
   <message key="xmlui.Submission.submit.UploadStep.checksum">Kontrolna vsota datotek:</message>
   <message key="xmlui.Submission.submit.UploadStep.submit_remove">Odstrani izbrane datoteke</message>
+  <message key="xmlui.Submission.submit.UploadStep.inform_about_licences">Licence za ta vnos lahko določite šele, ko v repozitorij naložite vsaj eno datoteko.</message>
+  <message key="xmlui.Submission.submit.UploadStep.submit_remove_all">Odstrani vse datoteke</message>
+  <message key="xmlui.Submission.submit.UploadStep.column_checksum">Kontrolna vsota</message>
+  <message key="xmlui.Submission.submit.UploadStep.column_order">Zaporedje</message>
   <message key="xmlui.Submission.submit.UploadStep.review.no_file">Naložili niste nobene datoteke.</message>
   <message key="xmlui.Submission.submit.UploadStep.social.drive.list_files">Dodajte datoteke s svojega pogona <span class="google-drive"> </span>
   </message>
@@ -952,12 +970,6 @@
   <message key="xmlui.Submission.submit.UploadWithEmbargoStep.checksum">Kontrolna vsota datotek:</message>
   <message key="xmlui.Submission.submit.UploadWithEmbargoStep.submit_remove">Odstrani izbrane datoteke</message>
   <message key="xmlui.Submission.submit.UploadWithEmbargoStep.submit_policy">Politike</message>
-  <!-- UFAL -->
-  <message key="xmlui.Submission.submit.UploadStep.inform_about_licences">Licence za ta vnos lahko določite šele, ko v repozitorij naložite vsaj eno datoteko.</message>
-  <message key="xmlui.Submission.submit.UploadStep.submit_remove_all">Odstrani vse datoteke</message>
-  <message key="xmlui.Submission.submit.UploadStep.column_checksum">Kontrolna vsota</message>
-  <message key="xmlui.Submission.submit.UploadStep.column_order">Zaporedje</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.EditFileStep -->
   <message key="xmlui.Submission.submit.EditFileStep.head">Urejanje datoteke</message>
   <message key="xmlui.Submission.submit.EditFileStep.file">Datoteka</message>
   <message key="xmlui.Submission.submit.EditFileStep.description">Opis datoteke</message>
@@ -969,9 +981,7 @@
   <message key="xmlui.Submission.submit.EditFileStep.info2">Če želenega formata ni na seznamu, <strong>izberite "formata ni na seznamu"</strong> in format vaše datoteke opišite v spodnjem polju.</message>
   <message key="xmlui.Submission.submit.EditFileStep.format_user">Drug format</message>
   <message key="xmlui.Submission.submit.EditFileStep.format_user_help">Ime in različica aplikacije, s katero ste ustvarili datoteko (na primer "<i>ACMESoft SuperApp, različica 1.5</i>").</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.EditBitstreamPolicies -->
   <message key="xmlui.Submission.submit.EditBitstreamPolicies.head">Dostop do bitnega toka</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.ReviewStep -->
   <message key="xmlui.Submission.submit.ReviewStep.head">Pregled vnosa</message>
   <message key="xmlui.Submission.submit.ReviewStep.yes">Da</message>
   <message key="xmlui.Submission.submit.ReviewStep.no">Ne</message>
@@ -986,7 +996,6 @@
   <message key="xmlui.Submission.submit.ReviewStep.unknown">neznano</message>
   <message key="xmlui.Submission.submit.ReviewStep.known">znano</message>
   <message key="xmlui.Submission.submit.ReviewStep.supported">podprto</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
   <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Prišlo je do napake ... {0}</message>
   <message key="xmlui.Submission.submit.CCLicenseStep.head">Licencirajte svoje delo</message>
   <message key="xmlui.Submission.submit.CCLicenseStep.info1">Če želite, lahko svojemu vnosu dodelite licenco <a href="http://creativecommons.org/">Creative Commons.</a> 
@@ -999,7 +1008,6 @@
   <message key="xmlui.Submission.submit.CCLicenseStep.no_license">Ni licenc Creative Commons</message>
   <message key="xmlui.Submission.submit.CCLicenseStep.save_changes">Če želite shraniti spremembe, kliknite "Naprej".</message>
   <message key="xmlui.Submission.submit.CCLicenseStep.submit_remove">Odstranite to licenco Creative Commons</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
   <message key="xmlui.Submission.submit.LicenseStep.head">Licenciranje</message>
   <message key="xmlui.Submission.submit.LicenseStep.info1">Da repozitorij lahko neomejeno reproducira, prevaja in distribuira vaš vnos, morate z izbiro "Podeljujem licenco" potrditi, da se strinjate z naslednjimi pogoji.</message>
   <message key="xmlui.Submission.submit.LicenseStep.info2"/>
@@ -1017,20 +1025,16 @@
   <message key="xmlui.Submission.submit.LicenseStep.distribution_license_head_link">Sporazum o distribuciji virov</message>
   <message key="xmlui.Submission.submit.LicenseStep.license_list_alert">Za vse podprte licence in njihove podrobnosti obiščite stran seznama licenc </message>
   <message key="xmlui.Submission.submit.LicenseStep.license_list_alert_link"/>
-  <message key="xmlui.Submission.submit.LicenseStep.resource_license_text">
-  <i class="fa fa-3x fa-crosshairs  pull-left"> </i>Izbirnik licenc vam nudi vizualno pomoč pri izbiri ustrezne licence za vaše podatke ali programsko opremo.</message>
+  <message key="xmlui.Submission.submit.LicenseStep.resource_license_text"><i class="fa fa-3x fa-crosshairs  pull-left"> </i>Izbirnik licenc vam nudi vizualno pomoč pri izbiri ustrezne licence za vaše podatke ali programsko opremo.</message>
   <message key="xmlui.Submission.submit.LicenseStep.resource_license_text2">Če že veste, pod katero licenco želite distribuirati svoje delo, jo izberite na spustnem seznamu.</message>
   <message key="xmlui.Submission.submit.LicenseStep.license_selector_button">Izbirnik licenc "OPEN License Selector"</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.RemovedStep -->
   <message key="xmlui.Submission.submit.RemovedStep.head">Vnos je bil odstranjen</message>
   <message key="xmlui.Submission.submit.RemovedStep.info1">Vnašanje je bilo prekinjeno in vnos je bil odstranjen iz sistema.</message>
   <message key="xmlui.Submission.submit.RemovedStep.go_submission">Pojdite na stran vnosov</message>
-  <!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
   <message key="xmlui.Submission.submit.CompletedStep.head">Vnos je bil oddan</message>
   <message key="xmlui.Submission.submit.CompletedStep.info1">Vaš vnos bo zdaj šel v postopek pregleda za to zbirko. Ko bo vnos dodan zbirki ali v primeru težav z oddanim vnosom, boste prejeli e-poštno obvestilo. Na strani vnosov lahko tudi spremljate status vašega vnosa.</message>
   <message key="xmlui.Submission.submit.CompletedStep.go_submission">Pojdite na stran vnosov</message>
   <message key="xmlui.Submission.submit.CompletedStep.submit_again">Ustvari nov vnos</message>
-  <!-- org.dspace.app.xmlui.Submission.workflow.PerformTaskStep -->
   <message key="xmlui.Submission.workflow.PerformTaskStep.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
   <message key="xmlui.Submission.workflow.PerformTaskStep.take_help">Dodelite si nalogo.</message>
   <message key="xmlui.Submission.workflow.PerformTaskStep.take_submit">Sprejmi nalogo</message>
@@ -1048,21 +1052,12 @@
   <message key="xmlui.Submission.workflow.PerformTaskStep.edit_submit">Uredi metapodatke</message>
   <message key="xmlui.Submission.workflow.PerformTaskStep.return_help">Vrnite nalogo v čakalno vrsto, da jo lahko sprejme drug uporabnik.</message>
   <message key="xmlui.Submission.workflow.PerformTaskStep.return_submit">Vrni nalogo v čakalno vrsto</message>
-  <!-- <UFAL> -->
   <message key="xmlui.Submission.workflow.PerformTaskStep.record_format_help">Prikaži enostavni/polni zapis vnosa</message>
   <message key="xmlui.Submission.workflow.ApproveError.note">Prišlo je do napake pri registraciji vnosa pri zunanjem ponudniku identifikatorjev handle. Morda je prišlo do začasnih težav na strežniku. Lahko poskusite odobriti vnos kasneje ali omogočite dostop do vnosa na lokalni ravni in naknadno ustvarite ustrezen zapis identifikatorja handle.</message>
-  <!--  </UFAL> -->
-  <!-- org.dspace.app.xmlui.Submission.workflow.RejectTaskStep -->
   <message key="xmlui.Submission.workflow.RejectTaskStep.info1">V spodnje polje vnesite razlog za zavrnitev vnosa in navedite, ali lahko avtor težavo popravi in ponovno odda vnos.</message>
   <message key="xmlui.Submission.workflow.RejectTaskStep.reason">Razlog</message>
   <message key="xmlui.Submission.workflow.RejectTaskStep.reason_required">Razlog je obvezen</message>
   <message key="xmlui.Submission.workflow.RejectTaskStep.submit_reject">Zavrni vnos</message>
-  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      
-      Administrative Aspect
-      
-      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-  <!-- action-generated messages. These are referenced from the sitemap rather than a transformer -->
   <message key="xmlui.administrative.FlowCurationUtils.curate_success_notice">Naloga je bila uspešno izvedena.</message>
   <message key="xmlui.administrative.FlowCurationUtils.curate_failed_notice">Naloga je bila nepričakovano prekinjena ali ni bila uspešno izvedena. Za več informacij se obrnite na <a class="helpdesk-tolink">pomoč uporabnikom</a> ali preverite sistemski dnevnik.</message>
   <message key="xmlui.administrative.FlowCurationUtils.queue_success_notice">Naloga je bila uspešno uvrščena v čakalno vrsto.</message>
@@ -1095,10 +1090,7 @@
   <message key="xmlui.administrative.FlowItemUtils.bitstream_delete">Izbrani bitni tokovi so bili izbrisani.</message>
   <message key="xmlui.administrative.FlowMapperUtils.map_items">Vnosi so bili uspešno preslikani.</message>
   <message key="xmlui.administrative.FlowMapperUtils.unmaped_items">Preslikave vnosov so bile izbrisane.</message>
-  <!-- general items for all of the eperson classes -->
   <message key="xmlui.administrative.eperson.general.epeople_trail">Upravljanje e-oseb</message>
-  <!-- org.dspace.app.xmlui.administrative.Navigation -->
-  <!-- contextual menu items -->
   <message key="xmlui.administrative.Navigation.context_head">Kontekst</message>
   <message key="xmlui.administrative.Navigation.context_edit_item">Urejanje vnosa</message>
   <message key="xmlui.administrative.Navigation.context_edit_collection">Urejanje zbirke</message>
@@ -1111,8 +1103,6 @@
   <message key="xmlui.administrative.Navigation.context_export_collection">Izvoz zbirke</message>
   <message key="xmlui.administrative.Navigation.context_export_community">Izvoz skupnosti</message>
   <message key="xmlui.administrative.Navigation.context_export_metadata">Izvoz metapodatkov</message>
-  <message key="xmlui.administrative.Navigation.context_search_export_metadata">Izvoz iskanja metapodatkov</message>
-  <!-- Site administrator options -->
   <message key="xmlui.administrative.Navigation.administrative_head">Administrativno</message>
   <message key="xmlui.administrative.Navigation.administrative_access_control">Nadzor dostopa</message>
   <message key="xmlui.administrative.Navigation.administrative_people">Osebe</message>
@@ -1134,9 +1124,7 @@
   <message key="xmlui.administrative.Navigation.administrative_licenses">Licence</message>
   <message key="xmlui.administrative.Navigation.administrative_handles">Identifikatorji handle</message>
   <message key="xmlui.administrative.Navigation.administrative_external_handles">Zunanji identifikatorji handle</message>
-  <!-- my account items -->
   <message key="xmlui.administrative.Navigation.account_export">Moji izvozi</message>
-  <!-- export item -->
   <message key="xmlui.administrative.ItemExport.head">Arhiv izvozov</message>
   <message key="xmlui.administrative.ItemExport.item.id.error">Navedeni ID vnosa ni veljaven.</message>
   <message key="xmlui.administrative.ItemExport.collection.id.error">Navedeni ID zbirke ni veljaven.</message>
@@ -1148,7 +1136,6 @@
   <message key="xmlui.administrative.ItemExport.collection.success">Zbirka je bila uspešno izvožena. Prejeli boste e-poštno sporočilo, ko bo možno prenesti arhiv. Svoje razpoložljive arhive si lahko ogledate tudi s klikom a povezavo ''Moji izvozi''.</message>
   <message key="xmlui.administrative.ItemExport.community.success">Skupnost je bila uspešno izvožena. Prejeli boste e-poštno sporočilo, ko bo možno prenesti arhiv. Svoje razpoložljive arhive si lahko ogledate tudi s klikom a povezavo ''Moji izvozi''.</message>
   <message key="xmlui.administrative.ItemExport.available.head">Arhivi izvozov, ki so na voljo za prenos:</message>
-  <!-- org.dspace.app.xmlui.administrative.eperson.ManageEPeopleMain -->
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.title">Upravljanje e-oseb</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.main_head">Upravljanje e-oseb</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_head">Dejanja</message>
@@ -1167,7 +1154,6 @@
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column5">Več informacij</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.submit_delete">Izbriši e-osebe</message>
   <message key="xmlui.administrative.eperson.ManageEPeopleMain.no_results">Vaše iskanje ni vrnilo rezultatov ...</message>
-  <!-- org.dspace.app.xmlui.administrative.eperson.AddEPersonForm -->
   <message key="xmlui.administrative.eperson.AddEPersonForm.title">Dodajanje e-osebe</message>
   <message key="xmlui.administrative.eperson.AddEPersonForm.trail">Dodajanje e-osebe</message>
   <message key="xmlui.administrative.eperson.AddEPersonForm.head1">Ustvarite novega uporabnika</message>
@@ -1184,7 +1170,6 @@
   <message key="xmlui.administrative.eperson.AddEPersonForm.error_org">Organizacija je obvezna</message>
   <message key="xmlui.administrative.eperson.AddEPersonForm.welcome_message">Pozdravno sporočilo</message>
   <message key="xmlui.administrative.eperson.AddEPersonForm.error_item_deleted">Vnos ni več na voljo!</message>
-  <!-- org.dspace.app.xmlui.administrative.eperson.EditEPersonForm -->
   <message key="xmlui.administrative.eperson.EditEPersonForm.title">Urejanje e-osebe</message>
   <message key="xmlui.administrative.eperson.EditEPersonForm.trail">Urejanje e-osebe</message>
   <message key="xmlui.administrative.eperson.EditEPersonForm.head1">Urejanje e-osebe</message>
@@ -1210,7 +1195,6 @@
   <message key="xmlui.administrative.eperson.EditEPersonForm.member_head">Skupine, ki jim e-oseba pripada:</message>
   <message key="xmlui.administrative.eperson.EditEPersonForm.indirect_member">(prek skupine: {0})</message>
   <message key="xmlui.administrative.eperson.EditEPersonForm.member_none">nobena</message>
-  <!-- org.dspace.app.xmlui.administrative.eperson.DeleteEPeopleConfirm -->
   <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.title">Potrditev izbrisa e-osebe</message>
   <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.trail">Potrditev izbrisa</message>
   <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.confirm_head">Potrditev izbrisa</message>
@@ -1219,9 +1203,7 @@
   <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_id">ID</message>
   <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_name">Ime</message>
   <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_email">E-poštni naslov</message>
-  <!-- general items for all of the group classes -->
   <message key="xmlui.administrative.group.general.group_trail">Upravljanje skupin</message>
-  <!-- org.dspace.app.xmlui.administrative.group.ManageGroupsMain -->
   <message key="xmlui.administrative.group.ManageGroupsMain.title">Upravljanje skupin</message>
   <message key="xmlui.administrative.group.ManageGroupsMain.main_head">Upravljanje skupin</message>
   <message key="xmlui.administrative.group.ManageGroupsMain.actions_head">Dejanja</message>
@@ -1240,7 +1222,6 @@
   <message key="xmlui.administrative.group.ManageGroupsMain.collection_link">Prikaz</message>
   <message key="xmlui.administrative.group.ManageGroupsMain.submit_delete">Izbriši skupine</message>
   <message key="xmlui.administrative.group.ManageGroupsMain.no_results">Vaše iskanje ni vrnilo rezultatov ...</message>
-  <!-- org.dspace.app.xmlui.administrative.group.EditGroupForm -->
   <message key="xmlui.administrative.group.EditGroupForm.title">Urejevalnik skupin</message>
   <message key="xmlui.administrative.group.EditGroupForm.trail">Urejanje skupin</message>
   <message key="xmlui.administrative.group.EditGroupForm.main_head">Urejevalnik skupin: {0} (id: {1})</message>
@@ -1280,7 +1261,6 @@
   <message key="xmlui.administrative.group.EditGroupForm.members_pending">[na čakanju]</message>
   <message key="xmlui.administrative.group.EditGroupForm.instructions_para">Odstranite člane</message>
   <message key="xmlui.administrative.group.EditGroupForm.collection_link_para">Odstranite člane</message>
-  <!-- org.dspace.app.xmlui.administrative.group.DeleteGroupsConfirm -->
   <message key="xmlui.administrative.group.DeleteGroupsConfirm.title">Potrditev izbrisa skupine</message>
   <message key="xmlui.administrative.group.DeleteGroupsConfirm.trail">Potrditev izbrisa</message>
   <message key="xmlui.administrative.group.DeleteGroupsConfirm.head">Potrditev izbrisa</message>
@@ -1289,10 +1269,8 @@
   <message key="xmlui.administrative.group.DeleteGroupsConfirm.column2">Ime</message>
   <message key="xmlui.administrative.group.DeleteGroupsConfirm.column3">E-osebe</message>
   <message key="xmlui.administrative.group.DeleteGroupsConfirm.column4">Skupine</message>
-  <!-- general items for all of the registries classes -->
   <message key="xmlui.administrative.registries.general.format_registry_trail">Register formatov</message>
   <message key="xmlui.administrative.registries.general.metadata_registry_trail">Register metapodatkov</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.java -->
   <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.title">Izbris formatov bitnih tokov</message>
   <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.trail">Izbris formatov bitnih tokov</message>
   <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.head">Potrditev izbrisa</message>
@@ -1300,7 +1278,6 @@
   <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column1">ID</message>
   <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column2">Vrsta medija MIME</message>
   <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column3">Ime</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.DeleteMetadataFieldsConfirm.java -->
   <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.title">Izbris polj</message>
   <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.trail">Izbris polj</message>
   <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.head">Potrditev izbrisa</message>
@@ -1310,7 +1287,6 @@
   <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column1">ID</message>
   <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column2">Ime</message>
   <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column3">Opomba glede obsega</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.DeleteMetadataSchemaConfirm.java-->
   <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.title">Izbris sheme</message>
   <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.trail">Izbris sheme</message>
   <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.head">Potrditev izbrisa</message>
@@ -1320,7 +1296,6 @@
   <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column1">ID</message>
   <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column2">Imenski prostor</message>
   <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column3">Ime</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.EditBitstreamFormat.java -->
   <message key="xmlui.administrative.registries.EditBitstreamFormat.title">Format bitnega toka</message>
   <message key="xmlui.administrative.registries.EditBitstreamFormat.trail">Format bitnega toka</message>
   <message key="xmlui.administrative.registries.EditBitstreamFormat.head1">Nov format bitnega toka</message>
@@ -1341,7 +1316,6 @@
   <message key="xmlui.administrative.registries.EditBitstreamFormat.internal_help">Formati z oznako "interno" so uporabniku skriti in se uporabljajo za administrativne namene.</message>
   <message key="xmlui.administrative.registries.EditBitstreamFormat.extensions">Datotečne pripone</message>
   <message key="xmlui.administrative.registries.EditBitstreamFormat.extensions_help">Datotečne pripone so pripone, ki se uporabljajo za samodejno identifikacijo formatov naloženih datotek. Za vsak format lahko vnesete več pripon.</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.EditMetadataSchema.java -->
   <message key="xmlui.administrative.registries.EditMetadataSchema.title">Metapodatkovna shema</message>
   <message key="xmlui.administrative.registries.EditMetadataSchema.trail">Metapodatkovna shema</message>
   <message key="xmlui.administrative.registries.EditMetadataSchema.head1">Metapodatkovna shema: "{0}"</message>
@@ -1368,7 +1342,6 @@
   <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_tolong">Element polja je predolg. Vsebuje lahko največ 32 znakov.</message>
   <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_tolong">Kvalifikator polja je predolg. Vsebuje lahko največ 32 znakov.</message>
   <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_badchar">Kvalifikator polja vsebuje nedovoljen znak. Kvalifikator NE sme vsebovati: pik, podčrtajev ali presledkov.</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.FormatRegistryMain.java -->
   <message key="xmlui.administrative.registries.FormatRegistryMain.title">Register formatov</message>
   <message key="xmlui.administrative.registries.FormatRegistryMain.head">Register formatov bitnih tokov</message>
   <message key="xmlui.administrative.registries.FormatRegistryMain.para1">Ta seznam formatov bitnih tokov nudi informacije o znanih formatih in njihovi ravni podpore. S tem orodjem lahko urejate ali dodajate nove bitne tokove. Formati z oznako "interno" so uporabniku skriti in se uporabljajo za administrativne namene.</message>
@@ -1383,7 +1356,6 @@
   <message key="xmlui.administrative.registries.FormatRegistryMain.support_1">Znano</message>
   <message key="xmlui.administrative.registries.FormatRegistryMain.support_2">Podpora</message>
   <message key="xmlui.administrative.registries.FormatRegistryMain.submit_delete">Izbriši formate</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.MetadatRegistryMain.java -->
   <message key="xmlui.administrative.registries.MetadataRegistryMain.title">Register metapodatkov</message>
   <message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Register metapodatkov</message>
   <message key="xmlui.administrative.registries.MetadataRegistryMain.para1">Register metapodatkov obsega seznam vseh metapodatkovnih polj, ki so na voljo v repozitoriju. Ta polja so lahko prisotna v več shemah. Repozitorij zahteva uporabo kvalificirane sheme Dublin Core. Z dodatnimi polji lahko shemo Dublin Core razširite ali v register dodate nove sheme.</message>
@@ -1400,7 +1372,6 @@
   <message key="xmlui.administrative.registries.MetadataRegistryMain.name_help">Okrajšani zapis za shemo. Uporabljen bo kot predpona pri imenu polja (npr. dc.element.qualifier). Ime lahko obsega največ 32 znakov in ne sme vsebovati presledkov, pik ali podčrtajev.</message>
   <message key="xmlui.administrative.registries.MetadataRegistryMain.name_error">To polje je obvezno. Obsega lahko največ 32 znakov in ne sme vsebovati presledkov, pik ali podčrtajev.</message>
   <message key="xmlui.administrative.registries.MetadataRegistryMain.submit_add">Dodaj novo shemo</message>
-  <!-- org.dspace.app.xmlui.administrative.registries.MoveMetadataField.java -->
   <message key="xmlui.administrative.registries.MoveMetadataField.title">Premik polj</message>
   <message key="xmlui.administrative.registries.MoveMetadataField.trail">Premik polj</message>
   <message key="xmlui.administrative.registries.MoveMetadataField.head1">Premik metapodatkovnih polj</message>
@@ -1410,10 +1381,8 @@
   <message key="xmlui.administrative.registries.MoveMetadataField.column3">Opomba glede obsega</message>
   <message key="xmlui.administrative.registries.MoveMetadataField.para2">Premaknite v shemo: </message>
   <message key="xmlui.administrative.registries.MoveMetadataField.submit_move">Premakni polja</message>
-  <!-- general authorization keywords -->
   <message key="xmlui.administrative.authorization.general.authorize_trail">Avtorizacija</message>
   <message key="xmlui.administrative.authorization.general.policyList_trail">Seznam politik</message>
-  <!-- org.dspace.app.xmlui.administrative.authorization.AuthorizationMain -->
   <message key="xmlui.administrative.authorization.AuthorizationMain.title">Dodelitev avtorizacijskih politik</message>
   <message key="xmlui.administrative.authorization.AuthorizationMain.main_head">Dodelitev avtorizacijskih politik</message>
   <message key="xmlui.administrative.authorization.AuthorizationMain.actions_head">Avtorizacije vnosa</message>
@@ -1425,7 +1394,6 @@
   <message key="xmlui.administrative.authorization.AuthorizationMain.actions_advanced_link">Kliknite tukaj, da odprete skrbniško orodje za politiko o nadomestnih znakih</message>
   <message key="xmlui.administrative.authorization.AuthorizationMain.containerList_head">Avtorizacije za skupnost/zbirko</message>
   <message key="xmlui.administrative.authorization.AuthorizationMain.containerList_para">Kliknite na skupnost ali zbirko za urejanje njenih politik.</message>
-  <!-- org.dspace.app.xmlui.administrative.authorization.EditContainerPolicies -->
   <message key="xmlui.administrative.authorization.EditContainerPolicies.title">Urejanje politik</message>
   <message key="xmlui.administrative.authorization.EditContainerPolicies.trail">Seznam politik</message>
   <message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_collection">Politike za zbirko "{0}" ({1},ID: {2})</message>
@@ -1440,7 +1408,6 @@
   <message key="xmlui.administrative.authorization.EditContainerPolicies.head_end_date">Datum zaključka</message>
   <message key="xmlui.administrative.authorization.EditContainerPolicies.submit_delete">Izbriši izbrano</message>
   <message key="xmlui.administrative.authorization.EditContainerPolicies.group_edit">Uredi</message>
-  <!-- org.dspace.app.xmlui.administrative.authorization.EditItemPolicies -->
   <message key="xmlui.administrative.authorization.EditItemPolicies.title">Urejanje politik vnosa</message>
   <message key="xmlui.administrative.authorization.EditItemPolicies.trail">Seznam politik</message>
   <message key="xmlui.administrative.authorization.EditItemPolicies.main_head">Politike za vnos {0} (ID={1})</message>
@@ -1453,7 +1420,6 @@
   <message key="xmlui.administrative.authorization.EditItemPolicies.add_bundlePolicy_link">Dodajte novo politiko svežnja</message>
   <message key="xmlui.administrative.authorization.EditItemPolicies.add_bitstreamPolicy_link">Dodajte novo politiko bitnega toka</message>
   <message key="xmlui.administrative.authorization.EditContainerPolicies.no_policies">Za ta predmet ni bila najdena nobena politika.</message>
-  <!-- org.dspace.app.xmlui.administrative.authorization.EditPolicyForm -->
   <message key="xmlui.administrative.authorization.EditPolicyForm.title">Urejanje politike</message>
   <message key="xmlui.administrative.authorization.EditPolicyForm.trail">Urejanje politike</message>
   <message key="xmlui.administrative.authorization.EditPolicyForm.main_head_new">Ustvarite novo politiko za {0} {1}</message>
@@ -1479,7 +1445,6 @@
   <message key="xmlui.administrative.authorization.EditPolicyForm.error_duplicated_policy">Enaka politika za to skupino in to dejanje že obstaja.</message>
   <message key="xmlui.administrative.authorization.EditPolicyForm.error_start_date_greater_than_end_date">Datum zaključka je pred datumom začetka</message>
   <message key="xmlui.administrative.authorization.EditPolicyForm.label_date_help">Dovoljeni format: llll, llll-mm, llll-mm-dd</message>
-  <!-- org.dspace.app.xmlui.administrative.authorization.AdvacedAuthorizationsForm -->
   <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.title">Napredni upravljalnik politik</message>
   <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.trail">Napredne avtorizacije</message>
   <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_head">Napredni upravljalnik politik</message>
@@ -1503,7 +1468,6 @@
   <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_start_date_greater_than_end_date">Datum zaključka je pred datumom začetka</message>
   <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_groupIds">Izberite vsaj skupino</message>
   <message key="xmlui.administrative.authorization.AdvancedAuthorizationsForm.error_collectionIds">Izberite vsaj zbirko</message>
-  <!-- org.dspace.app.xmlui.administrative.authorization.DeletePoliciesConfirm -->
   <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.title">Potrditev izbrisa politike</message>
   <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.trail">Potrditev izbrisa</message>
   <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_head">Potrditev izbrisa</message>
@@ -1511,8 +1475,6 @@
   <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_id">ID</message>
   <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_action">Dejanje</message>
   <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_group">Skupina</message>
-  <!-- Batch Import Tool -->
-  <!-- org.dspace.app.xmlui.administrative.batchimport -->
   <message key="xmlui.administrative.batchimport.general.select_collection">Izberite zbirko</message>
   <message key="xmlui.administrative.batchimport.general.collection">Zbirka</message>
   <message key="xmlui.administrative.batchimport.general.collection_help">Izberite zbirko, ki ji boste dodali vnos.</message>
@@ -1530,17 +1492,13 @@
   <message key="xmlui.administrative.batchimport.flow.import_successful">Uvoz je bil uspešen</message>
   <message key="xmlui.administrative.batchimport.flow.import_failed">Uvoz ni uspel</message>
   <message key="xmlui.administrative.batchimport.flow.failed_no_collection">Ciljna zbirka ni določena</message>
-  <!-- org.dspace.app.xmlui.administrative.batchimport.BatchImportConfirm -->
   <message key="xmlui.administrative.batchimport.BatchmportMain.submit_upload">Naloži ZIP "SimpleArchiveFormat"</message>
-  <!-- org.dspace.app.xmlui.administrative.batchimport.BatchImportConfirm -->
   <message key="xmlui.administrative.batchimport.BatchImportConfirm.success">Uspešno obdelano</message>
   <message key="xmlui.administrative.batchimport.BatchImportConfirm.changes_committed">Sprejete spremembe vnosa</message>
   <message key="xmlui.administrative.batchimport.BatchImportConfirm.item_added">Dodano: </message>
   <message key="xmlui.administrative.batchimport.BatchImportConfirm.item_removed">Odstranjeno: </message>
-  <!-- org.dspace.app.xmlui.administrative.batchimport.BatchImportUpload -->
   <message key="xmlui.administrative.batchimport.BatchImportUpload.item_add">Dodajte: </message>
   <message key="xmlui.administrative.batchimport.BatchImportUpload.item_remove">Odstranite: </message>
-  <!-- general edit item messages -->
   <message key="xmlui.administrative.item.general.item_trail">Vnosi</message>
   <message key="xmlui.administrative.item.general.template_head">Urejanje predloge vnosa za zbirko: {0}</message>
   <message key="xmlui.administrative.item.general.option_head">Urejanje vnosa</message>
@@ -1553,7 +1511,6 @@
   <message key="xmlui.administrative.item.general.option_license">Licenca</message>
   <message key="xmlui.administrative.item.general.option_embargo">Embargo</message>
   <message key="xmlui.administrative.item.general.option_services">Storitve</message>
-  <!-- org.dspace.app.xmlui.administrative.item.AddBitstreamForm -->
   <message key="xmlui.administrative.item.AddBitstreamForm.title">Nov bitni tok</message>
   <message key="xmlui.administrative.item.AddBitstreamForm.trail">Nov bitni tok</message>
   <message key="xmlui.administrative.item.AddBitstreamForm.head1">Naložite nov bitni tok</message>
@@ -1569,7 +1526,6 @@
   <message key="xmlui.administrative.item.AddBitstreamForm.description_help">Če želite, lahko dodate kratek opis datoteke, na primer "<i>glavni članek</i>" ali "<i>podatki preizkusa</i>".</message>
   <message key="xmlui.administrative.item.AddBitstreamForm.submit_upload">Naloži</message>
   <message key="xmlui.administrative.item.AddBitstreamForm.no_bundles">Da bi v repozitorij naložili nove bitne tokove, potrebujete pravice za BRANJE in PISANJE na vsaj enem svežnju.</message>
-  <!-- org.dspace.app.xmlui.administrative.item.DeleteBitstreamConfirm -->
   <message key="xmlui.administrative.item.DeleteBitstreamConfirm.title">Potrditev izbrisa</message>
   <message key="xmlui.administrative.item.DeleteBitstreamConfirm.trail">Potrditev izbrisa</message>
   <message key="xmlui.administrative.item.DeleteBitstreamConfirm.head1">Potrditev izbrisa</message>
@@ -1577,7 +1533,6 @@
   <message key="xmlui.administrative.item.DeleteBitstreamConfirm.column1">Ime</message>
   <message key="xmlui.administrative.item.DeleteBitstreamConfirm.column2">Opis</message>
   <message key="xmlui.administrative.item.DeleteBitstreamConfirm.column3">Format</message>
-  <!-- org.dspace.app.xmlui.administrative.item.ConfirmItemForm -->
   <message key="xmlui.administrative.item.ConfirmItemForm.title">Potrditev</message>
   <message key="xmlui.administrative.item.ConfirmItemForm.trail">Potrditev</message>
   <message key="xmlui.administrative.item.ConfirmItemForm.head1">Sprememba vnosa: {0}</message>
@@ -1598,7 +1553,6 @@
   <message key="xmlui.administrative.item.ConfirmItemForm.submit_reinstate">Obnovi</message>
   <message key="xmlui.administrative.item.ConfirmItemForm.submit_private">Spremeni v zasebno</message>
   <message key="xmlui.administrative.item.ConfirmItemForm.submit_public">Spremeni v javno</message>
-  <!-- org.dspace.app.xmlui.aspect.administrative.item.MoveItemForm -->
   <message key="xmlui.administrative.item.MoveItemForm.title">Premik</message>
   <message key="xmlui.administrative.item.MoveItemForm.trail">Premik</message>
   <message key="xmlui.administrative.item.MoveItemForm.head1">Premik vnosa: {0}</message>
@@ -1608,7 +1562,6 @@
   <message key="xmlui.administrative.item.MoveItemForm.submit_move">Premakni</message>
   <message key="xmlui.administrative.item.MoveItemForm.inherit_policies">Podedujte politike</message>
   <message key="xmlui.administrative.item.MoveItemForm.inherit_policies_help">Podedujte privzete politike ciljne zbirke</message>
-  <!-- org.dspace.app.xmlui.administrative.item.EditBitstreamForm -->
   <message key="xmlui.administrative.item.EditBitstreamForm.title">Urejanje bitnega toka</message>
   <message key="xmlui.administrative.item.EditBitstreamForm.trail">Urejanje bitnega toka</message>
   <message key="xmlui.administrative.item.EditBitstreamForm.head1">Urejanje bitnega toka</message>
@@ -1626,7 +1579,6 @@
   <message key="xmlui.administrative.item.EditBitstreamForm.user_help">Ime in različica aplikacije, s katero ste ustvarili datoteko (na primer "<i>ACMESoft SuperApp, različica 1.5</i>").</message>
   <message key="xmlui.administrative.item.EditBitstreamForm.name_label">Ime datoteke</message>
   <message key="xmlui.administrative.item.EditBitstreamForm.name_help">Spremenite ime datoteke za ta bitni tok. To bo spremenilo prikazni URL bitnega toka, vendar bodo stare povezave še razrešljive, če se zaporedje ID-ja ne spremeni.</message>
-  <!-- org.dspace.app.xmlui.administrative.item.EditItemBitstreamsForm -->
   <message key="xmlui.administrative.item.EditItemBitstreamsForm.title">Bitni tokovi vnosa</message>
   <message key="xmlui.administrative.item.EditItemBitstreamsForm.trail">Bitni tokovi vnosa</message>
   <message key="xmlui.administrative.item.EditItemBitstreamsForm.head1">Bitni tokovi</message>
@@ -1650,7 +1602,6 @@
   <message key="xmlui.administrative.item.EditItemBitstreamsForm.previous_order">Prejšnji:</message>
   <message key="xmlui.administrative.item.EditItemBitstreamsForm.order_up">Premakni gor</message>
   <message key="xmlui.administrative.item.EditItemBitstreamsForm.order_down">Premakni dol</message>
-  <!-- org.dspace.app.xmlui.administrative.item.EditItemMetadataForm -->
   <message key="xmlui.administrative.item.EditItemMetadataForm.title">Metapodatki vnosa</message>
   <message key="xmlui.administrative.item.EditItemMetadataForm.trail">Metapodatki vnosa</message>
   <message key="xmlui.administrative.item.EditItemMetadataForm.head1">Dodajanje novih metapodatkov</message>
@@ -1664,7 +1615,6 @@
   <message key="xmlui.administrative.item.EditItemMetadataForm.column2">Ime</message>
   <message key="xmlui.administrative.item.EditItemMetadataForm.column3">Vrednost</message>
   <message key="xmlui.administrative.item.EditItemMetadataForm.column4">Jezik</message>
-  <!-- org.dspace.app.xmlui.administrative.item.EditItemStatusForm -->
   <message key="xmlui.administrative.item.EditItemStatusForm.title">Status vnosa</message>
   <message key="xmlui.administrative.item.EditItemStatusForm.trail">Status vnosa</message>
   <message key="xmlui.administrative.item.EditItemStatusForm.para1">Dobrodošli na strani za upravljanje vnosa. Tukaj lahko umaknete, obnovite, premaknete ali izbrišete vnos. Lahko tudi posodobite ali dodate nove metapodatke / bitne tokove v drugih zavihkih</message>
@@ -1692,15 +1642,12 @@
   <message key="xmlui.administrative.item.EditItemStatusForm.label_public">Spremeni v javno</message>
   <message key="xmlui.administrative.item.EditItemStatusForm.submit_private">Spremeni v zasebno ...</message>
   <message key="xmlui.administrative.item.EditItemStatusForm.submit_public">Spremeni v javno ...</message>
-  <!-- org.dspace.app.xmlui.administrative.item.ViewItem -->
   <message key="xmlui.administrative.item.ViewItem.title">Prikaz vnosa</message>
   <message key="xmlui.administrative.item.ViewItem.trail">Prikaz vnosa</message>
-  <!-- org.dspace.app.xmlui.administrative.item.CurateItemForm.java -->
   <message key="xmlui.administrative.item.CurateItemForm.main_head">Kuriranje vnosa: {0}</message>
   <message key="xmlui.administrative.item.CurateItemForm.title">Kuriranje vnosa</message>
   <message key="xmlui.administrative.item.CurateItemForm.trail">Skrbnik</message>
   <message key="xmlui.administrative.item.CurateItemForm.label_name">Naloga</message>
-  <!-- cz.cuni.mff.ufal.administrative.EditItemLicenseForm -->
   <message key="xmlui.administrative.item.EditItemLicenseForm.title">Licenca vnosa</message>
   <message key="xmlui.administrative.item.EditItemLicenseForm.trail">Licenca</message>
   <message key="xmlui.administrative.item.EditItemLicenseForm.head1">Trenutna licenca</message>
@@ -1715,14 +1662,11 @@
   <message key="xmlui.administrative.item.DefineLicenseForm.success_message">Nova licenca je bila uspešno dodana.</message>
   <message key="xmlui.administrative.item.DefineLicenseForm.already_exists">Licenca že obstaja.</message>
   <message key="xmlui.administrative.item.DefineLicenseForm.unknown_error">Licence ni mogoče dodati.</message>
-  <!-- cz.cuni.mff.ufal.administrative.EditItemServicesForm -->
   <message key="xmlui.administrative.item.EditItemServicesForm.title">Storitve</message>
   <message key="xmlui.administrative.item.EditItemServicesForm.trail">Storitve</message>
-  <!-- cz.cuni.mff.ufal.administrative.LicenseForm -->
   <message key="xmlui.administrative.LicenseForm.title">Licence repozitorija</message>
   <message key="xmlui.administrative.LicenseForm.trail">Licence</message>
   <message key="xmlui.administrative.LicenseForm.head1">Upravljanje licenc</message>
-  <!-- These keys will map to the labels for extra license fields in LicenseForm -->
   <message key="xmlui.ExtraLicenseField.LicenseForm.SEND_TOKEN">Uporabnik bo prejel e-poštno sporočilo z navodili za prenos.</message>
   <message key="xmlui.ExtraLicenseField.LicenseForm.NAME">Uporabniško ime</message>
   <message key="xmlui.ExtraLicenseField.LicenseForm.DOB">Datum rojstva</message>
@@ -1732,7 +1676,6 @@
   <message key="xmlui.ExtraLicenseField.LicenseForm.ORGANIZATION">Uporabnika prosite za navedbo organizacije (neobvezno).</message>
   <message key="xmlui.ExtraLicenseField.LicenseForm.REQUIRED_ORGANIZATION">Uporabnika prosite za navedbo organizacije (obvezno).</message>
   <message key="xmlui.ExtraLicenseField.LicenseForm.INTENDED_USE">Uporabnika vprašajte o njegovih namerah z vnosom.</message>
-  <!-- These keys will map to the labels for extra license fields during LicenseStep in submission -->
   <message key="xmlui.ExtraLicenseField.submission.SEND_TOKEN">Prejeli boste e-poštno sporočilo z navodili za prenos.</message>
   <message key="xmlui.ExtraLicenseField.submission.NAME">Ime in priimek</message>
   <message key="xmlui.ExtraLicenseField.submission.DOB">Datum rojstva</message>
@@ -1742,13 +1685,11 @@
   <message key="xmlui.ExtraLicenseField.submission.ORGANIZATION">Organizacija</message>
   <message key="xmlui.ExtraLicenseField.submission.REQUIRED_ORGANIZATION">Organizacija</message>
   <message key="xmlui.ExtraLicenseField.submission.INTENDED_USE">Predvidena uporaba</message>
-  <!-- org.dspace.app.xmlui.administrative.item.FindItemForm -->
   <message key="xmlui.administrative.item.FindItemForm.title">Poiščite vnos</message>
   <message key="xmlui.administrative.item.FindItemForm.head1">Poiščite vnos</message>
   <message key="xmlui.administrative.item.FindItemForm.identifier_label">Interni ID vnosa/handle vnosa</message>
   <message key="xmlui.administrative.item.FindItemForm.identifier_error">Identifikatorja ni mogoče razrešiti.</message>
   <message key="xmlui.administrative.item.FindItemForm.find">Poišči</message>
-  <!-- org.dspace.app.xmlui.administrative.metadataimport -->
   <message key="xmlui.administrative.metadataimport.general.title">Uvoz metapodatkov</message>
   <message key="xmlui.administrative.metadataimport.general.head1">Uvoz metapodatkov</message>
   <message key="xmlui.administrative.metadataimport.general.trail">Uvoz metapodatkov</message>
@@ -1762,9 +1703,7 @@
   <message key="xmlui.administrative.metadataimport.flow.import_successful">Uvoz je bil uspešen</message>
   <message key="xmlui.administrative.metadataimport.flow.import_failed">Uvoz ni uspel</message>
   <message key="xmlui.administrative.metadataimport.flow.over_limit">Presegli ste največje dovoljeno število sprememb. Omejite spremembe ali spremenite bulkedit.gui-item-limit v dspace.cfg</message>
-  <!-- org.dspace.app.xmlui.administrative.metadataimport.MetadataImportConfirm -->
   <message key="xmlui.administrative.metadataimport.MetadataImportMain.submit_upload">Naloži CSV</message>
-  <!-- org.dspace.app.xmlui.administrative.metadataimport.MetadataImportConfirm -->
   <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.success">Uspešno obdelano</message>
   <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.changes_committed">Sprejete spremembe vnosa</message>
   <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_added">Dodano: </message>
@@ -1776,7 +1715,6 @@
   <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_deleted">Vnos je bil izbrisan</message>
   <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_withdrawn">Vnos je bil umaknjen</message>
   <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_reinstated">Vnos je bil obnovljen</message>
-  <!-- org.dspace.app.xmlui.administrative.metadataimport.MetadataImportUpload -->
   <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_add">Dodaj: </message>
   <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_remove">Odstrani: </message>
   <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_newowner">Dodajte v lastniško zbirko</message>
@@ -1789,21 +1727,17 @@
   <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_delete">Izbriši vnos</message>
   <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_withdraw">Umakni vnos</message>
   <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_reinstate">Obnovi vnos</message>
-  <!-- general mapper messages -->
   <message key="xmlui.administrative.mapper.general.mapper_trail">Preslikovalnik vnosov</message>
-  <!-- org.dspace.app.xmlui.administrative.mapper.MapperMain -->
   <message key="xmlui.administrative.mapper.MapperMain.title">Preslikovalnik vnosov</message>
   <message key="xmlui.administrative.mapper.MapperMain.head1">Preslikovalnik vnosov – preslikajte vnose iz drugih zbirk</message>
   <message key="xmlui.administrative.mapper.MapperMain.para1">Zbirka: "<strong>{0}</strong>"</message>
   <message key="xmlui.administrative.mapper.MapperMain.para2">To je orodje za preslikovanje vnosov, ki skrbnikom zbirk dovoljuje preslikavo vnosov iz drugih zbirk v to zbirko. Lahko poiščete vnose iz drugih zbirk in jih preslikate ali brskate po seznamu trenutno preslikanih vnosov.</message>
   <message key="xmlui.administrative.mapper.MapperMain.stat_label">Statistika</message>
-  <message key="xmlui.administrative.mapper.MapperMain.stat_info">
-  <strong>{0} od {1}</strong> vnosov v tej zbirki so preslikani iz drugih zbirk</message>
+  <message key="xmlui.administrative.mapper.MapperMain.stat_info"><strong>{0} od {1}</strong> vnosov v tej zbirki so preslikani iz drugih zbirk</message>
   <message key="xmlui.administrative.mapper.MapperMain.search_label">Iskanje</message>
   <message key="xmlui.administrative.mapper.MapperMain.submit_search">Išči vnose</message>
   <message key="xmlui.administrative.mapper.MapperMain.submit_browse">Brskaj po preslikanih vnosih</message>
   <message key="xmlui.administrative.mapper.MapperMain.no_add">(Zahtevana pravica za DODAJANJE v zbirko)</message>
-  <!-- org.dspace.app.xmlui.administrative.mapper.SearchItemForm -->
   <message key="xmlui.administrative.mapper.SearchItemForm.title">Iskanje vnosov</message>
   <message key="xmlui.administrative.mapper.SearchItemForm.trail">Iskanje vnosov</message>
   <message key="xmlui.administrative.mapper.SearchItemForm.head1">Iskanje vnosov, ki ustrezajo: "{0}"</message>
@@ -1812,7 +1746,6 @@
   <message key="xmlui.administrative.mapper.SearchItemForm.column2">Zbirka</message>
   <message key="xmlui.administrative.mapper.SearchItemForm.column3">Avtor</message>
   <message key="xmlui.administrative.mapper.SearchItemForm.column4">Naslov</message>
-  <!-- org.dspace.app.xmlui.administrative.mapper.BrowseItemForm -->
   <message key="xmlui.administrative.mapper.BrowseItemForm.title">Brskanje po preslikanih vnosih</message>
   <message key="xmlui.administrative.mapper.BrowseItemForm.trail">Brskanje po preslikanih vnosih</message>
   <message key="xmlui.administrative.mapper.BrowseItemForm.head1">Brskanje po preslikanih vnosih</message>
@@ -1822,13 +1755,11 @@
   <message key="xmlui.administrative.mapper.BrowseItemForm.column3">Avtor</message>
   <message key="xmlui.administrative.mapper.BrowseItemForm.column4">Naslov</message>
   <message key="xmlui.administrative.mapper.BrowseItemForm.no_remove">Za izbris preslikav vnosov iz zbirke potrebujete pravico za ODSTRANJEVANJE iz te zbirke.</message>
-  <!-- General tags for collection management -->
   <message key="xmlui.administrative.collection.general.collection_trail">Zbirke</message>
   <message key="xmlui.administrative.collection.general.options_metadata">Urejanje metapodatkov</message>
   <message key="xmlui.administrative.collection.general.options_roles">Dodelitev vlog</message>
   <message key="xmlui.administrative.collection.general.options_curate">Kuriranje</message>
   <message key="xmlui.administrative.collection.general.options_queue">Čakalna vrsta</message>
-  <!-- org.dspace.app.xmlui.administrative.collection.AssignCollectionRoles.java -->
   <message key="xmlui.administrative.collection.AssignCollectionRoles.title">Urejanje vlog zbirke</message>
   <message key="xmlui.administrative.collection.AssignCollectionRoles.trail">Vloge</message>
   <message key="xmlui.administrative.collection.AssignCollectionRoles.main_head">Urejanje zbirke: {0}</message>
@@ -1857,17 +1788,14 @@
   <message key="xmlui.administrative.collection.AssignCollectionRoles.sysadmins_only">
     <nobr>(samo skrbniki sistema)</nobr>
   </message>
-  <message key="xmlui.administrative.collection.AssignCollectionRoles.repository_role">
-  <br/>(Skupina na ravni repozitorija, samo skrbniki sistema)</message>
+  <message key="xmlui.administrative.collection.AssignCollectionRoles.repository_role"><br/>(Skupina na ravni repozitorija, samo skrbniki sistema)</message>
   <message key="xmlui.administrative.collection.AssignCollectionRoles.not_allowed">
     <nobr>(tega ne morete konfigurirati)</nobr>
   </message>
-  <!-- org.dspace.app.xmlui.administrative.collection.CurateCollectionForm.java -->
   <message key="xmlui.administrative.collection.CurateCollectionForm.main_head">Kuriranje zbirke: {0}</message>
   <message key="xmlui.administrative.collection.CurateCollectionForm.title">Kuriranje zbirke</message>
   <message key="xmlui.administrative.collection.CurateCollectionForm.trail">Skrbnik</message>
   <message key="xmlui.administrative.collection.CurateCollectionForm.label_name">Naloga</message>
-  <!-- org.dspace.app.xmlui.administrative.collection.DeleteCollectionConfirm.java -->
   <message key="xmlui.administrative.collection.DeleteCollectionConfirm.title">Potrditev izbrisa</message>
   <message key="xmlui.administrative.collection.DeleteCollectionConfirm.trail">Potrditev</message>
   <message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_head">Potrditev izbrisa zbirke {0}</message>
@@ -1875,13 +1803,11 @@
   <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item1">Vse dokončane in nedokončane vnose v tej zbirki, ki niso del drugih zbirk.</message>
   <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item2">Vsebino teh vnosov</message>
   <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item3">Vse povezane avtorizacijske politike</message>
-  <!-- org.dspace.app.xmlui.administrative.collection.DeleteCollectionRoleConfirm.java -->
   <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.title">Potrditev izbrisa vloge</message>
   <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.trail">Potrditev</message>
   <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_head">Potrditev izbrisa vloge {0}</message>
   <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para_read">Ali ste prepričani, da želite izbrisati to vlogo? Z izbrisom te skupine boste vsem uporabnikom podelili BRALNI dostop do vseh bodočih vnosov v zbirki. Ta sprememba ni retroaktivna. Obstoječi vnosi bodo še vedno omejeni na člane z vlogo, ki jo želite izbrisati.</message>
   <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para">Ali ste prepričani, da želite izbrisati to vlogo? Vse spremembe in prilagoditve za skupino {0} bodo izgubljene in morali jih boste ponovno nastaviti.</message>
-  <!-- org.dspace.app.xmlui.administrative.collection.EditCollectionMetadataForm.java -->
   <message key="xmlui.administrative.collection.EditCollectionMetadataForm.title">Urejanje metapodatkov zbirke</message>
   <message key="xmlui.administrative.collection.EditCollectionMetadataForm.trail">Metapodatki</message>
   <message key="xmlui.administrative.collection.EditCollectionMetadataForm.main_head">Urejanje zbirke: {0}</message>
@@ -1903,12 +1829,10 @@
   <message key="xmlui.administrative.collection.EditCollectionMetadataForm.sysadmins_only">
     <nobr>(samo skrbniki sistema)</nobr>
   </message>
-  <!-- org.dspace.app.xmlui.administrative.collection.CreateCollectionForm.java -->
   <message key="xmlui.administrative.collection.CreateCollectionForm.title">Nova zbirka</message>
   <message key="xmlui.administrative.collection.CreateCollectionForm.trail">Nova zbirka</message>
   <message key="xmlui.administrative.collection.CreateCollectionForm.main_head">Vnos metapodatkov za novo zbirko {0}</message>
   <message key="xmlui.administrative.collection.CreateCollectionForm.submit_save">Ustvari</message>
-  <!-- General to the harvesting options under collection -->
   <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.title">Nastavitve zajemanja za zbirko</message>
   <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.trail">Zajemanje</message>
   <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.options_harvest">Vir vsebine</message>
@@ -1916,7 +1840,6 @@
   <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_normal">To je standardna zbirka</message>
   <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_harvested">Ta zbirka svojo vsebino zajema iz zunanjega vira</message>
   <message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.submit_save">Shrani</message>
-  <!-- org.dspace.app.xmlui.administrative.collection.SetupCollectionHarvestingForm.java -->
   <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.main_settings_head">Mesto zajete zbirke</message>
   <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.options_head">Možnosti zajemanja</message>
   <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_oai_provider">Ponudnik OAI</message>
@@ -1931,7 +1854,6 @@
   <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.option_md_and_ref">Zajemite metapodatke in sklice na bitne tokove (zahteva podporo ORE).</message>
   <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.option_md_and_bs">Zajemite metapodatke in bitne tokove (zahteva podporo ORE).</message>
   <message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.submit_test">Preizkusne nastavitve</message>
-  <!-- org.dspace.app.xmlui.administrative.collection.EditCollectionHarvestingForm.java -->
   <message key="xmlui.administrative.collection.EditCollectionHarvestingForm.main_settings_head">Mesto zajete zbirke</message>
   <message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_oai_provider">Ponudnik OAI</message>
   <message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_setid">Nastavljeni ID OAI</message>
@@ -1970,7 +1892,6 @@
   <message key="xmlui.administrative.ControlPanel.harvest_label_oai_url">URL OAI-PMH</message>
   <message key="xmlui.administrative.ControlPanel.harvest_label_oai_source">Vir ORE</message>
   <message key="xmlui.administrative.ControlPanel.harvest_head_harvester_settings">Nastavitve programa za zajemanje</message>
-  <!-- org.dspace.app.xmlui.administrative.ControlPanel.logins -->
   <message key="xmlui.administrative.ControlPanel.option_logins">Prijave uporabnikov</message>
   <message key="xmlui.administrative.ControlPanel.option_shib_logins">Prijave Shib Raw</message>
   <message key="xmlui.administrative.ControlPanel.option_dspace_check_exceptions">Dnevniki Dspacea</message>
@@ -1981,13 +1902,11 @@
   <message key="xmlui.administrative.ControlPanel.option_releasenotes">Opombe ob izdaji</message>
   <message key="xmlui.administrative.ControlPanel.handle_list">Seznam handlov</message>
   <message key="xmlui.administrative.ControlPanel.option_statistics">Statistika</message>
-  <!-- General tags for community management -->
   <message key="xmlui.administrative.community.general.community_trail">Skupnosti</message>
   <message key="xmlui.administrative.community.general.options_metadata">Urejanje metapodatkov</message>
   <message key="xmlui.administrative.community.general.options_roles">Dodelitev vlog</message>
   <message key="xmlui.administrative.community.general.options_curate">Kuriranje</message>
   <message key="xmlui.administrative.community.general.options_queue">Čakalna vrsta</message>
-  <!-- org.dspace.app.xmlui.administrative.community.AssignCommunityRoles.java -->
   <message key="xmlui.administrative.community.AssignCommunityRoles.title">Urejanje vlog skupnosti</message>
   <message key="xmlui.administrative.community.AssignCommunityRoles.trail">Vloge</message>
   <message key="xmlui.administrative.community.AssignCommunityRoles.main_head">Urejanje skupnosti: {0}</message>
@@ -2004,12 +1923,10 @@
   <message key="xmlui.administrative.community.AssignCommunityRoles.sysadmins_only">
     <nobr>(samo skrbniki sistema)</nobr>
   </message>
-  <!-- org.dspace.app.xmlui.administrative.community.CurateCommunityForm.java -->
   <message key="xmlui.administrative.community.CurateCommunityForm.main_head">Kuriranje skupnosti: {0}</message>
   <message key="xmlui.administrative.community.CurateCommunityForm.title">Kuriranje skupnosti</message>
   <message key="xmlui.administrative.community.CurateCommunityForm.trail">Skrbnik</message>
   <message key="xmlui.administrative.community.CurateCommunityForm.label_name">Naloga</message>
-  <!-- org.dspace.app.xmlui.administrative.community.DeleteCommunityConfirm.java -->
   <message key="xmlui.administrative.community.DeleteCommunityConfirm.title">Potrditev izbrisa</message>
   <message key="xmlui.administrative.community.DeleteCommunityConfirm.trail">Potrditev</message>
   <message key="xmlui.administrative.community.DeleteCommunityConfirm.main_head">Potrditev izbrisa skupnosti {0}</message>
@@ -2018,12 +1935,10 @@
   <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item2">Vse dokončane in nedokončane vnose v tej skupnosti, ki niso del drugih skupnosti</message>
   <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item3">Vsebino teh vnosov</message>
   <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item4">Vse povezane avtorizacijske politike</message>
-  <!-- org.dspace.app.xmlui.administrative.community.DeleteCommunityRoleConfirm.java -->
   <message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.title">Potrditev izbrisa vloge</message>
   <message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.trail">Potrditev</message>
   <message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.main_head">Potrditev izbrisa vloge {0}</message>
   <message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.main_para">Ali ste prepričani, da želite izbrisati to vlogo? Vse spremembe in prilagoditve za skupino {0} bodo izgubljene in morali jih boste ponovno nastaviti.</message>
-  <!-- org.dspace.app.xmlui.administrative.community.EditCommunityMetadataForm.java -->
   <message key="xmlui.administrative.community.EditCommunityMetadataForm.title">Urejanje metapodatkov skupnosti</message>
   <message key="xmlui.administrative.community.EditCommunityMetadataForm.trail">Metapodatki</message>
   <message key="xmlui.administrative.community.EditCommunityMetadataForm.main_head">Urejanje metapodatkov skupnosti {0}</message>
@@ -2037,13 +1952,11 @@
   <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_existing_logo">Trenutni logotip</message>
   <message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete_logo">Odstrani logotip</message>
   <message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete">Izbriši skupnost</message>
-  <!-- org.dspace.app.xmlui.administrative.community.CreateCommunityForm.java -->
   <message key="xmlui.administrative.community.CreateCommunityForm.title">Nova skupnost</message>
   <message key="xmlui.administrative.community.CreateCommunityForm.trail">Nova skupnost</message>
   <message key="xmlui.administrative.community.CreateCommunityForm.main_head_sub">Vnos metapodatkov za novo podskupnost {0}</message>
   <message key="xmlui.administrative.community.CreateCommunityForm.main_head_top">Vnos metapodatkov za novo skupnost najvišje ravni</message>
   <message key="xmlui.administrative.community.CreateCommunityForm.submit_save">Ustvari</message>
-  <!-- org.dspace.app.xmlui.administrative.ControlPanel.java -->
   <message key="xmlui.administrative.ControlPanel.title">Nadzorna plošča</message>
   <message key="xmlui.administrative.ControlPanel.trail">Nadzorna plošča</message>
   <message key="xmlui.administrative.ControlPanel.head">Nadzorna plošča</message>
@@ -2095,8 +2008,7 @@
   <message key="xmlui.administrative.ControlPanel.mail_feedback_recipient">Prejemnik povratnih informacij</message>
   <message key="xmlui.administrative.ControlPanel.mail_admin">Splošni e-poštni naslov upravljavcev spletnega mesta</message>
   <message key="xmlui.administrative.ControlPanel.alerts_head">Sistemska opozorila</message>
-  <message key="xmlui.administrative.ControlPanel.alerts_warning">
-  <strong>Opozorila za sisteme z uravnoteženo obremenitvijo</strong>: Sistemska opozorila bodo prikazana samo na vozliščih, kjer ste jih aktivirali. Zagotoviti morate, da vsako vozlišče v nizu prejme ukaz za aktiviranje opozoril.</message>
+  <message key="xmlui.administrative.ControlPanel.alerts_warning"><strong>Opozorila za sisteme z uravnoteženo obremenitvijo</strong>: Sistemska opozorila bodo prikazana samo na vozliščih, kjer ste jih aktivirali. Zagotoviti morate, da vsako vozlišče v nizu prejme ukaz za aktiviranje opozoril.</message>
   <message key="xmlui.administrative.ControlPanel.alerts_message_label">Sporočilo opozorila</message>
   <message key="xmlui.administrative.ControlPanel.alerts_message_default">Zaradi rednega vzdrževanja bo sistem zaustavljen. Shranite svoje delo in se odjavite.</message>
   <message key="xmlui.administrative.ControlPanel.alerts_countdown_label">Odštevanje</message>
@@ -2111,8 +2023,7 @@
   <message key="xmlui.administrative.ControlPanel.alerts_session_current_sessions">Omeji avtentikacijo, vendar ohrani trenutne seje</message>
   <message key="xmlui.administrative.ControlPanel.alerts_session_only_administrative_sessions">Omeji avtentikacijo in prekini trenutne seje</message>
   <message key="xmlui.administrative.ControlPanel.alerts_session_note">
-    <div class="alert bold">
-    <i class="fa fa-info-circle fa-lg"> </i>Skrbniki spletne strani so izvzeti iz upravljanja sej.</div>
+    <div class="alert bold"><i class="fa fa-info-circle fa-lg"> </i>Skrbniki spletne strani so izvzeti iz upravljanja sej.</div>
   </message>
   <message key="xmlui.administrative.ControlPanel.alerts_submit_activate">Aktiviraj</message>
   <message key="xmlui.administrative.ControlPanel.alerts_submit_deactivate">Dezaktiviraj</message>
@@ -2135,13 +2046,6 @@
   <message key="xmlui.administrative.ControlPanel.headers">Glave: {0}</message>
   <message key="xmlui.administrative.ControlPanel.cookies">Piškotki: {0}</message>
   <message key="xmlui.administrative.ControlPanel.select_panel">Uporabite zgornje zavihke, da izberete informacije za prikaz</message>
-  <message key="xmlui.administrative.ControlPanel.tabs.Java Information">Informacije o Javi</message>
-  <message key="xmlui.administrative.ControlPanel.tabs.Configuration">Konfiguracija</message>
-  <message key="xmlui.administrative.ControlPanel.tabs.SystemWide Alerts">Sistemska opozorila</message>
-  <message key="xmlui.administrative.ControlPanel.tabs.Harvesting">Zajemanje</message>
-  <message key="xmlui.administrative.ControlPanel.tabs.Current Activity">Trenutna dejavnost</message>
-
-  <!-- <UFAL> -->
   <message key="xmlui.administrative.handle.general.handle">Handle</message>
   <message key="xmlui.administrative.handle.general.internal">Interno</message>
   <message key="xmlui.administrative.handle.general.url">URL</message>
@@ -2150,7 +2054,6 @@
   <message key="xmlui.administrative.handle.general.yes">Da</message>
   <message key="xmlui.administrative.handle.general.no">Ne</message>
   <message key="xmlui.administrative.handle.general.required_field">To polje je obvezno</message>
-  <!-- cz.cuni.mff.ufal.dspace.app.xmlui.aspect.administrative.handle.ManageHandlesMain -->
   <message key="xmlui.administrative.handle.ManageHandlesMain.title">Identifikatorji handle</message>
   <message key="xmlui.administrative.handle.ManageHandlesMain.head">Identifikatorji handle</message>
   <message key="xmlui.administrative.handle.ManageHandlesMain.trail">Identifikatorji handle</message>
@@ -2162,7 +2065,6 @@
   <message key="xmlui.administrative.handle.ManageHandlesMain.delete_handle">Izbriši handle</message>
   <message key="xmlui.administrative.handle.ManageHandlesMain.edit_handle">Uredi handle</message>
   <message key="xmlui.administrative.handle.ManageHandlesMain.change_handle_prefix">Spremeni predpono handla</message>
-  <!-- cz.cuni.mff.ufal.dspace.app.xmlui.aspect.administrative.handle.EditHandleForm -->
   <message key="xmlui.administrative.handle.EditHandleForm.edit_handle_trail">Urejanje handla</message>
   <message key="xmlui.administrative.handle.EditHandleForm.edit_handle_title">Urejanje handla</message>
   <message key="xmlui.administrative.handle.EditHandleForm.edit_handle_head">Urejanje handla</message>
@@ -2170,12 +2072,10 @@
   <message key="xmlui.administrative.handle.EditHandleForm.new_handle_title">Nov handle</message>
   <message key="xmlui.administrative.handle.EditHandleForm.new_handle_head">Nov handle</message>
   <message key="xmlui.administrative.handle.EditHandleForm.archive_old_handle">Želite arhivirati stari handle?</message>
-  <!-- cz.cuni.mff.ufal.dspace.app.xmlui.aspect.administrative.handle.DeleteHandleConfirm -->
   <message key="xmlui.administrative.handle.DeleteHandleConfirm.title">Potrditev izbrisa handla</message>
   <message key="xmlui.administrative.handle.DeleteHandleConfirm.trail">Potrditev izbrisa handla</message>
   <message key="xmlui.administrative.handle.DeleteHandleConfirm.head">Potrditev izbrisa handla</message>
   <message key="xmlui.administrative.handle.DeleteHandleConfirm.help">Ali ste prepričani, da želite izbrisati ta handle? Tega dejanja ni mogoče razveljaviti.</message>
-  <!-- cz.cuni.mff.ufal.dspace.app.xmlui.aspect.administrative.handle.ChangeHandlePrefixForm -->
   <message key="xmlui.administrative.handle.ChangeHandlePrefixForm.title">Sprememba predpone handla</message>
   <message key="xmlui.administrative.handle.ChangeHandlePrefixForm.trail">Sprememba predpone handla</message>
   <message key="xmlui.administrative.handle.ChangeHandlePrefixForm.head">Sprememba predpone handla</message>
@@ -2184,7 +2084,6 @@
   <message key="xmlui.administrative.handle.ChangeHandlePrefixForm.archive_old_handles">Želite arhivirati stare handle?</message>
   <message key="xmlui.administrative.handle.ChangeHandlePrefixForm.change">Spremeni</message>
   <message key="xmlui.administrative.handle.ChangeHandlePrefixForm.old_prefix_and_new_prefix_must_differ">Stara in nova predpona ne smeta biti enaki.</message>
-  <!--  cz.cuni.mff.ufal.dspace.app.xmlui.aspect.administrative.FlowHandleUtils -->
   <message key="xmlui.administrative.handle.FlowHandleUtils.handle_successfully_deleted">Uspešno izbrisano</message>
   <message key="xmlui.administrative.handle.FlowHandleUtils.handle_successfully_saved">Uspešno posodobljeno</message>
   <message key="xmlui.administrative.handle.FlowHandleUtils.prefix_successfully_changed">Predpona je bila uspešno spremenjena</message>
@@ -2222,11 +2121,7 @@
   <message key="xmlui.administrative.handle.ManageExternalHandles.para_no_results">Iskanje ni vrnilo rezultatov.</message>
   <message key="xmlui.administrative.handle.ManageExternalHandles.button_search_url">Išči po URL-jih</message>
   <message key="xmlui.administrative.handle.ManageExternalHandles.button_search_pid">Pojdi na PID</message>
-  <!-- </UFAL> -->
-  <!-- org.dspace.app.xmlui.administrative.SystemwideAlerts -->
-  <message key="xmlui.administrative.SystemwideAlerts.countdown">
-  <strong>V {0} minutah</strong>: </message>
-  <!-- org.dspace.app.xmlui.administrative.NotAuthorized -->
+  <message key="xmlui.administrative.SystemwideAlerts.countdown"><strong>V {0} minutah</strong>: </message>
   <message key="xmlui.administrative.NotAuthorized.title">Niste pooblaščeni</message>
   <message key="xmlui.administrative.NotAuthorized.trail">Niste pooblaščeni</message>
   <message key="xmlui.administrative.NotAuthorized.head">Nezadostne pravice</message>
@@ -2234,20 +2129,13 @@
   <message key="xmlui.administrative.NotAuthorized.para1b">skrbniki sistema</message>
   <message key="xmlui.administrative.NotAuthorized.para1c">.</message>
   <message key="xmlui.administrative.NotAuthorized.para2">Prijavite se kot drug uporabnik</message>
-  <!-- System-wide Curation Tasks form (org.dspace.app.xmlui.aspect.administrative.CurateForm) -->
   <message key="xmlui.administrative.CurateForm.title">Sistemske naloge pri kuriranju</message>
   <message key="xmlui.administrative.CurateForm.trail">Naloge pri kuriranju</message>
   <message key="xmlui.administrative.CurateForm.object_label_name">Handle predmeta Dspace</message>
   <message key="xmlui.administrative.CurateForm.object_hint">Namig: Vnesite [predpona-vašega-handla]/0, da nalogo izvedete na celotni spletni strani (to ni možno pri vseh nalogah).</message>
   <message key="xmlui.administrative.CurateForm.task_label_name">Naloga</message>
   <message key="xmlui.administrative.CurateForm.run_all">Poženi vse naloge hkrati</message>
-  <!-- Used by Curate<DSO>Form classes also -->
   <message key="xmlui.administrative.CurateForm.taskgroup_label_name">Izberite med naslednjimi skupinami</message>
-  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-Statistics Aspect
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
   <message key="xmlui.statistics.title">Statistika</message>
   <message key="xmlui.statistics.search.title">Statistika iskanja</message>
   <message key="xmlui.statistics.search.head">Statistika iskanja</message>
@@ -2318,11 +2206,6 @@ Statistics Aspect
   <message key="PiwikStatisticsTransformer.get_monthly">  Naročite mesečno e-poštno poročilo za ta vnos</message>
   <message key="PiwikStatisticsTransformer.subscribe">Naroči se</message>
   <message key="PiwikStatisticsTransformer.unsubscribe">Odjavi se</message>
-  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-Google Analytics Statistics Aspect
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
   <message key="xmlui.statisticsGoogleAnalytics.Navigation.title">Statistika</message>
   <message key="xmlui.statisticsGoogleAnalytics.Navigation.usage.view">Prikaz statistike Google Analytics</message>
   <message key="xmlui.statisticsGoogleAnalytics.trail">Statistika</message>
@@ -2332,12 +2215,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.statisticsGoogleAnalytics.dates.refresh">Osveži</message>
   <message key="xmlui.statisticsGoogleAnalytics.pageViews.title">Ogledi strani</message>
   <message key="xmlui.statisticsGoogleAnalytics.downloads.title">Prenosi datotek</message>
-  <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      
-      dri2xhtml
-      
-      !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-  <!-- structural.xsl -->
   <message key="xmlui.dri2xhtml.structural.footer-promotional">   </message>
   <message key="xmlui.dri2xhtml.structural.contact-link">Stopite v stik z nami</message>
   <message key="xmlui.dri2xhtml.structural.feedback-link">Pošljite povratne informacije</message>
@@ -2354,9 +2231,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.dri2xhtml.structural.pagination-next">Naslednja stran</message>
   <message key="xmlui.dri2xhtml.structural.link_cc">Creative Commons</message>
   <message key="xmlui.dri2xhtml.structural.link_original_license">Originalna licenca</message>
-  <!-- DS-METS-1.0-MODS.xsl -->
-  <!-- DS-METS-1.0-DIM.xsl -->
-  <!-- DS-METS-1.0-QDC.xsl -->
   <message key="xmlui.dri2xhtml.METS-1.0.no-preview">Predogled ni na voljo</message>
   <message key="xmlui.dri2xhtml.METS-1.0.no-title">Neimenovano</message>
   <message key="xmlui.dri2xhtml.METS-1.0.no-author">Neznan avtor</message>
@@ -2387,7 +2261,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.dri2xhtml.METS-1.0.item-files-view">Prikaz</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Opis</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Pokaži/<wbr/>Odpri</message>
-  <message key="xmlui.dri2xhtml.METS-1.0.item-files-access-rights">Dostop za branje je na voljo za</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">S tem vnosom ni povezana nobena datoteka.</message>
   <message key="xmlui.dri2xhtml.METS-1.0.item-files-checksum">MD5</message>
   <message key="xmlui.ufal.METS-1.0.item-collections">Zbirke</message>
@@ -2409,23 +2282,17 @@ Google Analytics Statistics Aspect
   <message key="xmlui.dri2xhtml.METS-1.0.community-logo-alt">Logotip skupnosti</message>
   <message key="xmlui.dri2xhtml.METS-1.0.no-logo-alt">Ni logotipa</message>
   <message key="xmlui.dri2xhtml.METS-1.0.news">Novice</message>
-  <!-- Internationalization elements specific to the Qualified Dublin Core metadata handler.
-       DS-METS-1.0-QDC.xsl -->
   <message key="xmlui.dri2xhtml.METS-1.0.qdc-not-applicable">
     Kvalificirani Dublin Core (QDC)trenutno ni na voljo za skupnosti in zbirke v Dspaceu. Ko uporabljate QDC, je za vnose v Dspaceu priporočljiva uporaba prehoda QDC, za procesiranje skupnosti ali zbirk pa DIM-e ali MODS-e.
   </message>
   <message key="xmlui.dri2xhtml.METS-1.0.header-qdc-elements">Elementi Dublin Cora</message>
   <message key="xmlui.dri2xhtml.METS-1.0.header-qdc-terms">Termini Dublin Cora</message>
   <message key="xmlui.dri2xhtml.METS-1.0.blocked">Blokirano</message>
-  <!-- Special pioneer model related text, wherever it might end up -->
   <message key="xmlui.dri2xhtml.pioneer.preview">Predogled</message>
   <message key="xmlui.dri2xhtml.pioneer.date">Datum</message>
   <message key="xmlui.dri2xhtml.pioneer.title">Naslov</message>
   <message key="xmlui.dri2xhtml.pioneer.author">Avtor</message>
-  <!-- tag used to handle the empty textarea tag added 09/28/2006 -->
   <message key="xmlui.dri2xhtml.default.textarea.value"> </message>
-  <!--###### File Format MIME Type Mappings ######-->
-  <!-- Application-based formats -->
   <message key="xmlui.dri2xhtml.mimetype.application/marc">Zapis MARC</message>
   <message key="xmlui.dri2xhtml.mimetype.application/mathematica">Mathematica</message>
   <message key="xmlui.dri2xhtml.mimetype.application/msword">Microsoft Word</message>
@@ -2457,7 +2324,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.dri2xhtml.mimetype.application/x-latex">LaTeX</message>
   <message key="xmlui.dri2xhtml.mimetype.application/x-photoshop">Photoshop</message>
   <message key="xmlui.dri2xhtml.mimetype.application/x-tex">TeX</message>
-  <!-- Audio-based formats -->
   <message key="xmlui.dri2xhtml.mimetype.audio/basic">Osnovni avdio</message>
   <message key="xmlui.dri2xhtml.mimetype.audio/flac">Avdio FLAC</message>
   <message key="xmlui.dri2xhtml.mimetype.audio/m4a">Avdio AAC</message>
@@ -2470,7 +2336,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.dri2xhtml.mimetype.audio/x-ogg">Ogg Vorbis</message>
   <message key="xmlui.dri2xhtml.mimetype.audio/x-pn-realaudio">RealAudio</message>
   <message key="xmlui.dri2xhtml.mimetype.audio/x-wav">Avdio WAV</message>
-  <!-- Image-based formats -->
   <message key="xmlui.dri2xhtml.mimetype.image/gif">Slika GIF</message>
   <message key="xmlui.dri2xhtml.mimetype.image/jp2">Slika JPEG 2000</message>
   <message key="xmlui.dri2xhtml.mimetype.image/jpeg">Slika JPEG</message>
@@ -2478,7 +2343,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.dri2xhtml.mimetype.image/tiff">Slika TIFF</message>
   <message key="xmlui.dri2xhtml.mimetype.image/x-ms-bmp">Slika BMP</message>
   <message key="xmlui.dri2xhtml.mimetype.image/x-photo-cd">Foto-CD</message>
-  <!-- Text-based formats -->
   <message key="xmlui.dri2xhtml.mimetype.text/css">Datoteka CSS</message>
   <message key="xmlui.dri2xhtml.mimetype.text/csv">Datoteka CSV</message>
   <message key="xmlui.dri2xhtml.mimetype.text/html">HTML</message>
@@ -2486,14 +2350,12 @@ Google Analytics Statistics Aspect
   <message key="xmlui.dri2xhtml.mimetype.text/plain">Besedilna datoteka</message>
   <message key="xmlui.dri2xhtml.mimetype.text/richtext">Datoteka RTF</message>
   <message key="xmlui.dri2xhtml.mimetype.text/xml">XML</message>
-  <!-- Video-based formats -->
   <message key="xmlui.dri2xhtml.mimetype.video/avi">Video AVI</message>
   <message key="xmlui.dri2xhtml.mimetype.video/mjp2">Motion JPEG 2000</message>
   <message key="xmlui.dri2xhtml.mimetype.video/mpeg">Video MPEG</message>
   <message key="xmlui.dri2xhtml.mimetype.video/mpeg2">Video MPEG-2</message>
   <message key="xmlui.dri2xhtml.mimetype.video/mp4">Video MPEG-4</message>
   <message key="xmlui.dri2xhtml.mimetype.video/quicktime">Video QuickTime</message>
-  <!-- explanatory messages for choice authority confidence values -->
   <message key="xmlui.authority.confidence.description.cf_unset">Za to vrednost ni bila nikoli zabeležena stopnja zaupanja</message>
   <message key="xmlui.authority.confidence.description.cf_novalue">Avtoriteta ni podala nobene razumne vrednosti zaupanja</message>
   <message key="xmlui.authority.confidence.description.cf_rejected">Avtoriteta priporoča zavrnitev tega vnosa</message>
@@ -2502,40 +2364,26 @@ Google Analytics Statistics Aspect
   <message key="xmlui.authority.confidence.description.cf_ambiguous">Obstaja več ustreznih avtoritetnih vrednosti z enako veljavo</message>
   <message key="xmlui.authority.confidence.description.cf_uncertain">Vrednost je singularna in veljavna, vendar je noben uporabnik še ni pregledal in potrdil, zato je nezanesljiva</message>
   <message key="xmlui.authority.confidence.description.cf_accepted">To avtoritetno vrednost je aktivni uporabnik potrdil kot zanesljivo</message>
-  <!-- help message on "unlock" button in EditItemMetadata display -->
   <message key="xmlui.authority.confidence.unlock.help">Odklenite vrednost avtoritetnega ključa za ročno urejanje ali jo ponovno zaklenite</message>
-  <!-- Choice Lookup popup window -->
-  <!-- NOTE: These messages necessarily use a *different* format for
-       - parameters, unfortunately, since substitution happens in the
-       - JavaScript (AJAX) that completes the lookup popup window.
-       - So, positional parameters are @1@, @2@, etc.
-  -->
   <message key="xmlui.ChoiceLookupTransformer.title">Iskanje vrednosti</message>
   <message key="xmlui.ChoiceLookupTransformer.accept">Potrdi</message>
   <message key="xmlui.ChoiceLookupTransformer.add">Dodaj</message>
   <message key="xmlui.ChoiceLookupTransformer.cancel">Prekliči</message>
   <message key="xmlui.ChoiceLookupTransformer.more">Več rezultatov</message>
-  <!-- params are: start, end, total-count, search-value -->
   <message key="xmlui.ChoiceLookupTransformer.results">Rezultati @1@ do @2@ od @3@ za "@4@"</message>
   <message key="xmlui.ChoiceLookupTransformer.fail">Napaka pri nalaganju izbranih podatkov: </message>
   <message key="xmlui.ChoiceLookupTransformer.lookup">Iskanje</message>
-  <!-- Choice Lookup - sample config for dc.publisher field -->
   <message key="xmlui.ChoiceLookupTransformer.field.dc_publisher.help">Ime izdajatelja</message>
   <message key="xmlui.ChoiceLookupTransformer.field.dc_publisher.title">Iskanje izdajatelja</message>
-  <!-- Params are: search-value -->
   <message key="xmlui.ChoiceLookupTransformer.field.dc_publisher.nonauthority">Neavtoritetna vrednost: @1@</message>
-  <!-- Choice Lookup - sample config for dc.contributor.author field -->
   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help">Ime v formatu "priimek, ime"</message>
   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help.last">Priimek, npr. "Novak"</message>
   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help.first">Ime, npr. "Jaka"</message>
   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.title">Iskanje avtorja v LC avtroriteti za imena</message>
   <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.nonauthority">Lokalna vrednost "@1@" (ni v avtoriteti za imena)</message>
-  <!-- Choice Lookup - config for dc.relation field -->
   <message key="xmlui.ChoiceLookupTransformer.field.dc_relation.help">Identifikator projekta OpenAIRE</message>
   <message key="xmlui.ChoiceLookupTransformer.field.dc_relation.title">Iskanje projekta</message>
-  <!-- Params are: search-value -->
   <message key="xmlui.ChoiceLookupTransformer.field.dc_relation.nonauthority">Neavtoritetna vrednost: @1@</message>
-  <!-- mobile theme -->
   <message key="xmlui.mobile.home_mobile">Dspace Mobile</message>
   <message key="xmlui.mobile.search_all">Išči VSE</message>
   <message key="xmlui.mobile.browse_all">Brskaj VSE po</message>
@@ -2546,7 +2394,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.mobile.related_google_scholar">Sorodno</message>
   <message key="xmlui.mobile.items_in_google_scholar">Vnosi v Google Scholarju</message>
   <message key="xmlui.mobile.download">Prenesi</message>
-  <!-- Versioning -->
   <message key="xmlui.aspect.versioning.VersioningNavigation.context_create_version">Ustvarite različico tega vnosa</message>
   <message key="xmlui.aspect.versioning.VersioningNavigation.context_show_version_history">Prikaz zgodovine različic</message>
   <message key="xmlui.aspect.versioning.VersionItemForm.title">Nova različica</message>
@@ -2608,7 +2455,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.aspect.sherpa.submission.white">bela</message>
   <message key="xmlui.aspect.sherpa.submission.yellow">rumena</message>
   <message key="xmlui.aspect.sherpa.submission.gray">siva</message>
-  <!-- End Versioning -->
   <message key="xmlui.mirage2.itemSummaryView.MetaData">Metapodatki</message>
   <message key="xmlui.mirage2.itemSummaryView.Collections">Zbirke</message>
   <message key="xmlui.mirage2.discovery.reset">Ponastavi</message>
@@ -2628,233 +2474,13 @@ Google Analytics Statistics Aspect
   <message key="xmlui.mirage2.navigation.rss.feed">vir</message>
   <message key="xmlui.mirage2.choice-authority-control.loading">Nalaganje ...</message>
   <message key="xmlui.mirage2.item-list.thumbnail">Sličica</message>
-  <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_lookup">Išči</message>
-  <message key="xmlui.Submission.submit.StartSubmissionLookupStep.title">Iskanje objav</message>
-  <message key="xmlui.Submission.submit.StartSubmissionLookupStep.lookup_help">Vnesite ID, DOI, naslov ali avtorja objave in kliknite "Išči". Prikazal se bo seznam vseh ustreznih objav, s katerega boste lahko izbrali želeno objavo.</message>
-  <message key="xmlui.Submission.submit.StartSubmissionLookupStep.submit_publication_item">Zapis uvoženih objav</message>
-  <message key="xmlui.Submission.submit.progressbar.lookup">Iskanje</message>
-
-  <!-- Discovery -->
-  <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.contributor.author_filter">Avtor</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.subject_filter">Ključna beseda</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.type_filter">Vrsta vsebine</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.date.issued">Datum izdaje</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_has_content_in_original_bundle">Vsebuje datoteke</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_true">Da</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.value_has_content_in_original_bundle_false">Ne</message>
-
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Datum izdaje</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_rights">Pravice</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type">Vrsta</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mediatype">Vrsta medija</message>
-  <!-- Site Leve Recently Added Content -->
-  <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Najnovejši vnosi</message>
-  <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Poglejte več</message>
-  <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.head">{0}: Nedavni vnosi</message>
-  <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.trail">Nedavni vnosi</message>
-  <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.recent.head">Nedavno dodano</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type_filter">Vrsta</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher_filter">Izdajatelj</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.ispartof">Nadrejena vsebina</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by">Združi rezultate po:</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.none">Nič</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.publication_grp">Objava</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.comm">Skupnost</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.coll">Zbirka</message>
-  <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.relation.ispartofseries_filter">Serija</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.contributor.author_browse">Brskanje po: Avtor</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.title_browse">Brskanje po: Naslov</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.subject_browse">Brskanje po: Vsebina</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.description.abstract_browse">Brskanje po: Povzetek</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_series_browse">Brskanje po: Serija</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_sponsor_browse">Brskanje po: Financer</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_identifier_browse">Brskanje po: Identifikator</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_language_browse">Brskanje po: Jezik (ISO)</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_keyword_browse">Brskanje po: Ključna beseda</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_taxon_browse">Brskanje po: Znanstveno ime</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_contributor_browse">Brskanje po: Sodelavec</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_creator_browse">Brskanje po: Avtor</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_subject_browse">Brskanje po: Vsebina</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_description_browse">Brskanje po: Opis</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_relation_browse">Brskanje po: Relacija</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_mime_browse">Brskanje po: Vrsta medija MIME</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_other_browse">Brskanje po: Drugi sodelavec</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_advisor_browse">Brskanje po: Svetovalec</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_department_browse">Brskanje po: Oddelek</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dateissued_dt_browse">Brskanje po: Datum izdaje</message>
-  <message key="xmlui.dri2xhtml.structural.pagination-info.nototal">Trenutno prikazani vnosi {0}–{1}</message>
-  <message key="xmlui.Discovery.AbstractSearch.type_author">Filtriraj po: Avtor</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author_filter">Avtor</message>
-  <message key="xmlui.Discovery.AbstractSearch.type_subject">Filtriraj po: Vsebina</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">Vsebina</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued.year">Datum izdaje</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.rights_filter">Pravice</message>
-  <message key="xmlui.Discovery.AbstractSearch.startswith">Začne se s/z</message>
-  <message key="xmlui.Discovery.AbstractSearch.startswith.help">Ali vpišite prvih nekaj črk:</message>
-  <message key="xmlui.Discovery.AbstractSearch.sort_by.head">Možnosti razvrščanja:</message>
-  <message key="xmlui.Discovery.AbstractSearch.sort_by.relevance">Ustreznost</message>
-  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_desc">Naslov (padajoče)</message>
-  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_desc">Datum izdaje (padajoče)</message>
-  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_asc">Naslov (naraščajoče)</message>
-  <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_asc">Datum izdaje (naraščajoče)</message>
-  <message key="xmlui.Discovery.AbstractSearch.type_language">Filtriraj po: Jezik</message>
-  <message key="xmlui.Discovery.AbstractSearch.rpp">Rezultati na stran:</message>
-  <message key="xmlui.Discovery.AbstractSearch.filters.controls.add-filter">Dodaj filter</message>
-  <message key="xmlui.Discovery.AbstractSearch.filters.controls.apply-filters">Uporabi</message>
-  <message key="xmlui.Discovery.AbstractSearch.filters.controls.remove-filter">Odstrani</message>
-  <message key="xmlui.Discovery.AbstractSearch.filters.controls.new-filters.head">Novi filtri:</message>
-  <message key="xmlui.Discovery.AbstractSearch.filters.controls.current-filters.head">Trenutni filtri:</message>
-  <message key="xmlui.Discovery.AbstractSearch.filters.display">Dodajanje filtrov:</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.publisher_filter">Izdajatelj</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.language_filter">Jezik</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.type_filter">Vrsta</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.mediatype_filter">Vrsta medija</message>
-  <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.has_file_b">Vsebuje datoteke</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.title_sort">Naslov</message>
-  <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dc.date.issued_dt">Datum izdaje</message>
-  <message key="xmlui.discovery.SearchFacetFilter.no-results">Strani ni bilo mogoče najti</message>
-  <message key="xmlui.discovery.AbstractFiltersTransformer.filters.head">Odkrij</message>
-  <message key="xmlui.discovery.AbstractFiltersTransformer.filters.view-more">... poglejte več</message>
-  <message key="xmlui.Discovery.SimpleSearch.search_scope">Išči</message>
-  <message key="xmlui.discovery.SimpleSearch.search_label">Išči</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter_head">Filtri</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter_add">Dodajanje filtrov</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter_help">Uporabite filtre za omejitev rezultatov iskanja.</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter_apply">Posodobitev filtrov</message> 
-  <message key="xmlui.Discovery.SimpleSearch.sort_head">Možnosti razvrščanja:</message>
-  <message key="xmlui.Discovery.SimpleSearch.sort_apply">Uporabi</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter.contains">Vsebuje</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter.equals">Je enako</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter.authority">ID</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter.notcontains">Ne vsebuje</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter.notequals">Ni enako</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter.notauthority">Ni ID</message>
-  <message key="xmlui.Discovery.SimpleSearch.filter.notavailable">Ni razpoložljivo</message>
-  <message key="xmlui.Discovery.RelatedItems.head">Sorodni vnosi</message>
-  <message key="xmlui.Discovery.RelatedItems.help">Prikazani so vnosi, ki so sorodni glede na naslov, avtorja, avtorja vnosa in ključno besedo.</message>
-  <message key="xmlui.Discovery.AbstractSearch.head1_community">Prikazanih {0} od skupno {1} zadetkov za skupnost: {2}. <span class="searchTime">({3} sekund)</span>
-  </message>
-  <message key="xmlui.Discovery.AbstractSearch.head1_collection">Prikazanih {0} od skupno {1} zadetkov za zbirko: {2}. <span class="searchTime">({3} sekund)</span>
-  </message>
-  <message key="xmlui.Discovery.AbstractSearch.head1_none">Prikazanih {0} od skupno {1} zadetkov. <span class="searchTime">({2} sekund)</span>
-  </message>
-  <message key="xmlui.Discovery.AbstractSearch.head2">Skupnosti ali zbirke, ki ustrezajo vaši poizvedbi</message>
-  <message key="xmlui.Discovery.AbstractSearch.head3">Vnosi, ki ustrezajo vaši poizvedbi</message>
-  <message key="xmlui.Discovery.SimpleSearch.did_you_mean">Ste morda mislili: </message>
-  <!-- XMLWorkflow -->
-  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
-  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_help">Dodelite si nalogo.</message>
-  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_submit">Sprejmi nalogo</message>
-  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_help">Pustite nalogo v čakalni vrsti, da jo lahko sprejme drug uporabnik.</message>
-  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_submit">Pusti nalogo</message>
-  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.back">Nazaj na pregled</message>
-  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.title">Potrditev/zavrnitev naloge</message>
-  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.head">Izvedba naloge: Potrdi/zavrni vnos</message>
-  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
-  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_help">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni". <strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
-  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_submit">Zavrni vnos</message>
-  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_help">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
-  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_submit">Odobri vnos</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.head">Izvedba naloge: Potrdi/zavrni/uredi vnos</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_help">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni".<strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_submit">Zavrni vnos</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_help">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_submit">Odobri vnos</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_help">Izberite to možnost za spremembo metapodatkov vnosa. Dodati boste morali vsa obvezna polja.</message>
-  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_submit">Uredi metapodatke</message>
-  <message key="xmlui.XMLWorkflow.step.unknown">Neznan status</message>
-  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.head">Izvedba naloge: Dodeli pregledovalca</message>
-  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.help">Uporabite spodnje iskalno polje, da poiščete e-osebo, ki ji boste dodelili pregledovanje.</message>
-  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.label">Poišči pregledovalca</message>
-  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.button">Poišči e-osebo</message>
-  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.select-reviewer.button">Določi za pregledovalca</message>
-  <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.help">Če niste prava oseba za pregled tega vnosa, lahko nalogo zavrnete s klikom na gumb "Zavrni nalogo".</message>
-  <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.button">Zavrni nalogo</message>
-  <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.head">Pregled vnosa</message>
-  <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.score.button">Preglej vnos</message>
-  <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.help">Vnesite oceno vnosa</message>
-  <message key="xmlui.XMLWorkflow.Navigation.xmlworkflow_overview">Pregled delotoka</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.trail">Pregled delotoka</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.title">Pregled delotoka</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column1"> </message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column2">Korak</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column3">Vnos</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column4">Zbirka</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column5">Avtor vnosa</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_submitter">Vrni vnose njihovim avtorjem</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_delete">Izbriši vnose</message>
-  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.no_results">Ni zadetkov</message>
-  <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.title">Prikaz vnosa v delotoku: {0}</message>
-  <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.trail">Prikaz vnosa v delotoku:</message>
-  <message key="xmlui.XMLWorkflow.default.reviewstep">Potrdi/zavrni</message>
-  <message key="xmlui.XMLWorkflow.default.reviewstep.claimaction">Potrdi/zavrni</message>
-  <message key="xmlui.XMLWorkflow.default.reviewstep.reviewaction">Potrdi/zavrni</message>
-  <message key="xmlui.XMLWorkflow.default.editstep">Korak potrdi/uredi/zavrni</message>
-  <message key="xmlui.XMLWorkflow.default.editstep.claimaction">Potrdi/uredi/zavrni</message>
-  <message key="xmlui.XMLWorkflow.default.editstep.editaction">Potrdi/uredi/zavrni</message>
-  <message key="xmlui.XMLWorkflow.default.finaleditstep">Končna potrditev/urejanje</message>
-  <message key="xmlui.XMLWorkflow.default.finaleditstep.claimaction">Končna potrditev/urejanje</message>
-  <message key="xmlui.XMLWorkflow.default.finaleditstep.finaleditaction">Končna potrditev/urejanje</message>
-  <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.claimaction">Korak dodelitve pregledovalca</message>
-  <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.selectrevieweraction">Dodeli pregledovalca</message>
-  <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep">Korak pregleda posameznega uporabnika</message>
-  <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep.singleuserreviewaction">Preglej vnos</message>
-  <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.claimaction">Pregled ocene</message>
-  <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.scorereviewaction">Pregled ocene</message>
-  <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep">Pregled ocene</message>
-  <!-- SwordClient -->
-  <message key="xmlui.swordclient.Navigation.context_head">Kopija SWORD</message>
-  <message key="xmlui.swordclient.Navigation.context_copy">Kopirajte vnos v drug repozitorij</message>
-  <message key="xmlui.swordclient.general.SwordCopy_trail">Kopija SWORD</message>
-  <message key="xmlui.swordclient.general.main_head">Kopiranje vnosa: {0}</message>
-  <message key="xmlui.swordclient.SelectTarget.title">Ciljno mesto kopije SWORD</message>
-  <message key="xmlui.swordclient.SelectTarget.trail">Izbira ciljnega mesta</message>
-  <message key="xmlui.swordclient.SelectTarget.url">URL</message>
-  <message key="xmlui.swordclient.SelectTarget.other_url">Nadomestni URL</message>
-  <message key="xmlui.swordclient.SelectTarget.username">Uporabniško ime</message>
-  <message key="xmlui.swordclient.SelectTarget.password">Geslo</message>
-  <message key="xmlui.swordclient.SelectTarget.on_behalf_of">V imenu</message>
-  <message key="xmlui.swordclient.SelectTargetAction.url_error">Neveljaven URL</message>
-  <message key="xmlui.swordclient.SelectTargetAction.username_error">Neveljavno uporabniško ime</message>
-  <message key="xmlui.swordclient.SelectTargetAction.password_error">Neveljavno geslo</message>
-  <message key="xmlui.swordclient.SelectTargetAction.serviceDoc_error">Napaka pri pridobivanju dokumenta storitve SWORD: {0}</message>
-  <message key="xmlui.swordclient.SelectCollection.title">Ciljne zbirke SWORD</message>
-  <message key="xmlui.swordclient.SelectCollection.trail">Izbira zbirke</message>
-  <message key="xmlui.swordclient.SelectCollection.collection_head">Zbirka: {0}</message>
-  <message key="xmlui.swordclient.SelectCollection.collection_title">Naslov: {0} </message>
-  <message key="xmlui.swordclient.SelectCollection.collection policy">Politika: {0}</message>
-  <message key="xmlui.swordclient.SelectCollection.collection_mediation">Mediacija: {0}</message>
-  <message key="xmlui.swordclient.SelectCollection.collection_file_types">Vrste datotek: {0}</message>
-  <message key="xmlui.swordclient.SelectCollection.collection_package_formats">Formati paketov: {0}</message>
-  <message key="xmlui.swordclient.SelectCollection.collection_deposit_button">Vnesi v to mesto</message>
-  <message key="xmlui.swordclient.SelectCollection.sub_service_target">Ciljno mesto podstoritve</message>
-  <message key="xmlui.swordclient.SelectCollection.sub_service_target_button">Pridobi dokument podstoritve</message>
-  <message key="xmlui.swordclient.SelectPackagingAction.head">Zbirka: {0}</message>
-  <message key="xmlui.swordclient.SelectPackagingAction.title">Naslov: {0}</message>
-  <message key="xmlui.swordclient.SelectPackagingAction.policy">Politika: {0} </message>
-  <message key="xmlui.swordclient.SelectPackagingAction.mediation">Mediacija: {0} </message>
-  <message key="xmlui.swordclient.SelectPackagingAction.file_types">Vrsta datoteke</message>
-  <message key="xmlui.swordclient.SelectPackagingAction.package_formats">Format paketa</message>
-  <message key="xmlui.swordclient.SelectPackagingAction.packageFormat_error">Izbran je bil nepodprt format paketa</message>
-  <message key="xmlui.swordclient.DepositAction.success">Vnos je bil uspešno kopiran</message>
-  <message key="xmlui.swordclient.DepositAction.package_format_error">Napaka v formatu paketa</message>
-  <message key="xmlui.swordclient.DepositAction.invalid_handle">Izbriši handle</message>
-  <message key="xmlui.swordclient.DepositAction.package_error">Pri ustvarjanju paketa je prišlo do napake</message>
-  <message key="xmlui.swordclient.DepositAction.error">Pri vnašanju je prišlo do napake: {0}</message>
-  <message key="xmlui.swordclient.SwordResponse.title">Odziv SWORD-a</message>
-  <message key="xmlui.swordclient.SwordResponse.trail">Odziv SWORD-a</message>
-  <!-- jmisutka DragNDrop -->
   <message key="xmlui.UFAL.dragndrop.upload.button.text">Naloži</message>
   <message key="xmlui.UFAL.dragndrop.upload.label">Povlecite in spustite, da naložite v repozitorij</message>
   <message key="xmlui.UFAL.dragndrop.nodescription.title">Opišite datoteko</message>
   <message key="xmlui.UFAL.dragndrop.nodescription.help">Če želite dodati opis, to storite tukaj in kliknite "Nadaljuj".</message>
   <message key="xmlui.UFAL.dragndrop.nodescription.label">Opisovanje datoteke </message>
-  <!-- ufal theme -->
   <message key="UFAL.firstpage.title">Repozitorij</message>
   <message key="UFAL.firstpage.title.text">Dobrodošli v repozitoriju Slovenske raziskovalne infrastrukture CLARIN.SI</message>
-  <!-- UFAL/lib/xsl/aspect/artifactbrowser/item-list.xsl -->
   <message key="xmlui.UFAL.artifactbrowser.item-contains-one-file">Ta vnos vsebuje {0} datoteko ({1}).</message>
   <message key="xmlui.UFAL.artifactbrowser.item-contains-many-files">Ta vnos vsebuje {0} datotek(e) ({1}).</message>
   <message key="xmlui.UFAL.artifactbrowser.item-contains-no-files">Ta vnos ne vsebuje datotek.</message>
@@ -2863,7 +2489,6 @@ Google Analytics Statistics Aspect
   <message key="xmlui.UFAL.artifactbrowser.filters.selected">Izbrani filtri</message>
   <message key="xmlui.UFAL.artifactbrowser.search.limit">Omejite svoje iskanje</message>
   <message key="xmlui.UFAL.artifactbrowser.item_list.authors">Avtorji:</message>
-  <!-- UFAL/lib/xsl/aspect/artifactbrowser/item-view.xsl -->
   <message key="xmlui.UFAL.artifactbrowser.item-download-all-files">Prenesi vse datoteke v vnosu ({0})</message>
   <message key="xmlui.UFAL.artifactbrowser.item-download-file">Prenesi datoteko</message>
   <message key="xmlui.UFAL.artifactbrowser.acknowledgement">Zahvala</message>
@@ -2878,7 +2503,7 @@ Google Analytics Statistics Aspect
   </message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.preview">Predogled</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.file_preview">Predogled datoteke</message>
-  <!-- UFAL/lib/xsl/aspect/artifactbrowser/item-view.xsl -->
+  <message key="xmlui.UFAL.artifactbrowser.item_view.show_all_authors" TODO="translate">show everyone</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.community">Skupnost</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.collections">Zbirke v skupnosti</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections">Ni zbirk v tej skupnosti.</message>
@@ -2886,35 +2511,17 @@ Google Analytics Statistics Aspect
   <message key="xmlui.UFAL.artifactbrowser.community_list.no_subcommunities">Ni podskupnosti v tej skupnosti.</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.description">Opis</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.contains">Ta skupnost vsebuje {0} vnos(ov).</message>
-  <!-- DisplayShareLink -->
-  <message key="xmlui.aspect.submission.submit.DisplayShareLink.title">Delitev povezave</message>
-  <message key="xmlui.aspect.submission.submit.DisplayShareLink.trail">Delitev povezave</message>
-  <message key="xmlui.aspect.submission.submit.DisplayShareLink.head">Delitev povezave</message>
-  <message key="xmlui.aspect.submission.submit.DisplayShareLink.para">Da bi delili vnos z drugim uporabnikom, mu posredujte naslednjo povezavo: <span class="linkify">{0}</span>. Prejeli boste tudi e-pošto s to povezavo.</message>
-  <!-- UFAL/lib/xsl/core/navigation.xsl -->
   <message key="xmlui.UFAL.navigation.menu_head">Kaj lahko storite?</message>
-  <!-- UFAL/lib/xsl/core/forms.xsl -->
   <message key="xmlui.UFAL.forms.licenseStep.accepted">Potrjeno</message>
   <message key="xmlui.UFAL.forms.licenseStep.click">Kliknite za potrditev</message>
   <message key="xmlui.UFAL.forms.buttons.add">Dodaj</message>
   <message key="xmlui.UFAL.forms.buttons.remove_selected">Odstrani izbrano</message>
-  <!-- Homepage -->
-  <message key="homepage.carousel.quote">“Na svetu bi moral biti samo en ogromen dépô umetnosti, ki bi ga umetnik obogatil s svojimi deli in pri tem dobil točno to, kar je želel ...”</message>
-  <message key="homepage.carousel.data_tools">Jezikovni viri in orodja</message>
-  <message key="homepage.carousel.find">Poiščite</message>
-  <message key="homepage.carousel.citation_support">Podpora pri navajanju vira (stalni identifikator)</message>
-  <message key="homepage.carousel.deposit">Brezplačna in varna hramba</message>
-  <message key="homepage.carousel.license">Licenca po vaši izbiri</message>
-  <message key="homepage.carousel.easy_find">Preprosto iskanje</message>
-  <message key="homepage.carousel.easy_cite">Preprosto navajanje vira</message>
-  <message key="homepage.item.description">Opis:</message>
-  <message key="homepage.item.authors">Avtor(ji):</message>
-  <message key="homepage.whatsnew">Najnovejše</message>
-  <message key="homepage.norecent">Ni novih vnosov!</message>
-  <message key="homepage.show_hide_menu">Pokaži/Skrij meni</message>
+  <message key="xmlui.aspect.submission.submit.DisplayShareLink.title">Delitev povezave</message>
+  <message key="xmlui.aspect.submission.submit.DisplayShareLink.trail">Delitev povezave</message>
+  <message key="xmlui.aspect.submission.submit.DisplayShareLink.head">Delitev povezave</message>
+  <message key="xmlui.aspect.submission.submit.DisplayShareLink.para">Da bi delili vnos z drugim uporabnikom, mu posredujte naslednjo povezavo: <span class="linkify">{0}</span>. Prejeli boste tudi e-pošto s to povezavo.</message>
   <message key="homepage.most_viewed_items">Največ ogledov</message>
   <message key="homepage.top_week">V preteklem tednu</message>
-  <!-- input-forms.xml -->
   <message key="input_forms.field.dc.type.label">Izberite vrsto vira</message>
   <message key="input_forms.field.dc.type.hint">Vrsta vira: "Korpus" zajema besedilne, govorne in multimodalne korpuse. "Leksikalnokonceptualni vir" obsega računalniške leksikone, ontologije, slovarje, sezname besed itd. "Jezikovni opis" pokriva jeziko(slo)vne modele in slovnice. "Tehnologija / Orodje / Storitev" se uporablja za orodja, sisteme, komponente sistemov itd.
   </message>
@@ -2946,7 +2553,16 @@ Google Analytics Statistics Aspect
   <message key="input_forms.field.dc.publisher.label">Izdajatelj</message>
   <message key="input_forms.field.dc.publisher.hint">Vnesite ime izdajatelja predhodne različice tega vnosa ali ime vaše matične institucije. Začnite vnašati ime izdajatelja in kliknite na samodokončani izpis imena, če se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.
   </message>
+  <message key="input_forms.field.dc.publisher.clariah.hint" TODO="translate">The name of the publisher of the original analog or born
+		digital object. Use your home institution if this is a born digital object being published now. Start typing the
+		publisher and use autocomplete form that will appear if applicable. End your input by pressing ESC if you
+		don't want to use the preselected value.
+	</message>
   <message key="input_forms.field.dc.publisher.required">Ime izdajatelja morate obvezno vnesti.</message>
+  <message key="input_forms.field.local.dataProvider.label" TODO="translate">Data provider</message>
+  <message key="input_forms.field.local.dataProvider.hint" TODO="translate">This concerns the digital object (not the analog
+		original). An institution from which the data come. Used eg. to give proper attribution. Generally
+		different from publisher.</message>
   <message key="input_forms.field.local.contact.person.label">Kontaktna oseba</message>
   <message key="input_forms.field.local.contact.person.hint">Oseba, na katero se obrnete v primeru težav z vnosom.</message>
   <message key="input_forms.field.local.contact.person.required">Izpolnite vsa polja za kontaktno osebo.</message>
@@ -3134,11 +2750,112 @@ Google Analytics Statistics Aspect
   <message key="input_forms.field.dc.relation.isreferencedby.label">Dokumentirano v</message>
   <message key="input_forms.field.dc.relation.isreferencedby.hint">Povezava do dela, ki se sklicuje na in tipično dokumentira vnesene podatke.</message>
   <message key="input_forms.field.dc.relation.isreferencedby.regexp-warning">Navedba URL-ja se mora začeti s http/https</message>
-  <!-- cz.cuni.mff.ufal.ContractPage -->
+  <message key="input_forms.field.edm.type.label" TODO="translate">Select the kind of resource you are submitting</message>
+  <message key="input_forms.field.edm.type.hint" TODO="translate">Choose one of TEXT, VIDEO, SOUND, IMAGE, 3D. If choosing
+		TEXT consider adding the resource among other Language Resources. Images are visual resources for users to
+		look at. Text materials are meant to be read and not looked at.</message>
+  <message key="input_forms.field.edm.type.required" TODO="translate">Please select one of the options.</message>
+  <message key="input_forms.value_pairs.edm_types.text" TODO="translate">TEXT</message>
+  <message key="input_forms.value_pairs.edm_types.video" TODO="translate">VIDEO</message>
+  <message key="input_forms.value_pairs.edm_types.sound" TODO="translate">SOUND</message>
+  <message key="input_forms.value_pairs.edm_types.image" TODO="translate">IMAGE</message>
+  <message key="input_forms.value_pairs.edm_types.3d" TODO="translate">3D</message>
+  <message key="input_forms.field.dc.type.clariah.label" TODO="translate">The type of the resource</message>
+  <message key="input_forms.field.dc.type.clariah.hint" TODO="translate">The type should be different from what you have
+		entered in the first step. Examples: photo or painting for IMAGE, book or letter for TEXT, etc.</message>
+  <message key="input_forms.field.dc.type.clariah.required" TODO="translate">Type is required</message>
+  <message key="input_forms.field.dc.language.iso.clariah.label" TODO="translate">Pick the languages of the TEXT</message>
+  <message key="input_forms.field.dc.language.iso.clariah.hint" TODO="translate">Select the language of the main content of the item. Multiple languages are possible. Start
+		typing the language and use autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
+		</message>
+  <message key="input_forms.field.dc.language.iso.clariah.required" TODO="translate">The language is required for TEXT resources</message>
+  <message key="input_forms.field.dc.language.iso1.clariah.label" TODO="translate">Language</message>
+  <message key="input_forms.field.dc.language.iso1.clariah.hint" TODO="translate">Optionally, select the language of the main content
+		of the item. Multiple languages are possible. Start
+		typing the language and use autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
+	</message>
+  <message key="input_forms.field.dc.subject.clariah.hint" TODO="translate">Enter appropriate subject keyword or phrase and press
+		the Add button. Use keywords to specify also people, places and times (period, era, date range etc) the resource
+		is about. You	can use hierarchical subjects, separate the hierarchy levels with two colons (::). Eg.
+		People::John Doe, Places::New York, Times::WWII.
+		You can repeat it	for multiple keywords or use separators i.e., comma and semicolon, which will split it accordingly.
+		Start typing the keyword and use autocomplete form that will appear. End your input by pressing
+		ESC if you don't want to use the preselected value.
+	</message>
+  <message key="input_forms.field.dc.alternate.identifiers.label" TODO="translate">Alternate identifiers</message>
+  <message key="input_forms.field.dc.alternate.identifiers.hint" TODO="translate">The item will get a handle. If the item has any
+		identification numbers	or codes associated with it, please enter the types and the actual numbers or codes.
+   </message>
   <message key="xmlui.ContractPage.title">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.trail">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.head">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.collection_name">{0}</message>
-  <!-- The following string says that what is in the english agreement goes, the translated agreement is for convenience only. see https://github.com/ufal/lindat-dspace/pull/491#issue-138531828 -->
-  <message key="xmlui.ContractPage.explain_non_localized_license">Pogodba je sklenjena v angleščini in njeno celotno besedilo si lahko ogledate spodaj. Slovenski prevod je namenjen le orientaciji. V primeru neskladij velja angleška različica.</message>
+  <message key="xmlui.Submission.submit.progressbar.showinfo" TODO="translate">Notice</message>
+  <message key="xmlui.Submission.submit.ShowInfoStep.head" TODO="translate">Notice</message>
+  <message key="xmlui.Submission.submit.ShowInfoStep.info1" TODO="translate">The submission process for digital humanities
+		collections is still being fine tuned. If you find yourself not being able to continue the submission,
+	because you can't provide the required information, or because the required format for a field is too strict, or
+		because there's no appropriate field for your information or for any other reason,
+		<a class="helpdesk-tolink">let us know</a>.</message>
+  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
+  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_help">Dodelite si nalogo.</message>
+  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_submit">Sprejmi nalogo</message>
+  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_help">Pustite nalogo v čakalni vrsti, da jo lahko sprejme drug uporabnik.</message>
+  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.leave_submit">Pusti nalogo</message>
+  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.back">Nazaj na pregled</message>
+  <message key="xmlui.XMLWorkflow.workflow.ClaimAction.title">Potrditev/zavrnitev naloge</message>
+  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.head">Izvedba naloge: Potrdi/zavrni vnos</message>
+  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
+  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_help">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni". <strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
+  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.reject_submit">Zavrni vnos</message>
+  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_help">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
+  <message key="xmlui.XMLWorkflow.workflow.AcceptAction.approve_submit">Odobri vnos</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.head">Izvedba naloge: Potrdi/zavrni/uredi vnos</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_help">Če ste pregledali vnos in se vam ne zdi primeren za vključitev v zbirko, izberite "Zavrni".<strong/> Navesti boste morali, zakaj se vam vnos ne zdi primeren in kaj bi avtor moral spremeniti pred ponovno oddajo.</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.reject_submit">Zavrni vnos</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_help">Če ste pregledali vnos in se vam zdi primeren za vključitev v zbirko, izberite "Odobri".</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.approve_submit">Odobri vnos</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_help">Izberite to možnost za spremembo metapodatkov vnosa. Dodati boste morali vsa obvezna polja.</message>
+  <message key="xmlui.XMLWorkflow.workflow.EditMetadataAction.edit_submit">Uredi metapodatke</message>
+  <message key="xmlui.XMLWorkflow.step.unknown">Neznan status</message>
+  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.head">Izvedba naloge: Dodeli pregledovalca</message>
+  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.help">Uporabite spodnje iskalno polje, da poiščete e-osebo, ki ji boste dodelili pregledovanje.</message>
+  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.label">Poišči pregledovalca</message>
+  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.search.button">Poišči e-osebo</message>
+  <message key="xmlui.XMLWorkflow.workflow.SelectReviewerAction.select-reviewer.button">Določi za pregledovalca</message>
+  <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.help">Če niste prava oseba za pregled tega vnosa, lahko nalogo zavrnete s klikom na gumb "Zavrni nalogo".</message>
+  <message key="xmlui.XMLWorkflow.workflow.SingleUserReviewAction.decline.button">Zavrni nalogo</message>
+  <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.head">Pregled vnosa</message>
+  <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.score.button">Preglej vnos</message>
+  <message key="xmlui.XMLWorkflow.workflow.ScoreReviewAction.help">Vnesite oceno vnosa</message>
+  <message key="xmlui.XMLWorkflow.Navigation.xmlworkflow_overview">Pregled delotoka</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.trail">Pregled delotoka</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.title">Pregled delotoka</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column1"> </message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column2">Korak</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column3">Vnos</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column4">Zbirka</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.search_column5">Avtor vnosa</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_submitter">Vrni vnose njihovim avtorjem</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.submit_delete">Izbriši vnose</message>
+  <message key="xmlui.XMLWorkflow.WorkflowOverviewTransformer.button.no_results">Ni zadetkov</message>
+  <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.title">Prikaz vnosa v delotoku: {0}</message>
+  <message key="xmlui.XMLWorkflow.WorkflowItemTransformer.trail">Prikaz vnosa v delotoku:</message>
+  <message key="xmlui.XMLWorkflow.default.reviewstep">Potrdi/zavrni</message>
+  <message key="xmlui.XMLWorkflow.default.reviewstep.claimaction">Potrdi/zavrni</message>
+  <message key="xmlui.XMLWorkflow.default.reviewstep.reviewaction">Potrdi/zavrni</message>
+  <message key="xmlui.XMLWorkflow.default.editstep">Korak potrdi/uredi/zavrni</message>
+  <message key="xmlui.XMLWorkflow.default.editstep.claimaction">Potrdi/uredi/zavrni</message>
+  <message key="xmlui.XMLWorkflow.default.editstep.editaction">Potrdi/uredi/zavrni</message>
+  <message key="xmlui.XMLWorkflow.default.finaleditstep">Končna potrditev/urejanje</message>
+  <message key="xmlui.XMLWorkflow.default.finaleditstep.claimaction">Končna potrditev/urejanje</message>
+  <message key="xmlui.XMLWorkflow.default.finaleditstep.finaleditaction">Končna potrditev/urejanje</message>
+  <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.claimaction">Korak dodelitve pregledovalca</message>
+  <message key="xmlui.XMLWorkflow.selectSingleReviewer.selectReviewerStep.selectrevieweraction">Dodeli pregledovalca</message>
+  <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep">Korak pregleda posameznega uporabnika</message>
+  <message key="xmlui.XMLWorkflow.selectSingleReviewer.singleUserReviewStep.singleuserreviewaction">Preglej vnos</message>
+  <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.claimaction">Pregled ocene</message>
+  <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep.scorereviewaction">Pregled ocene</message>
+  <message key="xmlui.XMLWorkflow.scoreReview.scoreReviewStep">Pregled ocene</message>
 </catalogue>
