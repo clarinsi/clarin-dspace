@@ -14,30 +14,25 @@ os.chdir(script_directory)
 language1 = sys.argv[1]
 language2 = sys.argv[2] if len(sys.argv) > 2 else 'en'
 
+def compare_keys(file_name1, file_name2, keys_function):
+    print('\n\nComparing {} and {}:'.format(file_name1, file_name2))
+    keys1 = keys_function(file_name1)
+    keys2 = keys_function(file_name2)
+    report_delta(file_name1, file_name2, keys2-keys1)
+    report_delta(file_name2, file_name1, keys1-keys2)
+
+def report_delta(file_name1, file_name2, keys):
+    if (len(keys) == 0):
+        print('\n  Every key in {} is also in {}.'.format(file_name2, file_name1))
+    else:
+        print('\n  Present in ' + file_name2 + ' but missing in ' + file_name1 + ':')
+        for key in keys:
+            print('    ' + key)
+
 xml_file_name1 = find_language_file_name(language1, 'xml')
 xml_file_name2 = find_language_file_name(language2, 'xml')
-
-xml_keys1 = get_xml_keys(xml_file_name1)
-xml_keys2 = get_xml_keys(xml_file_name2)
-
-print('\nPresent in ' + xml_file_name2 + ' but missing in ' + xml_file_name1 + ':')
-for key in sorted(xml_keys2 - xml_keys1):
-    print(key)
-
-print('\nPresent in ' + xml_file_name1 + ' but missing in ' + xml_file_name2 + ':')
-for key in sorted(xml_keys1 - xml_keys2):
-    print(key)
+compare_keys(xml_file_name1, xml_file_name2, get_xml_keys)
 
 js_file_name1 = find_language_file_name(language1, 'js')
-js_keys1 = get_js_keys(js_file_name1)
 js_file_name2 = find_language_file_name(language2, 'js')
-js_keys2 = get_js_keys(js_file_name2)
-
-print('\nPresent in ' + js_file_name2 + ' but missing in ' + js_file_name1 + ':')
-for key in (js_keys2 - js_keys1):
-    print(key)
-
-print('\nPresent in ' + js_file_name1 + ' but missing in ' + js_file_name2 + ':')
-for key in (js_keys1 - js_keys2):
-    print(key)
-
+compare_keys(js_file_name1, js_file_name2, get_js_keys)

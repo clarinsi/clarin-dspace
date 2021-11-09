@@ -48,7 +48,7 @@ def _create_xml_en_joint_file():
         for fname in [os.path.join(dpath, fname) for fname in fnames]:
             if ('/target/' not in fname and fname.endswith('/messages.xml')):
                 en_file_names.add(os.path.abspath(fname))
-    print('Constructing temporary joint xml from all English messages.xml:\n  ' + '\n  '.join(en_file_names) + '\n')
+    print('\nConstructing temporary joint xml ' + XML_EN_JOINT_FILE_NAME + ' from all English messages.xml:\n  ' + '\n  '.join(en_file_names))
     en_joint_file = codecs.open(XML_EN_JOINT_FILE_NAME, 'w', 'UTF-8')
     for (index, en_file_name) in enumerate(en_file_names):
         en_file = codecs.open(en_file_name, 'r', 'UTF-8')
