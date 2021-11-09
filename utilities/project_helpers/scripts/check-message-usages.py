@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+## USAGE EXAMPLE: python check-message-usages.py cs
+
 import sys
 import subprocess
 import codecs
@@ -7,7 +9,7 @@ import os
 import re
 import xml.etree.ElementTree as xml
 
-from check_message_lib import find_language_file_name, root_directory
+from check_message_lib import find_language_file_name, ROOT_DIRECTORY
 
 language = sys.argv[1]
 
