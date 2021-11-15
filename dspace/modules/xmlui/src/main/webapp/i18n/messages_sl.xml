@@ -1,6 +1,6 @@
 <!--
-    Translation: Lia Lampe, 2018-2019, Katja Zupan, 2016-2017.
-    Review: Tomaž Erjavec, Cyprian Laskowski, 2016-2019.
+    Translation: Katja Meden (2020-2021), Lia Lampe (2018-2019) Katja Zupan (2016-2017).
+    Review: Tomaž Erjavec, Cyprian Laskowski.
 
     This file was made on the basis of the dSpace/LINDAT localisation
     file for CLARIN.SI, https://www.clarin.si/repository/xmlui/.
@@ -2503,7 +2503,7 @@
   </message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.preview">Predogled</message>
   <message key="xmlui.UFAL.artifactbrowser.item_view.file_preview">Predogled datoteke</message>
-  <message key="xmlui.UFAL.artifactbrowser.item_view.show_all_authors" TODO="translate">show everyone</message>
+  <message key="xmlui.UFAL.artifactbrowser.item_view.show_all_authors">prikaži vse</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.community">Skupnost</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.collections">Zbirke v skupnosti</message>
   <message key="xmlui.UFAL.artifactbrowser.community_list.no_collections">Ni zbirk v tej skupnosti.</message>
@@ -2553,16 +2553,10 @@
   <message key="input_forms.field.dc.publisher.label">Izdajatelj</message>
   <message key="input_forms.field.dc.publisher.hint">Vnesite ime izdajatelja predhodne različice tega vnosa ali ime vaše matične institucije. Začnite vnašati ime izdajatelja in kliknite na samodokončani izpis imena, če se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.
   </message>
-  <message key="input_forms.field.dc.publisher.clariah.hint" TODO="translate">The name of the publisher of the original analog or born
-		digital object. Use your home institution if this is a born digital object being published now. Start typing the
-		publisher and use autocomplete form that will appear if applicable. End your input by pressing ESC if you
-		don't want to use the preselected value.
-	</message>
+  <message key="input_forms.field.dc.publisher.clariah.hint">Ime založnika originalnega analognega ali izvorno digitalnega objekta. Uporabite svojo institucijo, če je to izvorno digitalni objekt, ki ga želite objaviti. Začnite tipkati ime založnika in uporabite samodokončanje z obrazcem, ki se bo pojavil, če založnik že obstaja v sistemu. Pritisnite ESC, če ne želite uporabiti samodejno izbrane vrednosti.</message>
   <message key="input_forms.field.dc.publisher.required">Ime izdajatelja morate obvezno vnesti.</message>
-  <message key="input_forms.field.local.dataProvider.label" TODO="translate">Data provider</message>
-  <message key="input_forms.field.local.dataProvider.hint" TODO="translate">This concerns the digital object (not the analog
-		original). An institution from which the data come. Used eg. to give proper attribution. Generally
-		different from publisher.</message>
+  <message key="input_forms.field.local.dataProvider.label">Ponudnik podatkov</message>
+  <message key="input_forms.field.local.dataProvider.hint">Institucija od koder prihajajo podatki. Nanaša se na digitalni objekt (in ne analogni original) in se uporablja npr. za pravilno atribucijo. V splošnem to ni enako kot izdajatelj.</message>
   <message key="input_forms.field.local.contact.person.label">Kontaktna oseba</message>
   <message key="input_forms.field.local.contact.person.hint">Oseba, na katero se obrnete v primeru težav z vnosom.</message>
   <message key="input_forms.field.local.contact.person.required">Izpolnite vsa polja za kontaktno osebo.</message>
@@ -2579,8 +2573,7 @@
   <message key="input_forms.field.dc.language.iso1.hint">Če je orodje/storitev jezikovno odvisna, izberite ustrezne jezike. V nasprotnem primeru pustite polje prazno. Lahko določite več jezikov. Začnite vnašati jezik in kliknite na samodokončani izpis, če se prikaže.
   </message>
   <message key="input_forms.field.dc.subject.label">Ključne besede</message>
-  <message key="input_forms.field.dc.subject.hint">Vnesite ustrezne ključne besede ali besedne zveze in kliknite na gumb "Dodaj". Če želite vnesti več ključnih besed, lahko ponovite ta postopek ali uporabite ločila, tj. vejico ali podpičje, s katerimi boste ločili ključne besede. Začnite vnašati ključno besedo in kliknite na samodokončani izpis, ko se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.
-  </message>
+  <message key="input_forms.field.dc.subject.hint">Vnesite ustrezne ključne besede ali besedne zveze in kliknite na gumb "Dodaj". Če želite vnesti več ključnih besed, lahko ponovite ta postopek ali uporabite ločila, tj. vejico ali podpičje, s katerimi boste ločili ključne besede. Začnite vnašati ključno besedo in kliknite na samodokončani izpis, ko se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.</message>
   <message key="input_forms.field.dc.subject.required">Vnesite vsaj eno ključno besedo, povezano z vašim vnosom.</message>
   <message key="input_forms.field.local.size.info.label">Velikost</message>
   <message key="input_forms.field.local.size.info.hint">Lahko navedete obseg vnesenih podatkov, npr. število pojavnic.</message>
@@ -2750,53 +2743,32 @@
   <message key="input_forms.field.dc.relation.isreferencedby.label">Dokumentirano v</message>
   <message key="input_forms.field.dc.relation.isreferencedby.hint">Povezava do dela, ki se sklicuje na in tipično dokumentira vnesene podatke.</message>
   <message key="input_forms.field.dc.relation.isreferencedby.regexp-warning">Navedba URL-ja se mora začeti s http/https</message>
-  <message key="input_forms.field.edm.type.label" TODO="translate">Select the kind of resource you are submitting</message>
-  <message key="input_forms.field.edm.type.hint" TODO="translate">Choose one of TEXT, VIDEO, SOUND, IMAGE, 3D. If choosing
-		TEXT consider adding the resource among other Language Resources. Images are visual resources for users to
-		look at. Text materials are meant to be read and not looked at.</message>
-  <message key="input_forms.field.edm.type.required" TODO="translate">Please select one of the options.</message>
-  <message key="input_forms.value_pairs.edm_types.text" TODO="translate">TEXT</message>
-  <message key="input_forms.value_pairs.edm_types.video" TODO="translate">VIDEO</message>
-  <message key="input_forms.value_pairs.edm_types.sound" TODO="translate">SOUND</message>
-  <message key="input_forms.value_pairs.edm_types.image" TODO="translate">IMAGE</message>
-  <message key="input_forms.value_pairs.edm_types.3d" TODO="translate">3D</message>
-  <message key="input_forms.field.dc.type.clariah.label" TODO="translate">The type of the resource</message>
-  <message key="input_forms.field.dc.type.clariah.hint" TODO="translate">The type should be different from what you have
-		entered in the first step. Examples: photo or painting for IMAGE, book or letter for TEXT, etc.</message>
-  <message key="input_forms.field.dc.type.clariah.required" TODO="translate">Type is required</message>
-  <message key="input_forms.field.dc.language.iso.clariah.label" TODO="translate">Pick the languages of the TEXT</message>
-  <message key="input_forms.field.dc.language.iso.clariah.hint" TODO="translate">Select the language of the main content of the item. Multiple languages are possible. Start
-		typing the language and use autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
-		</message>
-  <message key="input_forms.field.dc.language.iso.clariah.required" TODO="translate">The language is required for TEXT resources</message>
-  <message key="input_forms.field.dc.language.iso1.clariah.label" TODO="translate">Language</message>
-  <message key="input_forms.field.dc.language.iso1.clariah.hint" TODO="translate">Optionally, select the language of the main content
-		of the item. Multiple languages are possible. Start
-		typing the language and use autocomplete form that will appear if applicable. Better to list all the languages then to use the 'mul' iso code (if there are too many, contact support).
-	</message>
-  <message key="input_forms.field.dc.subject.clariah.hint" TODO="translate">Enter appropriate subject keyword or phrase and press
-		the Add button. Use keywords to specify also people, places and times (period, era, date range etc) the resource
-		is about. You	can use hierarchical subjects, separate the hierarchy levels with two colons (::). Eg.
-		People::John Doe, Places::New York, Times::WWII.
-		You can repeat it	for multiple keywords or use separators i.e., comma and semicolon, which will split it accordingly.
-		Start typing the keyword and use autocomplete form that will appear. End your input by pressing
-		ESC if you don't want to use the preselected value.
-	</message>
-  <message key="input_forms.field.dc.alternate.identifiers.label" TODO="translate">Alternate identifiers</message>
-  <message key="input_forms.field.dc.alternate.identifiers.hint" TODO="translate">The item will get a handle. If the item has any
-		identification numbers	or codes associated with it, please enter the types and the actual numbers or codes.
-   </message>
+  <message key="input_forms.field.edm.type.label">Izberite vrsto vira, ki ga vnašate</message>
+  <message key="input_forms.field.edm.type.hint">Izberite enega od TEXT, VIDEO, SOUND, IMAGE, 3D. Če izberete TEXT, razmislite, ali bi dodali vir med druge jezikovne vire.</message>
+  <message key="input_forms.field.edm.type.required">Prosim izberite eno od možnosti.</message>
+  <message key="input_forms.value_pairs.edm_types.text">TEXT</message>
+  <message key="input_forms.value_pairs.edm_types.video">VIDEO</message>
+  <message key="input_forms.value_pairs.edm_types.sound">SOUND</message>
+  <message key="input_forms.value_pairs.edm_types.image">IMAGE</message>
+  <message key="input_forms.value_pairs.edm_types.3d">3D</message>
+  <message key="input_forms.field.dc.type.clariah.label">Vrsta vira</message>
+  <message key="input_forms.field.dc.type.clariah.hint">Vrsta naj bi bila drugačna, kot to, kar ste vnesli v prvem koraku. Primeri: "photo" ali "painting" za IMAGE, "book" ali "letter" za TEXT, itd.</message>
+  <message key="input_forms.field.dc.type.clariah.required">Vrsta je obvezna</message>
+  <message key="input_forms.field.dc.language.iso.clariah.label">Izberite jezike besedila</message>
+  <message key="input_forms.field.dc.language.iso.clariah.hint">Izberite jezike glavne vsebine vnosa. Možne je izbrati več jezikov. Začnite tipkati ime jezika in uporabite samodokončanje izpisa, ko se prikaže. Bolje je našteti vse jezike, kot pa uporabiti ISO kodo 'mul' za več jezikov (če je jezikov preveč, prosimo, nam pišite).</message>
+  <message key="input_forms.field.dc.language.iso.clariah.required">Jezik je zahtevan podatek za vire vrste TEXT</message>
+  <message key="input_forms.field.dc.language.iso1.clariah.label">Jezik</message>
+  <message key="input_forms.field.dc.language.iso1.clariah.hint">Če želite, izberite jezik glavne vsebine vnosa. Možno je izbrati več jezikov. Začnite tipkati ime jezika in uporabite samodokončanje izpisa, ko se prikaže. Bolje je našteti vse jezike, kot pa uporabiti ISO kodo 'mul' za več jezikov (če je jezikov preveč, prosimo, nam pišite).</message>
+  <message key="input_forms.field.dc.subject.clariah.hint">Vnesite primerne ključne besede ali fraze, in pritisnite gumb "Dodaj". Uporabite ključne besede tudi, da določite osebe, kraje in čase (obdobje, era, razpon datumov itd.), ki opisujejo vir. Uporabite lahko hierarhične ključne besede, pri čemer so nivoji ločeni z dvema dvopičjema (::). Npr. People::John Doe, Places::New York, Times::WWII. Za več ključnih besed lahko to ponovite, ali pa uporabite ločilo vejica ali podpičje, ki bo niz ključnih besed primerno razdelil. Začnite tipkati ključno besedo in uporabite samodokončanje izpisa, ko se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.</message>
+  <message key="input_forms.field.dc.alternate.identifiers.label">Alternativni identifikatorji</message>
+  <message key="input_forms.field.dc.alternate.identifiers.hint">Vnos bo dobil identifikator handle. Če ima vnos pripisane identifikacijske številke ali kode, prosimo, vnesite njihove vrste in te številke ali kode.</message>
   <message key="xmlui.ContractPage.title">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.trail">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.head">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.collection_name">{0}</message>
-  <message key="xmlui.Submission.submit.progressbar.showinfo" TODO="translate">Notice</message>
-  <message key="xmlui.Submission.submit.ShowInfoStep.head" TODO="translate">Notice</message>
-  <message key="xmlui.Submission.submit.ShowInfoStep.info1" TODO="translate">The submission process for digital humanities
-		collections is still being fine tuned. If you find yourself not being able to continue the submission,
-	because you can't provide the required information, or because the required format for a field is too strict, or
-		because there's no appropriate field for your information or for any other reason,
-		<a class="helpdesk-tolink">let us know</a>.</message>
+  <message key="xmlui.Submission.submit.progressbar.showinfo">Obvestilo</message>
+  <message key="xmlui.Submission.submit.ShowInfoStep.head">Obvestilo</message>
+  <message key="xmlui.Submission.submit.ShowInfoStep.info1">Postopek oddaje zbirk za digitalno humanistiko je še v postopku razvoja. Če ne morete nadaljevati vnosa zato, ker ne morete vnesti zahtevanih podatkov, ali je zahtevani format za podatkovno polje preveč omejujoč, ali zato, ker za vašo informacijo primerno polje še ne obstaja, ali zaradi kateregakoli drugega razloga, <a class="helpdesk-tolink">nam pišite</a>.</message>
   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.info1">Dejanja, ki jih lahko izvedete pri tej nalogi:</message>
   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_help">Dodelite si nalogo.</message>
   <message key="xmlui.XMLWorkflow.workflow.ClaimAction.take_submit">Sprejmi nalogo</message>
