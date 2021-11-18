@@ -21,7 +21,7 @@ def find_xml_prefixes_and_files():
     grep_command = 'grep -R -P "[>\'\\"](' + '|'.join(prefixes) + ')\\." --include=*.java --include=*.xsl --include=*.xmap --include=*.xslt --include=input-forms.xml --exclude-dir=*/target/* *'
     prefix_regexp = "[>'\"]((?:" + "|".join(prefixes) + ")\..+?)[<'\"]"
 
-    os.chdir(root_directory)
+    os.chdir(ROOT_DIRECTORY)
     with open(os.devnull, 'w') as devnull:
         output = subprocess.check_output(grep_command, shell=True, stderr=devnull)
     output_lines = output.strip().split('\n')
@@ -68,7 +68,7 @@ def add_js_results(language, results):
             key = message_match.group(1)
             result = {'type':'js', 'match':'no', 'key':key, 'file_name':None, 'prefix':None}
             grep_command = 'grep -R -P "(\\\\$|jQuery)\\.i18n\._\\([\'\\"]' + key + '[\'\\"][),]" --include=*.js --include=*.html --exclude-dir=*/target/* *'
-            os.chdir(root_directory)
+            os.chdir(ROOT_DIRECTORY)
             try:
                 with open(os.devnull, 'w') as devnull:
                     output = subprocess.check_output(grep_command, shell=True, stderr=devnull)
