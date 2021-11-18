@@ -1,18 +1,19 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-## USAGE EXAMPLE: python update-translation-xml-messages.py cs
-
-import sys
+import argparse
 import os
 import lxml.etree as lxml
 
 from check_message_lib import find_language_file_name, get_xml_keys
 
+arg_parser = argparse.ArgumentParser(description="Add English XML messages missing in the language's messages, marked with @TODO=TRANSLATE.")
+arg_parser.add_argument('-lang', required=True, help='Language (as a 2-letter code) of the messages file')
+arguments = arg_parser.parse_args()
+language = arguments.lang
+
 script_directory = os.path.dirname(os.path.realpath(__file__))
 os.chdir(script_directory)
-
-language = sys.argv[1]
 
 english_file_name = find_language_file_name('en', 'xml')
 english_keys = get_xml_keys(english_file_name)

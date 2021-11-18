@@ -1,18 +1,21 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-## USAGE EXAMPLE: python check-message-translations.py cs
-
-import sys
+import argparse
 import os
 
 from check_message_lib import find_language_file_name, get_js_keys, get_xml_keys
 
+arg_parser = argparse.ArgumentParser(description='Compare the XML and JS message keys for two languages.')
+arg_parser.add_argument('-lang1', required=True, help='First language as a 2-letter code')
+arg_parser.add_argument('-lang2', default='en', help='Second language as a 2-letter code (defaults to "en")')
+arguments = arg_parser.parse_args()
+language1 = arguments.lang1
+language2 = arguments.lang2
+
 script_directory = os.path.dirname(os.path.realpath(__file__))
 os.chdir(script_directory)
 
-language1 = sys.argv[1]
-language2 = sys.argv[2] if len(sys.argv) > 2 else 'en'
 
 def compare_keys(file_name1, file_name2, keys_function):
     print('\n\nComparing {} and {}:'.format(file_name1, file_name2))
