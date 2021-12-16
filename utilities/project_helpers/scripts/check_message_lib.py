@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import glob
 import re
 import codecs
 import xml.etree.ElementTree as etree
@@ -43,11 +44,8 @@ def get_js_keys(js_file_name):
 ## Merge together all messages.xml into one temporary messages-en.xml.
 ## Avoids xml parsing to prevent namespace complications.
 def _create_xml_en_joint_file():
-    en_file_names = set()
-    for (dpath, dnames, fnames) in os.walk(ROOT_DIRECTORY):
-        for fname in [os.path.join(dpath, fname) for fname in fnames]:
-            if ('/target/' not in fname and fname.endswith('/messages.xml')):
-                en_file_names.add(os.path.abspath(fname))
+    en_file_names = sorted(glob.glob(ROOT_DIRECTORY + '/dspace-xmlui/src/**/messages.xml', recursive=True))
+    print(en_file_names)
     print('\nConstructing temporary joint xml ' + XML_EN_JOINT_FILE_NAME + ' from all English messages.xml:\n  ' + '\n  '.join(en_file_names))
     en_joint_file = codecs.open(XML_EN_JOINT_FILE_NAME, 'w', 'UTF-8')
     for (index, en_file_name) in enumerate(en_file_names):
@@ -55,6 +53,8 @@ def _create_xml_en_joint_file():
         if (index == 0):
             for line in en_file:
                 if ('</catalogue>' not in line):
+                    if ('<catalogue' in line):
+                        line = re.sub(' xmlns=".*?"','',line)
                     en_joint_file.write(line)
         else:
             inside_catalogue_flag = False
@@ -70,5 +70,3 @@ def _create_xml_en_joint_file():
         en_file.close()
     en_joint_file.write('</catalogue>\n')
     en_joint_file.close()
-
-

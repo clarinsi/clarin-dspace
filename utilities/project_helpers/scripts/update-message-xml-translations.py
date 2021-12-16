@@ -38,8 +38,6 @@ else:
     english_root = english_tree.getroot()
     for message in english_root:
         if (message.tag != lxml.Comment):
-            for element in message.xpath('descendant-or-self::*'):
-                element.tag = element.tag[element.tag.index('}')+1:]
             key = message.get('key')
             if (key in other_keys):
                 other_root.append(current_map[key])
