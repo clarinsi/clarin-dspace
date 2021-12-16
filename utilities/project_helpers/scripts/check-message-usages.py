@@ -30,7 +30,7 @@ def find_xml_prefixes_and_files():
     os.chdir(ROOT_DIRECTORY)
     with open(os.devnull, 'w') as devnull:
         output = subprocess.check_output(grep_command, shell=True, stderr=devnull)
-    output_lines = output.strip().split('\n')
+    output_lines = str(output).strip().split('\n')
     message_prefixes = set()
     for grep_line in output_lines:
         line_match = re.search(LINE_REGEXP, grep_line, re.U)
@@ -47,7 +47,7 @@ def add_xml_results(language, results):
     file_name = find_language_file_name(language, 'xml')
     root = xml.parse(file_name)
     messages = root.findall('*')
-    print 'Checking message usage for the ' + str(len(messages)) + ' messages in ' + file_name + ' ...'
+    print('Checking message usage for the ' + str(len(messages)) + ' messages in ' + file_name + ' ...')
     for message in messages:
         key = message.get('key')
         result = {'type':'xml', 'match':'no', 'key':key, 'file_name':None, 'prefix':None}
@@ -78,7 +78,7 @@ def add_js_results(language, results):
             try:
                 with open(os.devnull, 'w') as devnull:
                     output = subprocess.check_output(grep_command, shell=True, stderr=devnull)
-                output_lines = output.strip().split('\n')
+                output_lines = str(output).strip().split('\n')
                 line_match = re.search(LINE_REGEXP, output_lines[0], re.U)
                 (file_name, line) = line_match.groups()
                 result['match'] = 'full'
@@ -90,15 +90,15 @@ def add_js_results(language, results):
 
 def print_partial_results(results_all, kind, match):
     results = [result for result in results_all if result['type'] == kind and result['match'] == match]
-    print ''
-    print kind + ' message keys with ' + match + ' match (' + str(len(results)) + '):'
+    print('')
+    print(kind + ' message keys with ' + match + ' match (' + str(len(results)) + '):')
     for result in results:
         line = '  ' + result['key']
         if (result['prefix'] is not None):
             line += ' (' + result['prefix'] + ')'
         if (result['file_name'] is not None):
             line += ' [' + result['file_name'] + ']'
-        print line
+        print(line)
 
 results = []
 add_xml_results(language, results)
