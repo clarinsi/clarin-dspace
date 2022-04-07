@@ -2,7 +2,8 @@
 
 # mail variables
 recipient="repo-technical@clarin.si"
-subject="fido system warning"
+host=`hostname`
+subject="$host system warning"
 
 body=""
 
