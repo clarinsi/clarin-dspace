@@ -23,6 +23,7 @@
             <xsl:variable name="institution"><xsl:call-template name="institution"/></xsl:variable>
             <xsl:variable name="keywords"><xsl:call-template name="keywords"/></xsl:variable>
             <xsl:variable name="copyright"><xsl:call-template name="copyright"/></xsl:variable>
+            <xsl:variable name="issn"><xsl:call-template name="issn"/></xsl:variable>
             <xsl:variable name="year"><xsl:call-template name="year"/></xsl:variable>
             <xsl:if test="$title != ''">
                     <xsl:value-of select="util:format($title)"/>
@@ -41,6 +42,9 @@
             <xsl:value-of select="util:format($keywords)"/>
             -->
                     <xsl:value-of select="util:format($copyright)"/>
+            </xsl:if>
+            <xsl:if test="$issn != ''">
+                    <xsl:value-of select="util:format($issn)"/>
             </xsl:if>
             <xsl:if test="$year != ''">
                     <xsl:value-of select="util:format($year)"/>}
@@ -97,9 +101,14 @@
         </xsl:choose>
     </xsl:template>
     
+    <xsl:template name="issn">
+      issn = {2820-4042},
+    </xsl:template>
+
     <xsl:template name="year">
         <xsl:if test="doc:metadata/doc:element[@name='dc']/doc:element[@name='date']/doc:element[@name='issued']/doc:element/doc:field[@name='value']">
                 year = {<xsl:value-of select="substring(doc:metadata/doc:element[@name='dc']/doc:element[@name='date']/doc:element[@name='issued']/doc:element/doc:field[@name='value'],1,4)"/>}
         </xsl:if>
     </xsl:template>
+
 </xsl:stylesheet>

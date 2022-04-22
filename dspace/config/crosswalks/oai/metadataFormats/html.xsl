@@ -20,6 +20,7 @@
     <xsl:variable name="repository"><xsl:call-template name="repository"/></xsl:variable>
     <xsl:variable name="year"><xsl:call-template name="year"/></xsl:variable>
     <xsl:variable name="publisher"><xsl:call-template name="publisher"/></xsl:variable>
+    <xsl:variable name="issn"><xsl:call-template name="issn"/></xsl:variable>
 
     <xsl:template match="/">
 
@@ -51,6 +52,10 @@
                     <xsl:if test="$repository != ''">
                         <xsl:text>, </xsl:text>
                         <xsl:copy-of select="$repository"/>
+                    </xsl:if>
+                    <xsl:if test="$issn != ''">
+                        <xsl:text>, </xsl:text>
+                        <xsl:copy-of select="$issn"/>
                     </xsl:if>
                     <xsl:if test="$pid != ''">
                         <xsl:text>, </xsl:text>
@@ -122,11 +127,15 @@
         <xsl:value-of select="doc:metadata/doc:element[@name='dc']/doc:element[@name='publisher']/doc:element/doc:field[@name='value']"/>
     </xsl:template>
 
+    <xsl:template name="issn">
+      <xsl:text>ISSN 2820-4042</xsl:text>
+    </xsl:template>
+
     <xsl:template name="interpolate-variables">
         <xsl:param name="value" />
         <xsl:choose>
             <xsl:when
-                    test="contains($value, '{title}') or contains($value, '{authors}') or contains($value, '{pid}') or contains($value, '{repository}') or contains($value, '{year}') or contains($value, '{publisher}')">
+                    test="contains($value, '{title}') or contains($value, '{authors}') or contains($value, '{pid}') or contains($value, '{repository}') or contains($value, '{year}') or contains($value, '{publisher}') or contains($value, '{issn}')">
                 <xsl:choose>
                     <xsl:when test="starts-with($value,'{title}')">
                         <xsl:copy-of select="$title"/>
@@ -162,6 +171,12 @@
                         <xsl:copy-of select="$publisher"/>
                         <xsl:call-template name="interpolate-variables">
                             <xsl:with-param name="value" select="substring-after($value,'{publisher}')"/>
+                        </xsl:call-template>
+                    </xsl:when>
+                    <xsl:when test="starts-with($value,'{issn}')">
+                        <xsl:copy-of select="$issn"/>
+                        <xsl:call-template name="interpolate-variables">
+                            <xsl:with-param name="value" select="substring-after($value,'{issn}')"/>
                         </xsl:call-template>
                     </xsl:when>
                     <!-- we have a known variable but not at the start -->
