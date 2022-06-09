@@ -45,6 +45,7 @@ def get_js_keys(js_file_name):
 ## Avoids xml parsing to prevent namespace complications.
 def _create_xml_en_joint_file():
     en_file_names = sorted(glob.glob(ROOT_DIRECTORY + '/dspace-xmlui/src/**/messages.xml', recursive=True))
+    en_file_names.insert(0, en_file_names.pop(en_file_names.index(ROOT_DIRECTORY + '/dspace-xmlui/src/main/webapp/i18n/messages.xml')))
     print(en_file_names)
     print('\nConstructing temporary joint xml ' + XML_EN_JOINT_FILE_NAME + ' from all English messages.xml:\n  ' + '\n  '.join(en_file_names))
     en_joint_file = codecs.open(XML_EN_JOINT_FILE_NAME, 'w', 'UTF-8')
