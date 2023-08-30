@@ -170,8 +170,9 @@ def check_files(env):
                 ret, msg = verificator( f )
             else:
                 ret, msg = verify( verificator, f )
-                if ret != 0:
-                    print ret, mime_type, f,  msg.split('\n')[0]
+            msg = msg.split('\n')[0]
+            if not callable( verificator) and ret!= 0:
+                print ret, mime_type, f,  msg
             _logger.info( "checked: [%s] [%d]...", msg[:min( len( msg ), 200 )], ret )
             #_logger.info( "checked: return code [%d]...", ret )
             if ret != _OK:
