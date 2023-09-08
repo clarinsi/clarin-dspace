@@ -2612,8 +2612,8 @@
   <message key="input_forms.field.dc.subject.clariah.hint">Vnesite primerne ključne besede ali fraze, in pritisnite gumb "Dodaj". Uporabite ključne besede tudi, da določite osebe, kraje in čase (obdobje, era, razpon datumov itd.), ki opisujejo vir. Uporabite lahko hierarhične ključne besede, pri čemer so nivoji ločeni z dvema dvopičjema (::). Npr. People::John Doe, Places::New York, Times::WWII. Za več ključnih besed lahko to ponovite, ali pa uporabite ločilo vejica ali podpičje, ki bo niz ključnih besed primerno razdelil. Začnite tipkati ključno besedo in uporabite samodokončanje izpisa, ko se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.</message>
   <message key="input_forms.field.dc.alternate.identifiers.label">Alternativni identifikatorji</message>
   <message key="input_forms.field.dc.alternate.identifiers.hint">Vnos bo dobil identifikator handle. Če ima vnos pripisane identifikacijske številke ali kode, prosimo, vnesite njihove vrste in te številke ali kode.</message>
-  <message key="input_forms.field.local.demo.uri2.label" translated="false">Course homepage</message>
-  <message key="input_forms.field.dc.type.teaching.hint" translated="false">This is here to autofill a value. The value should not be changed.</message>
+  <message key="input_forms.field.local.demo.uri2.label">Domač stran tečaja</message>
+  <message key="input_forms.field.dc.type.teaching.hint">To je tukaj, da se vrednost določi avtomatsko. Vrednosti se ne sme spreminjati.</message>
   <message key="xmlui.ContractPage.title">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.trail">Sporazum o distribuciji virov</message>
   <message key="xmlui.ContractPage.head">Sporazum o distribuciji virov</message>
