@@ -22,7 +22,7 @@ fi
 
 ### Tomcat ###
 echo "Stopping tomcat"
-/etc/init.d/tomcat7 stop
+systemctl stop tomcat9
 ### Postgres ###
 echo "Stopping postgres"
 /etc/init.d/postgresql stop

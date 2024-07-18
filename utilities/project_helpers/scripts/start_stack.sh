@@ -7,7 +7,7 @@ echo "Starting postgres"
 ### Tomcat ###
 echo "Starting tomcat"
 CATALINA_OPTS="-Xms512M -Xmx2048M"
-/etc/init.d/tomcat7 start
+systemctl start tomcat9
 ### Handle server ###
 HANDLE_SERVER=/etc/init.d/handle-server
 if [[ -r $HANDLE_SERVER ]]; then
