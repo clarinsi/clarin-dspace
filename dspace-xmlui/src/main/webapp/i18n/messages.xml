@@ -1016,7 +1016,10 @@
     <!-- org.dspace.app.xmlui.Submission.submit.UploadStep -->
 	<message key="xmlui.Submission.submit.UploadStep.head">Upload File(s)</message>
 	<message key="xmlui.Submission.submit.UploadStep.file">File</message>
-    <message key="xmlui.Submission.submit.UploadStep.file_help">Please enter the full path of the file on your computer corresponding to your item. If you click "Browse...", a new window will allow you to select the file from your computer. <div class='alert'>When uploading language resources, please try to use one of the recommended formats mentioned in <a href='http://www.clarin.eu/sites/default/files/Standards%20for%20LRT-v6.pdf' target='_blank'>LRT Standards</a></div><div class='alert'>Uploading <strong>files larger than {0} </strong> requires special handling. Please contact <a class="helpdesk-tolink">Help Desk</a> about how to upload these files. Thank you for your understanding.</div></message>
+	<message key="xmlui.Submission.submit.UploadStep.file_help">Please enter the full path of the file on your computer corresponding to your item. If you click "Browse...", a new window will allow you to select the file from your computer.
+	<div class='alert'>When uploading language resources, please follow the <a href="https://www.clarin.si/repository/xmlui/page/data" target='_blank'>CLARIN.SI guidelines for data submissions</a>.</div>
+	<div class='alert'>Uploading <strong>files larger than {0}</strong> requires special handling. Please contact <a class="helpdesk-tolink">Help Desk</a> about how to upload these files. Thank you for your understanding.</div>
+	</message>
     <message key="xmlui.Submission.submit.UploadStep.file_local_head">Add files from URI</message>
     <message key="xmlui.Submission.submit.UploadStep.file_local_help">Please enter the full path of the file available on local server or from a http location.</message>
 	<message key="xmlui.Submission.submit.UploadStep.file_error">The item must contain at least one file.</message>
@@ -3029,10 +3032,8 @@
 	</message>
 	<message key="input_forms.field.local.demo.uri.regexp-warning">The supplied url must start with http/https</message>
 	<message key="input_forms.field.dc.date.issued.label">Date issued</message>
-	<message key="input_forms.field.dc.date.issued.hint">Please give the date when the submission data were issued if any e.g., 2014-01-21 or at least
-		the year.
-	</message>
-	<message key="input_forms.field.dc.date.issued.required">You must enter the date or at least the year in a valid format.</message>
+	<message key="input_forms.field.dc.date.issued.hint">Please give the date when the submission data were issued, e.g., 2014-01-21.</message>
+	<message key="input_forms.field.dc.date.issued.required">You must enter the date in a valid format.</message>
 	<message key="input_forms.field.local.hidden.label">Should this item be hidden from browse/search?</message>
 	<message key="input_forms.field.local.hidden.hint">Indicate whether you want to hide this item from browse and search. Combine with "Upload cmdi"
 		for weblicht submissions.

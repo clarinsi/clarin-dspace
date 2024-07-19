@@ -439,7 +439,7 @@
   <message key="xmlui.EPerson.WelcomeLogin.head2">Pravilnik o zasebnosti</message>
   <message key="xmlui.EPerson.WelcomeLogin.para1">Podatki, ki nam jih posreduje vaš IdP (običajno vaša matična institucija), so prikazani spodaj.</message>
   <message key="xmlui.EPerson.WelcomeLogin.warn1">
-    <div class="bold text-error">Uporabljamo le atribute, ki so potrebni za delovanje sistema in so opredeljeni v pravilniku o zasebnosti, dostopnem na <a href="http://www.clarin.si/privacy_policy.html" target="_blank" class="bold">http://www.clarin.si/privacy_policy.html</a>.<BR/>Atribute lahko zabeležimo in hranimo za določen čas.</div>
+    <div class="bold text-error">Uporabljamo le atribute, ki so potrebni za delovanje sistema in so opredeljeni v pravilniku o zasebnosti, dostopnem na <a href="https://www.clarin.si/privacy_policy.html" target="_blank" class="bold">https://www.clarin.si/privacy_policy.html</a>.<BR/>Atribute lahko zabeležimo in hranimo za določen čas.</div>
   </message>
   <message key="xmlui.EPerson.WelcomeLogin.buttonok">Nazaj na Domov</message>
   <message key="xmlui.EPerson.LDAPLogin.title">Vpis</message>
@@ -751,9 +751,9 @@
   <message key="xmlui.Submission.submit.EditPolicyStep.head">Urejanje politike</message>
   <message key="xmlui.Submission.submit.UploadStep.head">Nalaganje datotek</message>
   <message key="xmlui.Submission.submit.UploadStep.file">Datoteka</message>
-  <message key="xmlui.Submission.submit.UploadStep.file_help">Vnesite celotno pot datoteke na vašem računalniku, ki ustreza vnosu. S klikom na "Prebrskaj ..." se bo odprlo novo okno in lahko boste izbrali datoteko z vašega računalnika. <div class="alert">Prosimo, da pri nalaganju jezikovnih virov uporabite enega izmed priporočenih formatov, navedenih v <a href="http://www.clarin.eu/sites/default/files/Standards%20for%20LRT-v6.pdf" target="_blank">standardih LRT.</a>
-</div>
-<div class="alert">Nalaganje <strong>datotek, večjih od {0}, </strong> zahteva posebno ravnanje. Obrnite se na <a class="helpdesk-tolink">pomoč uporabnikom</a> za informacije o tem, kako te datoteke naložiti v repozitorij. Hvala za razumevanje.</div>
+  <message key="xmlui.Submission.submit.UploadStep.file_help">Vnesite celotno pot datoteke na vašem računalniku, ki ustreza vnosu. S klikom na "Prebrskaj ..." se bo odprlo novo okno in lahko boste izbrali datoteko z vašega računalnika.
+  <div class="alert">Prosimo, da pri nalaganju jezikovnih virov upoštevate <a href="https://www.clarin.si/repository/xmlui/page/data" target="_blank">Smernice za oddajo podatkov CLARIN.SI</a>.</div>
+<div class="alert">Nalaganje <strong>datotek, večjih od {0}</strong>, zahteva posebno ravnanje. Obrnite se na <a class="helpdesk-tolink">pomoč uporabnikom</a> za informacije o tem, kako te datoteke naložiti v repozitorij. Hvala za razumevanje.</div>
   </message>
   <message key="xmlui.Submission.submit.UploadStep.file_local_head">Dodajanje datotek z URI-ja</message>
   <message key="xmlui.Submission.submit.UploadStep.file_local_help">Vnesite celotno pot datoteke, ki je na voljo na lokalnem strežniku ali http-ju.</message>
@@ -846,7 +846,7 @@
   <message key="xmlui.Submission.submit.ReviewStep.supported">podprto</message>
   <message key="xmlui.Submission.submit.CCLicenseStep.ccws_error">Prišlo je do napake ... {0}</message>
   <message key="xmlui.Submission.submit.CCLicenseStep.head">Licencirajte svoje delo</message>
-  <message key="xmlui.Submission.submit.CCLicenseStep.info1">Če želite, lahko svojemu vnosu dodelite licenco <a href="http://creativecommons.org/">Creative Commons.</a> 
+  <message key="xmlui.Submission.submit.CCLicenseStep.info1">Če želite, lahko svojemu vnosu dodelite licenco <a href="https://creativecommons.org/">Creative Commons.</a> 
   <strong>Licence Creative Commons določajo pogoje uporabe vašega dela.</strong>
   </message>
   <message key="xmlui.Submission.submit.CCLicenseStep.submit_choose_creative_commons">Izberi licenco</message>
@@ -2387,28 +2387,23 @@
   </message>
   <message key="input_forms.field.local.demo.uri.regexp-warning">Navedba URL-ja se mora začeti s http/https</message>
   <message key="input_forms.field.dc.date.issued.label">Datum objave</message>
-  <message key="input_forms.field.dc.date.issued.hint">Navedite datum objave podatkov vnosa, npr. 2018-01-21 ali vsaj letnico.
-  </message>
+  <message key="input_forms.field.dc.date.issued.hint">Navedite točen datum objave podatkov vnosa, npr. 2018-01-21.</message>
   <message key="input_forms.field.dc.date.issued.required">Datum ali vsaj letnico morate vnesti v veljavnem formatu.</message>
   <message key="input_forms.field.local.hidden.label">Želite onemogočiti brskanje/iskanje tega vnosa?</message>
-  <message key="input_forms.field.local.hidden.hint">Označite, ali želite onemogočiti brskanje ali iskanje tega vnosa. Združite z "Naloži CMDI" za vnose, ustvarjene z WebLichtom.
-  </message>
+  <message key="input_forms.field.local.hidden.hint">Označite, ali želite onemogočiti brskanje ali iskanje tega vnosa. Združite z "Naloži CMDI" za vnose, ustvarjene z WebLichtom.</message>
   <message key="input_forms.field.local.hasMetadata.label">Ali boste v repozitorij naložili datoteko CMDI?</message>
-  <message key="input_forms.field.local.hasMetadata.hint">V naslednjem koraku označite, ali boste v repozitorij naložili datoteko CMDI. Združite s "Skrij" za vnose, ustvarjene z WebLichtom.
-  </message>
+  <message key="input_forms.field.local.hasMetadata.hint">V naslednjem koraku označite, ali boste v repozitorij naložili datoteko CMDI. Združite s "Skrij" za vnose, ustvarjene z WebLichtom.</message>
   <message key="input_forms.field.dc.contributor.author.label">Avtorji</message>
-  <message key="input_forms.field.dc.contributor.author.hint">Vnesite imena avtorjev vnosa. Začnite vnašati avtorjev priimek in kliknite na samodokončani izpis imena, če se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.
-  </message>
+  <message key="input_forms.field.dc.contributor.author.hint">Vnesite imena avtorjev vnosa. Začnite vnašati avtorjev priimek in kliknite na samodokončani izpis imena, če se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.</message>
   <message key="input_forms.field.dc.contributor.author.required">Dodajte avtorje</message>
   <message key="input_forms.field.dc.publisher.label">Izdajatelj</message>
-  <message key="input_forms.field.dc.publisher.hint">Vnesite ime izdajatelja predhodne različice tega vnosa ali ime vaše matične institucije. Začnite vnašati ime izdajatelja in kliknite na samodokončani izpis imena, če se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.
-  </message>
+  <message key="input_forms.field.dc.publisher.hint">Vnesite ime izdajatelja predhodne različice tega vnosa ali ime vaše matične institucije. Začnite vnašati ime izdajatelja in kliknite na samodokončani izpis imena, če se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.</message>
   <message key="input_forms.field.dc.publisher.clariah.hint">Ime založnika originalnega analognega ali izvorno digitalnega objekta. Uporabite svojo institucijo, če je to izvorno digitalni objekt, ki ga želite objaviti. Začnite tipkati ime založnika in uporabite samodokončanje z obrazcem, ki se bo pojavil, če založnik že obstaja v sistemu. Pritisnite ESC, če ne želite uporabiti samodejno izbrane vrednosti.</message>
   <message key="input_forms.field.dc.publisher.required">Ime izdajatelja morate obvezno vnesti.</message>
   <message key="input_forms.field.local.dataProvider.label">Ponudnik podatkov</message>
   <message key="input_forms.field.local.dataProvider.hint">Institucija od koder prihajajo podatki. Nanaša se na digitalni objekt (in ne analogni original) in se uporablja npr. za pravilno atribucijo. V splošnem to ni enako kot izdajatelj.</message>
   <message key="input_forms.field.local.contact.person.label">Kontaktna oseba</message>
-  <message key="input_forms.field.local.contact.person.hint">Oseba, na katero se obrnete v primeru težav z vnosom.</message>
+  <message key="input_forms.field.local.contact.person.hint">Oseba, na katero se obrne v primeru težav z vnosom.</message>
   <message key="input_forms.field.local.contact.person.required">Izpolnite vsa polja za kontaktno osebo.</message>
   <message key="input_forms.field.local.sponsor.label">Financiranje</message>
   <message key="input_forms.field.local.sponsor.hint">Izrazite zahvalo sponzorjem in agencijam, ki so financirali delo, opisano v vnosu.</message>
@@ -2426,7 +2421,7 @@
   <message key="input_forms.field.dc.subject.hint">Vnesite ustrezne ključne besede ali besedne zveze in kliknite na gumb "Dodaj". Če želite vnesti več ključnih besed, lahko ponovite ta postopek ali uporabite ločila, tj. vejico ali podpičje, s katerimi boste ločili ključne besede. Začnite vnašati ključno besedo in kliknite na samodokončani izpis, ko se prikaže. Če ne želite vnesti vnaprej izbrane vrednosti, kliknite na tipko ESC.</message>
   <message key="input_forms.field.dc.subject.required">Vnesite vsaj eno ključno besedo, povezano z vašim vnosom.</message>
   <message key="input_forms.field.local.size.info.label">Velikost</message>
-  <message key="input_forms.field.local.size.info.hint">Lahko navedete obseg vnesenih podatkov, npr. število pojavnic.</message>
+  <message key="input_forms.field.local.size.info.hint">Navedite obseg vnesenih podatkov, npr. število besedil, št. pojavnic itd.</message>
   <message key="input_forms.field.metashare.ResourceInfo#ContentInfo.mediaType.label">Vrsta medija</message>
   <message key="input_forms.field.metashare.ResourceInfo#ContentInfo.mediaType.hint">Vrsta medija za glavno vsebino vnosa, npr. "besedilo" za besedilne korpuse ali "avdio" za zvočne posnetke.
   </message>
