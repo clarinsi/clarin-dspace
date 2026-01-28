@@ -291,8 +291,10 @@ public class DiscoJuiceFeeds extends AbstractGenerator {
             //Caution does not follow redirects, and even if you set it to http->https is not possible
             Object obj = parser.parse(new InputStreamReader(conn.getInputStream()));
             return (JSONArray) obj;
-        }catch (IOException|ParseException e){
-            log.error("Failed to obtain/parse "+ url + "\nCheck timeouts, redirects, shibboleth config.\n" + e);
+        } catch (IOException e){
+            log.error("Failed to obtain "+ url + "\nCheck timeouts, redirects, shibboleth config.\n" + e);
+        } catch (ParseException e){
+            log.error("Failed to parse "+ url + "\nCheck shibboleth config and json data source.\n" + e);
         }
         return new JSONArray();
     }
